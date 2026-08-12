@@ -1,0 +1,2 @@
+Selected Fruite:  Mango
+Selected SuperHeros [ 'Aquaman', 'Hellboy', 'Thor' ]

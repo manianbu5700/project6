@@ -1,0 +1,2176 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: windowHandling.spec.js >> windowHandling
+- Location: tests\windowHandling.spec.js:5:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - navigation "Shortcuts menu" [ref=e3]:
+    - heading "Skip to" [level=2] [ref=e4]
+    - list "Skip to" [ref=e5]:
+      - listitem [ref=e6]:
+        - link "main content" [ref=e7] [cursor=pointer]:
+          - /url: "#skippedLink"
+          - text: Main content
+      - listitem [ref=e8]:
+        - link "Results" [ref=e9] [cursor=pointer]:
+          - /url: .s-asin a:has(h2)
+    - separator [ref=e10]
+    - heading "Keyboard shortcuts" [level=2] [ref=e11]
+    - list "Keyboard shortcuts" [ref=e12]:
+      - listitem [ref=e13]:
+        - link "Search, alt, forward slash" [ref=e14] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e15]:
+            - generic [ref=e16]: Search
+            - generic [ref=e17]:
+              - generic [ref=e18]: alt
+              - generic [ref=e19]: +
+              - generic [ref=e20]: /
+      - listitem [ref=e21]:
+        - link "Cart, shift, alt, c" [ref=e22] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e23]:
+            - generic [ref=e24]: Cart
+            - generic [ref=e25]:
+              - generic [ref=e26]: shift
+              - generic [ref=e27]: +
+              - generic [ref=e28]: alt
+              - generic [ref=e29]: +
+              - generic [ref=e30]: C
+      - listitem [ref=e31]:
+        - link "Home, shift, alt, h" [ref=e32] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e33]:
+            - generic [ref=e34]: Home
+            - generic [ref=e35]:
+              - generic [ref=e36]: shift
+              - generic [ref=e37]: +
+              - generic [ref=e38]: alt
+              - generic [ref=e39]: +
+              - generic [ref=e40]: H
+      - listitem [ref=e41]:
+        - link "Your orders, shift, alt, o" [ref=e42] [cursor=pointer]:
+          - /url: javascript:void(0)
+          - generic [ref=e43]:
+            - generic [ref=e44]: Orders
+            - generic [ref=e45]:
+              - generic [ref=e46]: shift
+              - generic [ref=e47]: +
+              - generic [ref=e48]: alt
+              - generic [ref=e49]: +
+              - generic [ref=e50]: O
+      - listitem [ref=e51]:
+        - button "Show/hide shortcuts, shift, alt, z" [ref=e52] [cursor=pointer]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: Show/Hide shortcuts
+            - generic [ref=e55]:
+              - generic [ref=e56]: shift
+              - generic [ref=e57]: +
+              - generic [ref=e58]: alt
+              - generic [ref=e59]: +
+              - generic [ref=e60]: Z
+    - generic [ref=e66]: To move between items, use your keyboard's up or down arrows.
+  - banner [ref=e67]:
+    - navigation "Primary" [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e70]:
+          - link "Amazon.in" [ref=e72] [cursor=pointer]:
+            - /url: /ref=nav_logo
+            - generic: .in
+          - button "Delivering to Chennai 600009 Update location" [ref=e75] [cursor=pointer]:
+            - generic [ref=e77]:
+              - generic [ref=e78]: Delivering to Chennai 600009
+              - generic [ref=e79]: Update location
+        - search [ref=e82]:
+          - generic [ref=e85]:
+            - generic [ref=e87]: All
+            - combobox "Select the department you want to search in" [ref=e89] [cursor=pointer]:
+              - option "All Categories" [selected]
+              - option "Alexa Skills"
+              - option "Amazon Devices"
+              - option "Amazon Fashion"
+              - option "Amazon Fresh"
+              - option "Amazon Fresh Meat"
+              - option "Amazon Pharmacy"
+              - option "Appliances"
+              - option "Apps & Games"
+              - option "Audible Audiobooks"
+              - option "Baby"
+              - option "Beauty"
+              - option "Books"
+              - option "Car & Motorbike"
+              - option "Clothing & Accessories"
+              - option "Collectibles"
+              - option "Computers & Accessories"
+              - option "Deals"
+              - option "Electronics"
+              - option "Furniture"
+              - option "Garden & Outdoors"
+              - option "Gift Cards"
+              - option "Grocery & Gourmet Foods"
+              - option "Health & Personal Care"
+              - option "Home & Kitchen"
+              - option "Industrial & Scientific"
+              - option "Jewellery"
+              - option "Kindle Store"
+              - option "Luggage & Bags"
+              - option "Luxury Beauty"
+              - option "Movies & TV Shows"
+              - option "MP3 Music"
+              - option "Music"
+              - option "Musical Instruments"
+              - option "Office Products"
+              - option "Pet Supplies"
+              - option "Prime Video"
+              - option "Shoes & Handbags"
+              - option "Software"
+              - option "Sports, Fitness & Outdoors"
+              - option "Subscribe & Save"
+              - option "Tools & Home Improvement"
+              - option "Toys & Games"
+              - option "Under ₹500"
+              - option "Video Games"
+              - option "Watches"
+          - searchbox "Search Amazon.in" [ref=e92]: samsung s25 ultra 5g mobile
+          - generic "Go" [ref=e95] [cursor=pointer]:
+            - button "Go" [ref=e96]
+        - generic [ref=e98]:
+          - generic [ref=e99]:
+            - link "Choose a language for shopping in Amazon India. The current selection is English (EN)." [ref=e100] [cursor=pointer]:
+              - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=topnav_lang
+              - generic [ref=e103]:
+                - img "India" [ref=e104]
+                - generic [ref=e105]: EN
+            - button "Expand to Change Language or Country" [ref=e106] [cursor=pointer]
+          - generic [ref=e107]:
+            - link "Hello, sign in Account & Lists" [ref=e108] [cursor=pointer]:
+              - /url: https://www.amazon.in/ap/signin?openid.return_to=https%3A%2F%2Fwww.amazon.in%2Fs%3Fk%3Dsamsung%2Bs25%2Bultra%2B5g%2Bmobile%26ref%3Dnav_ya_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=inflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0
+              - generic [ref=e110]: Hello, sign in
+              - generic [ref=e111]: Account & Lists
+            - button "Expand Account and Lists" [ref=e112] [cursor=pointer]
+          - link "Returns & Orders" [ref=e113] [cursor=pointer]:
+            - /url: /gp/css/order-history?ref_=nav_orders_first
+            - generic [ref=e114]: Returns
+            - generic [ref=e115]: "& Orders"
+          - link "0 items in cart" [ref=e116] [cursor=pointer]:
+            - /url: /gp/cart/view.html?ref_=nav_cart
+            - generic [ref=e118]: "0"
+            - generic [ref=e121]: Cart
+      - generic [ref=e122]:
+        - button "Open All Categories Menu" [ref=e124] [cursor=pointer]:
+          - generic [ref=e126]: All
+        - list [ref=e130]:
+          - listitem [ref=e131]:
+            - generic [ref=e132]:
+              - link "Fresh" [ref=e133] [cursor=pointer]:
+                - /url: /fresh?ref_=nav_cs_grocery
+              - button "Fresh Details" [ref=e134] [cursor=pointer]
+          - listitem [ref=e135]:
+            - link "Prime Video" [ref=e137] [cursor=pointer]:
+              - /url: https://www.primevideo.com/offers/nonprimehomepage/ref_=nav_dvm_crs_in_s_gw_bt_dk_p_hamburgr?ref_=avod_desktop_topnav
+          - listitem [ref=e138]:
+            - link "Sell" [ref=e140] [cursor=pointer]:
+              - /url: /b/32702023031?node=32702023031&ld=AZINSOANavDesktop_T3&ref_=nav_cs_sell_T3
+          - listitem [ref=e141]:
+            - link "Bestsellers" [ref=e143] [cursor=pointer]:
+              - /url: /gp/bestsellers/?ref_=nav_cs_bestsellers
+          - listitem [ref=e144]:
+            - link "Today's Deals" [ref=e146] [cursor=pointer]:
+              - /url: /deals?ref_=nav_cs_gb
+          - listitem [ref=e147]:
+            - link "Customer Service" [ref=e149] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=nav_cs_help
+          - listitem [ref=e150]:
+            - link "Mobiles" [ref=e152] [cursor=pointer]:
+              - /url: /mobile-phones/b/?ie=UTF8&node=1389401031&ref_=nav_cs_mobiles
+          - listitem [ref=e153]:
+            - link "New Releases" [ref=e155] [cursor=pointer]:
+              - /url: /gp/new-releases/?ref_=nav_cs_newreleases
+          - listitem [ref=e156]:
+            - generic [ref=e157]:
+              - link "Prime" [ref=e158] [cursor=pointer]:
+                - /url: /prime?ref_=nav_cs_primelink_nonmember
+              - button "Prime Details" [ref=e159] [cursor=pointer]
+          - listitem [ref=e160]:
+            - link "Amazon Pay" [ref=e162] [cursor=pointer]:
+              - /url: /gp/sva/dashboard?ref_=nav_cs_apay
+          - listitem [ref=e163]:
+            - link "Electronics" [ref=e165] [cursor=pointer]:
+              - /url: /electronics/b/?ie=UTF8&node=976419031&ref_=nav_cs_electronics
+          - listitem [ref=e166]:
+            - link "Home & Kitchen" [ref=e168] [cursor=pointer]:
+              - /url: /Home-Kitchen/b/?ie=UTF8&node=976442031&ref_=nav_cs_home
+          - listitem [ref=e169]:
+            - link "Fashion" [ref=e171] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6648217031&ref_=nav_cs_fashion
+          - listitem [ref=e172]:
+            - link "Computers" [ref=e174] [cursor=pointer]:
+              - /url: /computers-and-accessories/b/?ie=UTF8&node=976392031&ref_=nav_cs_pc
+          - listitem [ref=e175]:
+            - link "Toys & Games" [ref=e177] [cursor=pointer]:
+              - /url: /Toys-Games/b/?ie=UTF8&node=1350380031&ref_=nav_cs_toys
+          - listitem [ref=e178]:
+            - link "Beauty & Personal Care" [ref=e180] [cursor=pointer]:
+              - /url: /beauty/b/?ie=UTF8&node=1355016031&ref_=nav_cs_beauty
+          - listitem [ref=e181]:
+            - link "Car & Motorbike" [ref=e183] [cursor=pointer]:
+              - /url: /Car-Motorbike-Store/b/?ie=UTF8&node=4772060031&ref_=nav_cs_automotive
+          - listitem [ref=e184]:
+            - link "Sports, Fitness & Outdoors" [ref=e186] [cursor=pointer]:
+              - /url: /Sports/b/?ie=UTF8&node=1984443031&ref_=nav_cs_sports
+          - listitem [ref=e187]:
+            - link "Home Improvement" [ref=e189] [cursor=pointer]:
+              - /url: /Home-Improvement/b/?ie=UTF8&node=4286640031&ref_=nav_cs_hi
+          - listitem [ref=e190]:
+            - link "Gift Cards" [ref=e192] [cursor=pointer]:
+              - /url: /gift-card-store/b/?ie=UTF8&node=3704982031&ref_=nav_cs_gc
+          - listitem [ref=e193]:
+            - link "Video Games" [ref=e195] [cursor=pointer]:
+              - /url: /video-games/b/?ie=UTF8&node=976460031&ref_=nav_cs_video_games
+          - listitem [ref=e196]:
+            - link "Grocery & Gourmet Foods" [ref=e198] [cursor=pointer]:
+              - /url: /Gourmet-Specialty-Foods/b/?ie=UTF8&node=2454178031&ref_=nav_cs_grocery
+          - listitem [ref=e199]:
+            - link "Pet Supplies" [ref=e201] [cursor=pointer]:
+              - /url: /Pet-Supplies/b/?ie=UTF8&node=2454181031&ref_=nav_cs_pets
+          - listitem [ref=e202]:
+            - link "Custom Products" [ref=e204] [cursor=pointer]:
+              - /url: /Amazon-Custom/b/?ie=UTF8&node=32615889031&ref_=nav_cs_custom
+          - listitem [ref=e205]:
+            - link "Health, Household & Personal Care" [ref=e207] [cursor=pointer]:
+              - /url: /health-and-personal-care/b/?ie=UTF8&node=1350384031&ref_=nav_cs_hpc
+          - listitem [ref=e208]:
+            - link "Baby" [ref=e210] [cursor=pointer]:
+              - /url: /Baby/b/?ie=UTF8&node=1571274031&ref_=nav_cs_baby
+          - listitem [ref=e211]:
+            - link "Audible" [ref=e213] [cursor=pointer]:
+              - /url: /Audible-Books-and-Originals/b/?ie=UTF8&node=17941593031&ref_=nav_cs_audible
+          - listitem [ref=e214]:
+            - link "AmazonBasics" [ref=e216] [cursor=pointer]:
+              - /url: /b/?node=6637738031&ref_=nav_cs_amazonbasics
+          - listitem [ref=e217]:
+            - link "Subscribe & Save" [ref=e219] [cursor=pointer]:
+              - /url: /auto-deliveries/landing?ref_=nav_cs_sns
+          - listitem [ref=e220]:
+            - link "Kindle eBooks" [ref=e222] [cursor=pointer]:
+              - /url: /Kindle-eBooks/b/?ie=UTF8&node=1634753031&ref_=nav_cs_kindle_books
+          - listitem [ref=e223]:
+            - link "Books" [ref=e225] [cursor=pointer]:
+              - /url: /Books/b/?ie=UTF8&node=976389031&ref_=nav_cs_books
+          - listitem [ref=e226]:
+            - link "Flights" [ref=e228] [cursor=pointer]:
+              - /url: /flights?ref_=nav_cs_apay_desktop_topnav_flights
+        - link "AugART26_Event" [ref=e232] [cursor=pointer]:
+          - /url: /events/greatfreedomsale/?_encoding=UTF8&ref_=nav_swm_event&pf_rd_p=84b33765-98c5-4189-9140-5b49efeeb8df&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A21TJRUUN4KGV&pf_rd_r=R1X0SJ2C554QFBYAQW2D
+          - img "AugART26_Event" [ref=e233]
+      - dialog [ref=e234]
+  - generic [ref=e236]:
+    - heading "1-16 of over 7,000 results for \"samsung s25 ultra 5g mobile\" Featured" [level=1] [ref=e239]:
+      - generic [ref=e240]:
+        - heading "1-16 of over 7,000 results for \"samsung s25 ultra 5g mobile\"" [level=2] [ref=e245]
+        - generic [ref=e250]:
+          - generic [ref=e251]: "Sort by:"
+          - combobox "Sort by:" [ref=e252]:
+            - option "Featured" [selected]
+            - 'option "Price: Low to High"'
+            - 'option "Price: High to Low"'
+            - option "Avg. Customer Review"
+            - option "Newest Arrivals"
+            - option "Best Sellers"
+          - generic [ref=e255] [cursor=pointer]: Sort by:Featured
+    - generic [ref=e257]:
+      - generic [ref=e259]:
+        - generic [ref=e261]:
+          - generic [ref=e266]:
+            - link [ref=e267] [cursor=pointer]:
+              - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/stores/page/A16ABF29-A6CF-4129-84D2-B2F3D517B746/?_encoding=UTF8&store_ref=SB_A09329051A8O4886SPXEG-A023688413D019RETYHS8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=auto-sparkle-hsa-tetris&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_bkgd&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+            - generic [ref=e269]:
+              - link [ref=e270] [cursor=pointer]:
+                - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/stores/page/A16ABF29-A6CF-4129-84D2-B2F3D517B746/?_encoding=UTF8&store_ref=SB_A09329051A8O4886SPXEG-A023688413D019RETYHS8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=auto-sparkle-hsa-tetris&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_bkgd&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+              - generic [ref=e271]:
+                - link "Samsung" [ref=e272] [cursor=pointer]:
+                  - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/stores/page/A16ABF29-A6CF-4129-84D2-B2F3D517B746/?_encoding=UTF8&store_ref=SB_A09329051A8O4886SPXEG-A023688413D019RETYHS8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=auto-sparkle-hsa-tetris&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_logo&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                  - img "Samsung" [ref=e273]
+                - generic [ref=e274]:
+                  - heading "Galaxy S25 Ultra - AI ProVisual Engine" [level=2] [ref=e275] [cursor=pointer]:
+                    - generic [ref=e276]:
+                      - generic [ref=e277]: Galaxy S25 Ultra - AI ProVisual Engine
+                      - generic [ref=e278]: Galaxy S25 Ultra - AI ProVisual Engine
+                  - link "Save up to 27% on Samsung" [ref=e279] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/stores/page/A16ABF29-A6CF-4129-84D2-B2F3D517B746/?_encoding=UTF8&store_ref=SB_A09329051A8O4886SPXEG-A023688413D019RETYHS8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=auto-sparkle-hsa-tetris&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_cta&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                    - generic [ref=e282]:
+                      - text: Save up to 27% on
+                      - generic [ref=e283]:
+                        - text: Samsung
+                        - img [ref=e284]
+              - generic [ref=e286]:
+                - generic [ref=e287]:
+                  - link [ref=e288] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/stores/page/A16ABF29-A6CF-4129-84D2-B2F3D517B746/?_encoding=UTF8&store_ref=SB_A09329051A8O4886SPXEG-A023688413D019RETYHS8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=auto-sparkle-hsa-tetris&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_bkgd&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                  - link "Samsung" [ref=e290] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/stores/page/A16ABF29-A6CF-4129-84D2-B2F3D517B746/?_encoding=UTF8&store_ref=SB_A09329051A8O4886SPXEG-A023688413D019RETYHS8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=auto-sparkle-hsa-tetris&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_ls_dpc&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                    - img "Samsung" [ref=e292]
+                - list "Products":
+                  - listitem:
+                    - generic [ref=e293]:
+                      - link [ref=e294] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKNKCYX/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_0_bkgd&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                      - link "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Silverblue, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life" [ref=e296] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKNKCYX/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_0_img&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                        - img "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Silverblue, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life" [ref=e298]
+                      - generic [ref=e299]:
+                        - link "Freedom Sale Mega Deal" [ref=e300] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKNKCYX/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_0_badge&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                          - generic [ref=e302]: Freedom Sale Mega Deal
+                        - link "₹94,999 Eligible for Prime. ₹1,29,999 (27% off)" [ref=e303] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKNKCYX/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-1-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_0_price&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                          - generic [ref=e304]:
+                            - generic [ref=e305]:
+                              - generic [ref=e306]: ₹94,999
+                              - generic [ref=e307]: ₹94,999
+                            - img "Eligible for Prime." [ref=e308]
+                          - generic [ref=e309]:
+                            - generic [ref=e310]:
+                              - generic [ref=e311]: ₹1,29,999
+                              - text: ₹1,29,999
+                            - text: (27% off)
+                  - listitem:
+                    - generic [ref=e312]:
+                      - link [ref=e313] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKL9MQ8/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_1_bkgd&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                      - link "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Whitesilver, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life" [ref=e315] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKL9MQ8/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_1_img&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                        - img "Samsung Galaxy S25 Ultra 5G AI Smartphone (Titanium Whitesilver, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life" [ref=e317]
+                      - generic [ref=e318]:
+                        - link "Freedom Sale Mega Deal" [ref=e319] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKL9MQ8/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_1_badge&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                          - generic [ref=e321]: Freedom Sale Mega Deal
+                        - link "₹94,999 Eligible for Prime. ₹1,29,999 (27% off)" [ref=e322] [cursor=pointer]:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JB9jLOq6NQwWqHdDdgOiytQAAAGf9iQ5IwoAAAH2AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDIgICC-CZ3K/clv1c_ek-wBIfXJTjbTt0CPA2AqRMc8PpF-_AVTT9cj2l45JY9qDON6DotRO3E0Qwa_8gOY74b7UxROEUV0Nvrxv1k1MzA-5WONrM_MAnoKfC9A5Mr5Anz7vMgTYL1sY3k5nEJ59mYFbAG180MBLXrHtUlgHFK0P-RPnXokPRwzR-p4PYPWeYRLhBszl_U5RFgIRSMPmc8LbAi73fowtAtN8vA7EiWCR-9agQkto1HuWh-ovWsWNJXhA__naR_COxES_e1VxivMpvr660ITVRJlh7rdWdf90fGL7gK3VKHOZA0eacqDtZ9LLCVGe3Ett3SYOJx8yrDx10fuLNaa6_bwDXI2F7_UEwjHBOX9I1yV-FP8YPSFWvzzrcAFMmLiQnx_Avll-sLNNz-yTsXeajWazdP1O3crjjBTmEfM1pmD8jpSqUpTvJTrh4GygVcVRqJ1AJHFsMLLByJau04FGet7Imbxrr6Kh3uX7gz2WgPyATN1lbo62Yy_E30bNsGpkRfRPEQNaM3agSfH8fiGedne9F4BS1YA3R5MSVIRDcMEdbA6Iuw_lDrTCaAoikMhyvyvrtyMz3LkwNkgjccg9Mf6U3HiaHYgcFMifxx4Qoxg1nldEvovjiWt6qyKuK7swmRBB39FEesu91RIzm2OcVVE_N7gZ9kvFuhZ-zlUBURVYyFI7nRPipwfEmZfHeDQ-NMQTQ53ZSOtYt-fQmitqXrpDi5gIFqMbz2nHKetJEYLUywksz87VPzznEluI9Xoe_Qil2k8qc7AK73uCQEfO-J5VGJvlVqXNUHhwk3YAGPsU_8Gu92ERtoEOE2hmd5xMjWF8NZSimCXXMEu7HO9uCJQYaUX3pllQLxUS2-tQ-B0BcT10jMnnN3PRL1cTFlvB-hFpRaWHaaMzRjYqp7Qguqv364N660E4TSugmDZgwK9928Of925wfttyaesltjRHTrvVaowRaYJ6GkKt4rJXEnYyhNe5eLLbezSjPPYpb8FAkBYAJ694Of0fbSOSAqfd1NWyJVi0ro2-NSa_xcfNpSFhBf92RrKMW1PHXYWXmffjU5aLii5phzbshZ2F6vh_484wz-8DG2m7R-S0mXolPVFk8MonQaG5e8iCYj6jM9l1s4a5jqvtYlmiLLTH0cL4OGrODq5WicQCT86VU_sW6V0NA9rPCgAUQ-K35Bi_U5YmbTpPNzaVwZsokKXGSP0mgiOl4Kqu8o6_-FQI-wfwyLjzW8YPN00SGwjGtu_moqZ7Ch5Xm-I-J7iXk-djbJIrK510wyFBEtexOHByMP51zQZH6j6LiJ89BMrfgp8TIO9vc-2U7dC8ACeyR9O5NNdjff9AaGS0ALCiBqKbIfF_H_wLnCIfw_ctGnWDRVLrcV1pYZ0UvohGmuvncsrH0yhveD8fEXrBTfLoQbQq7l5QoPdTEMy_kfCaseap8T8N7bhMtkBBjgsdjGjIqumqmM8rWoCjrf8qGrfK0nyXPA3ZS6FzB-c8eGPzGLVdj25QYpdFiLa4M4N8ZMy1xiv-AbKpoQhkZEoJgAxiwzHrJVScDCKOfkJR365Vbmc9RCbQk1QpZ9cKmXwsak0aw0LJ_sllOI4U-5qlZE5EV6hFLynaqEVUyQkCGZuzP29Fqmxp8UgyJQukFXSlBz9y5OrVIFLw-AAKKvJudsrKibZ5FUmhOCHLVGUhoLcb3kp6k4RSgX4my585OyojU7kj1Cl-l2cQA-VhlTKyeikiY6VZT8nB-sR6YEvK5gEKFYBrAJGVAjIsiNiLq8M7zGntJAybn5agqmsIQ/https://www.amazon.in/gp/aw/d/B0DSKL9MQ8/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=41f5679c2276d7ae2194cbaebc4e1cfc&hsa_cr_id=0&qid=1786540996&sr=1-2-e0fa1fdd-d857-4087-adda-5bd576b25987&aref=WOAYZJziPx&ref_=sbx_be_s_sparkle_dlcd_asin_1_price&pd_rd_w=LIqoc&content-id=amzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244%3Aamzn1.sym.c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_p=c0c4f4ed-4ecc-4626-b0b0-d428311a6244&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=NmJtd&pd_rd_r=300a9124-fd20-4412-85ad-4da15bfe7af7
+                          - generic [ref=e323]:
+                            - generic [ref=e324]:
+                              - generic [ref=e325]: ₹94,999
+                              - generic [ref=e326]: ₹94,999
+                            - img "Eligible for Prime." [ref=e327]
+                          - generic [ref=e328]:
+                            - generic [ref=e329]:
+                              - generic [ref=e330]: ₹1,29,999
+                              - text: ₹1,29,999
+                            - text: (27% off)
+              - button "Leave feedback on Sponsored ad" [ref=e335] [cursor=pointer]: Sponsored
+          - generic [ref=e338]:
+            - generic [ref=e341]:
+              - heading "Results" [level=2] [ref=e342]
+              - generic [ref=e343]: Check each product page for other buying options.
+            - generic:
+              - list:
+                - listitem [ref=e344]:
+                  - generic [ref=e350]:
+                    - link [ref=e356] [cursor=pointer]:
+                      - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DSKL9MQ8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1
+                      - img [ref=e358]
+                    - generic [ref=e361]:
+                      - generic [ref=e362]:
+                        - heading "Samsung" [level=2] [ref=e365]
+                        - link "Galaxy S25 Ultra 5G AI Smartphone (Titanium Whitesilver, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life" [ref=e366] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DSKL9MQ8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1
+                          - heading "Galaxy S25 Ultra 5G AI Smartphone (Titanium Whitesilver, 12GB RAM, 256GB Storage), 200MP Camera, S Pen Included, Long Battery Life" [level=2] [ref=e367]
+                      - generic [ref=e368]:
+                        - generic [ref=e369]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=e371] [cursor=pointer]:
+                            - generic [ref=e373]: 4.5 out of 5 stars
+                          - link "1,709 ratings" [ref=e375] [cursor=pointer]:
+                            - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DSKL9MQ8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1#customerReviews
+                            - text: (1.7K)
+                        - generic [ref=e376]: 1K+ bought in past month
+                      - generic [ref=e379]:
+                        - generic [ref=e380]:
+                          - link "Freedom Sale Mega Deal" [ref=e382] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e385]: Freedom Sale Mega Deal
+                          - generic [ref=e387]:
+                            - generic [ref=e388]: Price, product page
+                            - 'link "₹94,999 M.R.P: ₹1,29,999 M.R.P: ₹1,29,999" [ref=e389] [cursor=pointer]':
+                              - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DSKL9MQ8/ref=sr_1_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1
+                              - generic [ref=e390]:
+                                - generic [ref=e391]: ₹94,999
+                                - generic [ref=e392]: ₹94,999
+                              - generic [ref=e393]: "M.R.P: ₹1,29,999"
+                              - generic [ref=e394]:
+                                - text: "M.R.P:"
+                                - generic [ref=e395]:
+                                  - generic [ref=e396]: ₹1,29,999
+                                  - text: ₹1,29,999
+                            - text: (27% off)
+                          - generic [ref=e400]:
+                            - generic [ref=e401]: Flat INR 5000 Off on ALL BanksCards
+                            - generic [ref=e402]: Flat INR 5000 Off on ALL BanksCards
+                        - generic [ref=e405]:
+                          - generic [ref=e407]: FREE delivery Fri, 14 Aug
+                          - generic [ref=e409]: Or fastest delivery Tomorrow 6 am - 10 am
+                        - generic [ref=e423] [cursor=pointer]:
+                          - button "Add to cart" [ref=e424]
+                          - generic [ref=e425]: Add to cart
+                        - group "colours available" [ref=e427]:
+                          - list [ref=e428]:
+                            - generic [ref=e429]:
+                              - listitem:
+                                - link "Titanium Whitesilver":
+                                  - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DSKL9MQ8/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1
+                            - generic [ref=e432]:
+                              - listitem:
+                                - link "Titanium Black":
+                                  - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DVC6VC7P/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1
+                            - generic [ref=e435]:
+                              - listitem:
+                                - link "Titanium Gray":
+                                  - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DVC8FPVJ/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1
+                            - generic [ref=e438]:
+                              - listitem:
+                                - link "Titanium Silverblue":
+                                  - /url: /Samsung-Smartphone-Whitesilver-Snapdragon-ProVisual/dp/B0DVC72DF8/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-1
+                - listitem [ref=e443]:
+                  - generic [ref=e449]:
+                    - link [ref=e455] [cursor=pointer]:
+                      - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0FNMQW9HW/ref=sr_1_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                      - img [ref=e457]
+                    - generic [ref=e460]:
+                      - generic [ref=e461]:
+                        - heading "Samsung" [level=2] [ref=e464]
+                        - link "Galaxy S25 FE 5G Smartphone with Galaxy AI (JetBlack, 8GB RAM, 128GB Storage), 12MP Front Camera, ProVisual Engine, Long Battery Life" [ref=e465] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0FNMQW9HW/ref=sr_1_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                          - heading "Galaxy S25 FE 5G Smartphone with Galaxy AI (JetBlack, 8GB RAM, 128GB Storage), 12MP Front Camera, ProVisual Engine, Long Battery Life" [level=2] [ref=e466]
+                      - generic [ref=e467]:
+                        - generic [ref=e468]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=e470] [cursor=pointer]:
+                            - generic [ref=e472]: 4.4 out of 5 stars
+                          - link "276 ratings" [ref=e474] [cursor=pointer]:
+                            - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0FNMQW9HW/ref=sr_1_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2#customerReviews
+                            - text: (276)
+                        - generic [ref=e475]: 1K+ bought in past month
+                      - generic [ref=e478]:
+                        - generic [ref=e479]:
+                          - generic [ref=e481]:
+                            - generic [ref=e482]: Price, product page
+                            - 'link "₹49,999 M.R.P: ₹69,999 M.R.P: ₹69,999" [ref=e483] [cursor=pointer]':
+                              - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0FNMQW9HW/ref=sr_1_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                              - generic [ref=e484]:
+                                - generic [ref=e485]: ₹49,999
+                                - generic [ref=e486]: ₹49,999
+                              - generic [ref=e487]: "M.R.P: ₹69,999"
+                              - generic [ref=e488]:
+                                - text: "M.R.P:"
+                                - generic [ref=e489]:
+                                  - generic [ref=e490]: ₹69,999
+                                  - text: ₹69,999
+                            - text: (29% off)
+                          - generic [ref=e494]:
+                            - generic [ref=e495]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e496]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e501]: FREE delivery Sat, 22 Aug
+                        - generic [ref=e515] [cursor=pointer]:
+                          - button "Add to cart" [ref=e516]
+                          - generic [ref=e517]: Add to cart
+                        - generic [ref=e519]:
+                          - text: More Buying Choices
+                          - text: ₹46,999
+                          - link "(3 new offers)" [ref=e521] [cursor=pointer]:
+                            - /url: /gp/offer-listing/B0FNMQW9HW/ref=sr_1_2_olp?keywords=samsung+s25+ultra+5g+mobile&dib_tag=se&dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&qid=1786540996&sr=8-2
+                        - group "colours available" [ref=e523]:
+                          - list [ref=e524]:
+                            - generic [ref=e525]:
+                              - listitem:
+                                - link "Jetblack":
+                                  - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0FNMQW9HW/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                            - generic [ref=e528]:
+                              - listitem:
+                                - link "Icy Blue":
+                                  - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0H3FCSY5T/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                            - generic [ref=e531]:
+                              - listitem:
+                                - link "Mint":
+                                  - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0H3FC1F56/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                            - generic [ref=e534]:
+                              - listitem:
+                                - link "Navy":
+                                  - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0FNMR6KTQ/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                            - generic [ref=e537]:
+                              - listitem:
+                                - link "Silver Shadow":
+                                  - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0H3FN92VB/ref=cs_sr_dp_5?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                            - generic [ref=e540]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /Samsung-Smartphone-JetBlack-Storage-ProVisual/dp/B0FNMNWQZV/ref=cs_sr_dp_6?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-2
+                - listitem [ref=e545]:
+                  - generic [ref=e551]:
+                    - link [ref=e557] [cursor=pointer]:
+                      - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5XW6TN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-3
+                      - img [ref=e559]
+                    - generic [ref=e562]:
+                      - generic [ref=e563]:
+                        - heading "Samsung" [level=2] [ref=e566]
+                        - link "Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Gray, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery" [ref=e567] [cursor=pointer]:
+                          - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5XW6TN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-3
+                          - heading "Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Gray, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery" [level=2] [ref=e568]
+                      - generic [ref=e569]:
+                        - generic [ref=e570]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e572] [cursor=pointer]:
+                            - generic [ref=e574]: 4.6 out of 5 stars
+                          - link "4,309 ratings" [ref=e576] [cursor=pointer]:
+                            - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5XW6TN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-3#customerReviews
+                            - text: (4.3K)
+                        - generic [ref=e577]: 100+ bought in past month
+                      - generic [ref=e580]:
+                        - generic [ref=e581]:
+                          - generic [ref=e583]:
+                            - generic [ref=e584]: Price, product page
+                            - 'link "₹99,999 M.R.P: ₹1,34,999 M.R.P: ₹1,34,999" [ref=e585] [cursor=pointer]':
+                              - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5XW6TN/ref=sr_1_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-3
+                              - generic [ref=e586]:
+                                - generic [ref=e587]: ₹99,999
+                                - generic [ref=e588]: ₹99,999
+                              - generic [ref=e589]: "M.R.P: ₹1,34,999"
+                              - generic [ref=e590]:
+                                - text: "M.R.P:"
+                                - generic [ref=e591]:
+                                  - generic [ref=e592]: ₹1,34,999
+                                  - text: ₹1,34,999
+                            - text: (26% off)
+                          - generic [ref=e596]:
+                            - generic [ref=e597]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e598]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e599]:
+                          - generic [ref=e603]: FREE delivery Fri, 21 Aug
+                          - generic "Only 2 left in stock." [ref=e605]
+                        - generic [ref=e619] [cursor=pointer]:
+                          - button "Add to cart" [ref=e620]
+                          - generic [ref=e621]: Add to cart
+                - listitem [ref=e624]:
+                  - generic [ref=e630]:
+                    - link [ref=e636] [cursor=pointer]:
+                      - /url: /Samsung-Galaxy-Ultra-Phantom-Storage/dp/B0BT9FDZ8N/ref=sr_1_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-4
+                      - img [ref=e638]
+                    - generic [ref=e641]:
+                      - generic [ref=e642]:
+                        - heading "Samsung" [level=2] [ref=e645]
+                        - link "Galaxy S23 Ultra 5G AI Smartphone (Phantom Black, 12GB, 256GB Storage)" [ref=e646] [cursor=pointer]:
+                          - /url: /Samsung-Galaxy-Ultra-Phantom-Storage/dp/B0BT9FDZ8N/ref=sr_1_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-4
+                          - heading "Galaxy S23 Ultra 5G AI Smartphone (Phantom Black, 12GB, 256GB Storage)" [level=2] [ref=e647]
+                      - generic [ref=e649]:
+                        - text: "4.5"
+                        - button "4.5 out of 5 stars, rating details" [ref=e651] [cursor=pointer]:
+                          - generic [ref=e653]: 4.5 out of 5 stars
+                        - link "5,118 ratings" [ref=e655] [cursor=pointer]:
+                          - /url: /Samsung-Galaxy-Ultra-Phantom-Storage/dp/B0BT9FDZ8N/ref=sr_1_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-4#customerReviews
+                          - text: (5.1K)
+                      - generic [ref=e658]:
+                        - generic [ref=e659]:
+                          - generic [ref=e661]:
+                            - generic [ref=e662]: Price, product page
+                            - 'link "₹81,999 M.R.P: ₹1,49,999 M.R.P: ₹1,49,999" [ref=e663] [cursor=pointer]':
+                              - /url: /Samsung-Galaxy-Ultra-Phantom-Storage/dp/B0BT9FDZ8N/ref=sr_1_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-4
+                              - generic [ref=e664]:
+                                - generic [ref=e665]: ₹81,999
+                                - generic [ref=e666]: ₹81,999
+                              - generic [ref=e667]: "M.R.P: ₹1,49,999"
+                              - generic [ref=e668]:
+                                - text: "M.R.P:"
+                                - generic [ref=e669]:
+                                  - generic [ref=e670]: ₹1,49,999
+                                  - text: ₹1,49,999
+                            - text: (45% off)
+                          - generic [ref=e674]:
+                            - generic [ref=e675]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e676]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e681]: FREE delivery Fri, 21 Aug
+                        - generic [ref=e695] [cursor=pointer]:
+                          - button "Add to cart" [ref=e696]
+                          - generic [ref=e697]: Add to cart
+                - listitem [ref=e700]:
+                  - generic [ref=e706]:
+                    - link [ref=e712] [cursor=pointer]:
+                      - /url: /Samsung-Smartphone-Storage-Powerful-Snapdragon/dp/B0FDL5T1PF/ref=sr_1_5?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-5
+                      - img [ref=e714]
+                    - generic [ref=e717]:
+                      - generic [ref=e718]:
+                        - heading "Samsung" [level=2] [ref=e721]
+                        - link "Galaxy Z Fold7 5G Mobile with Galaxy AI (Silver Shadow, 12GB RAM, 256GB Storage), Ultra Sleek Design with 200MP Camera, Ultra-Smooth Gaming with Powerful Snapdragon 8 Elite, Google Gemini" [ref=e722] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Storage-Powerful-Snapdragon/dp/B0FDL5T1PF/ref=sr_1_5?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-5
+                          - heading "Galaxy Z Fold7 5G Mobile with Galaxy AI (Silver Shadow, 12GB RAM, 256GB Storage), Ultra Sleek Design with 200MP Camera, Ultra-Smooth Gaming with Powerful Snapdragon 8 Elite, Google Gemini" [level=2] [ref=e723]
+                      - generic [ref=e725]:
+                        - text: "4.4"
+                        - button "4.4 out of 5 stars, rating details" [ref=e727] [cursor=pointer]:
+                          - generic [ref=e729]: 4.4 out of 5 stars
+                        - link "98 ratings" [ref=e731] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Storage-Powerful-Snapdragon/dp/B0FDL5T1PF/ref=sr_1_5?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-5#customerReviews
+                          - text: (98)
+                      - generic [ref=e734]:
+                        - generic [ref=e735]:
+                          - generic [ref=e737]:
+                            - generic [ref=e738]: Price, product page
+                            - 'link "₹1,74,999 M.R.P: ₹2,24,999 M.R.P: ₹2,24,999" [ref=e739] [cursor=pointer]':
+                              - /url: /Samsung-Smartphone-Storage-Powerful-Snapdragon/dp/B0FDL5T1PF/ref=sr_1_5?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-5
+                              - generic [ref=e740]:
+                                - generic [ref=e741]: ₹1,74,999
+                                - generic [ref=e742]: ₹1,74,999
+                              - generic [ref=e743]: "M.R.P: ₹2,24,999"
+                              - generic [ref=e744]:
+                                - text: "M.R.P:"
+                                - generic [ref=e745]:
+                                  - generic [ref=e746]: ₹2,24,999
+                                  - text: ₹2,24,999
+                            - text: (22% off)
+                          - generic [ref=e750]:
+                            - generic [ref=e751]: Save extra with No Cost EMI
+                            - generic [ref=e752]: Save extra with No Cost EMI
+                        - generic [ref=e755]:
+                          - generic [ref=e757]: FREE delivery Fri, 14 Aug
+                          - generic [ref=e759]: Or fastest delivery Tomorrow 6 am - 10 am
+                        - generic [ref=e773] [cursor=pointer]:
+                          - button "Add to cart" [ref=e774]
+                          - generic [ref=e775]: Add to cart
+                        - group "colours available" [ref=e777]:
+                          - list [ref=e778]:
+                            - generic [ref=e779]:
+                              - listitem:
+                                - link "Silver Shadow":
+                                  - /url: /Samsung-Smartphone-Storage-Powerful-Snapdragon/dp/B0FDL5T1PF/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-5
+                            - generic [ref=e782]:
+                              - listitem:
+                                - link "JetBlack":
+                                  - /url: /Samsung-Smartphone-Storage-Powerful-Snapdragon/dp/B0H14L91B2/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-5
+                            - generic [ref=e785]:
+                              - listitem:
+                                - link "Blue Shadow":
+                                  - /url: /Samsung-Smartphone-Storage-Powerful-Snapdragon/dp/B0FDL3VZR8/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-5
+                - listitem [ref=e790]:
+                  - generic [ref=e796]:
+                    - link [ref=e802] [cursor=pointer]:
+                      - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5Z4GD3/ref=sr_1_6?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-6
+                      - img [ref=e804]
+                    - generic [ref=e807]:
+                      - generic [ref=e808]:
+                        - heading "Samsung" [level=2] [ref=e811]
+                        - link "Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Violet, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery" [ref=e812] [cursor=pointer]:
+                          - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5Z4GD3/ref=sr_1_6?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-6
+                          - heading "Galaxy S24 Ultra 5G AI Smartphone with Galaxy AI (Titanium Violet, 12GB, 256GB Storage), Snapdragon 8 Gen 3, 200 MP Camera with ProVisual Engine and 5000mAh Battery" [level=2] [ref=e813]
+                      - generic [ref=e814]:
+                        - generic [ref=e815]: Number 1 Top-Rated
+                        - generic [ref=e816]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e818] [cursor=pointer]:
+                            - generic [ref=e820]: 4.6 out of 5 stars
+                          - link "5,188 ratings" [ref=e822] [cursor=pointer]:
+                            - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5Z4GD3/ref=sr_1_6?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-6#customerReviews
+                            - text: (5.1K)
+                      - generic [ref=e825]:
+                        - generic [ref=e826]:
+                          - generic [ref=e828]:
+                            - generic [ref=e829]: Price, product page
+                            - 'link "₹99,990 M.R.P: ₹1,34,999 M.R.P: ₹1,34,999" [ref=e830] [cursor=pointer]':
+                              - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5Z4GD3/ref=sr_1_6?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-6
+                              - generic [ref=e831]:
+                                - generic [ref=e832]: ₹99,990
+                                - generic [ref=e833]: ₹99,990
+                              - generic [ref=e834]: "M.R.P: ₹1,34,999"
+                              - generic [ref=e835]:
+                                - text: "M.R.P:"
+                                - generic [ref=e836]:
+                                  - generic [ref=e837]: ₹1,34,999
+                                  - text: ₹1,34,999
+                            - text: (26% off)
+                          - generic [ref=e841]:
+                            - generic [ref=e842]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e843]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e848]: FREE delivery Fri, 21 Aug
+                        - generic [ref=e862] [cursor=pointer]:
+                          - button "Add to cart" [ref=e863]
+                          - generic [ref=e864]: Add to cart
+                        - group "colours available" [ref=e866]:
+                          - list [ref=e867]:
+                            - generic [ref=e868]:
+                              - listitem:
+                                - link "Titanium Violet":
+                                  - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5Z4GD3/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-6
+                            - generic [ref=e871]:
+                              - listitem:
+                                - link "Titanium Black":
+                                  - /url: /Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CT5BJC16/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-6
+                - listitem [ref=e876]:
+                  - generic [ref=e882]:
+                    - link [ref=e888] [cursor=pointer]:
+                      - /url: /Samsung-Storage-Enhanced-Unmatched-Nightography/dp/B0FDBB2VRC/ref=sr_1_7?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-7
+                      - img [ref=e890]
+                    - generic [ref=e893]:
+                      - generic [ref=e894]:
+                        - heading "Samsung" [level=2] [ref=e897]
+                        - link "Galaxy M36 5G Mobile (Velvet Black, 6GB RAM, 128GB Storage) | Google Gemini| Gorilla Glass Victus+ | 7.7mm | AI Enhanced 50MP OIS Triple Camera| Nightography| Lag-free Gaming | Without Charger" [ref=e898] [cursor=pointer]:
+                          - /url: /Samsung-Storage-Enhanced-Unmatched-Nightography/dp/B0FDBB2VRC/ref=sr_1_7?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-7
+                          - heading "Galaxy M36 5G Mobile (Velvet Black, 6GB RAM, 128GB Storage) | Google Gemini| Gorilla Glass Victus+ | 7.7mm | AI Enhanced 50MP OIS Triple Camera| Nightography| Lag-free Gaming | Without Charger" [level=2] [ref=e899]
+                      - generic [ref=e900]:
+                        - generic [ref=e901]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=e903] [cursor=pointer]:
+                            - generic [ref=e905]: 4.1 out of 5 stars
+                          - link "3,202 ratings" [ref=e907] [cursor=pointer]:
+                            - /url: /Samsung-Storage-Enhanced-Unmatched-Nightography/dp/B0FDBB2VRC/ref=sr_1_7?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-7#customerReviews
+                            - text: (3.2K)
+                        - generic [ref=e908]: 5K+ bought in past month
+                      - generic [ref=e911]:
+                        - generic [ref=e912]:
+                          - generic [ref=e914]:
+                            - generic [ref=e915]: Price, product page
+                            - 'link "₹19,999 M.R.P: ₹25,499 M.R.P: ₹25,499" [ref=e916] [cursor=pointer]':
+                              - /url: /Samsung-Storage-Enhanced-Unmatched-Nightography/dp/B0FDBB2VRC/ref=sr_1_7?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-7
+                              - generic [ref=e917]:
+                                - generic [ref=e918]: ₹19,999
+                                - generic [ref=e919]: ₹19,999
+                              - generic [ref=e920]: "M.R.P: ₹25,499"
+                              - generic [ref=e921]:
+                                - text: "M.R.P:"
+                                - generic [ref=e922]:
+                                  - generic [ref=e923]: ₹25,499
+                                  - text: ₹25,499
+                            - text: (22% off)
+                          - generic [ref=e927]:
+                            - generic [ref=e928]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e929]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e934]: FREE delivery Sat, 22 Aug
+                        - generic [ref=e948] [cursor=pointer]:
+                          - button "Add to cart" [ref=e949]
+                          - generic [ref=e950]: Add to cart
+                        - group "colours available" [ref=e952]:
+                          - list [ref=e953]:
+                            - generic [ref=e954]:
+                              - listitem:
+                                - link "Velvet Black":
+                                  - /url: /Samsung-Storage-Enhanced-Unmatched-Nightography/dp/B0FDBB2VRC/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-7
+                            - generic [ref=e957]:
+                              - listitem:
+                                - link "Orange Haze":
+                                  - /url: /Samsung-Storage-Enhanced-Unmatched-Nightography/dp/B0H14NRY8T/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-7
+                            - generic [ref=e960]:
+                              - listitem:
+                                - link "Serene Green":
+                                  - /url: /Samsung-Storage-Enhanced-Unmatched-Nightography/dp/B0H153RKM3/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-7
+                - listitem [ref=e965]:
+                  - generic [ref=e971]:
+                    - link [ref=e977] [cursor=pointer]:
+                      - /url: /Samsung-Moonlight-Storage-Upgrades-Lag-free/dp/B0G81TPT89/ref=sr_1_8?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-8
+                      - img [ref=e979]
+                    - generic [ref=e982]:
+                      - generic [ref=e983]:
+                        - heading "Samsung" [level=2] [ref=e986]
+                        - link "Galaxy M17 5G Mobile (Moonlight Silver, 6GB RAM, 128GB Storage) | 50MP OIS Triple Camera | Gorilla Glass Victus| IP54 | 6 Gen OS Upgrades | AI | Gemini Live | Lag-free Gaming | Without Charger" [ref=e987] [cursor=pointer]:
+                          - /url: /Samsung-Moonlight-Storage-Upgrades-Lag-free/dp/B0G81TPT89/ref=sr_1_8?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-8
+                          - heading "Galaxy M17 5G Mobile (Moonlight Silver, 6GB RAM, 128GB Storage) | 50MP OIS Triple Camera | Gorilla Glass Victus| IP54 | 6 Gen OS Upgrades | AI | Gemini Live | Lag-free Gaming | Without Charger" [level=2] [ref=e988]
+                      - generic [ref=e989]:
+                        - generic [ref=e990]:
+                          - text: "4.1"
+                          - button "4.1 out of 5 stars, rating details" [ref=e992] [cursor=pointer]:
+                            - generic [ref=e994]: 4.1 out of 5 stars
+                          - link "2,208 ratings" [ref=e996] [cursor=pointer]:
+                            - /url: /Samsung-Moonlight-Storage-Upgrades-Lag-free/dp/B0G81TPT89/ref=sr_1_8?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-8#customerReviews
+                            - text: (2.2K)
+                        - generic [ref=e997]: 2K+ bought in past month
+                      - generic [ref=e1000]:
+                        - generic [ref=e1001]:
+                          - generic [ref=e1003]:
+                            - generic [ref=e1004]: Price, product page
+                            - 'link "₹18,999 M.R.P: ₹23,999 M.R.P: ₹23,999" [ref=e1005] [cursor=pointer]':
+                              - /url: /Samsung-Moonlight-Storage-Upgrades-Lag-free/dp/B0G81TPT89/ref=sr_1_8?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-8
+                              - generic [ref=e1006]:
+                                - generic [ref=e1007]: ₹18,999
+                                - generic [ref=e1008]: ₹18,999
+                              - generic [ref=e1009]: "M.R.P: ₹23,999"
+                              - generic [ref=e1010]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1011]:
+                                  - generic [ref=e1012]: ₹23,999
+                                  - text: ₹23,999
+                            - text: (21% off)
+                          - generic [ref=e1016]:
+                            - generic [ref=e1017]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1018]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1021]:
+                          - generic [ref=e1023]: FREE delivery Sat, 15 Aug
+                          - generic [ref=e1025]: Or fastest delivery Fri, 14 Aug
+                        - generic [ref=e1039] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1040]
+                          - generic [ref=e1041]: Add to cart
+                        - group "colours available" [ref=e1043]:
+                          - list [ref=e1044]:
+                            - generic [ref=e1045]:
+                              - listitem:
+                                - link "Moonlight Silver":
+                                  - /url: /Samsung-Moonlight-Storage-Upgrades-Lag-free/dp/B0G81TPT89/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-8
+                            - generic [ref=e1048]:
+                              - listitem:
+                                - link "Sapphire Black":
+                                  - /url: /Samsung-Moonlight-Storage-Upgrades-Lag-free/dp/B0G81P4MPG/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-8
+                - listitem [ref=e1053]:
+                  - generic [ref=e1059]:
+                    - link [ref=e1065] [cursor=pointer]:
+                      - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL8BF2X2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9
+                      - img [ref=e1067]
+                    - generic [ref=e1070]:
+                      - generic [ref=e1071]:
+                        - heading "Samsung" [level=2] [ref=e1074]
+                        - link "Galaxy S26 5G (Black, 12GB RAM, 256GB Storage), AI Phone, Photo Assist, Creative Studio, 50MP Camera with ProVisual Engine, Powerful Customized Processor and 4300mAh Battery" [ref=e1075] [cursor=pointer]:
+                          - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL8BF2X2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9
+                          - heading "Galaxy S26 5G (Black, 12GB RAM, 256GB Storage), AI Phone, Photo Assist, Creative Studio, 50MP Camera with ProVisual Engine, Powerful Customized Processor and 4300mAh Battery" [level=2] [ref=e1076]
+                      - generic [ref=e1077]:
+                        - generic [ref=e1078]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=e1080] [cursor=pointer]:
+                            - generic [ref=e1082]: 4.4 out of 5 stars
+                          - link "240 ratings" [ref=e1084] [cursor=pointer]:
+                            - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL8BF2X2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9#customerReviews
+                            - text: (240)
+                        - generic [ref=e1085]: 200+ bought in past month
+                      - generic [ref=e1088]:
+                        - generic [ref=e1089]:
+                          - link "Freedom Sale Deal" [ref=e1091] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e1094]: Freedom Sale Deal
+                          - generic [ref=e1096]:
+                            - generic [ref=e1097]: Price, product page
+                            - 'link "₹79,999 M.R.P: ₹1,17,999 M.R.P: ₹1,17,999" [ref=e1098] [cursor=pointer]':
+                              - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL8BF2X2/ref=sr_1_9?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9
+                              - generic [ref=e1099]:
+                                - generic [ref=e1100]: ₹79,999
+                                - generic [ref=e1101]: ₹79,999
+                              - generic [ref=e1102]: "M.R.P: ₹1,17,999"
+                              - generic [ref=e1103]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1104]:
+                                  - generic [ref=e1105]: ₹1,17,999
+                                  - text: ₹1,17,999
+                            - text: (32% off)
+                          - generic [ref=e1109]:
+                            - generic [ref=e1110]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1111]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1114]:
+                          - generic [ref=e1116]: FREE delivery Fri, 14 Aug
+                          - generic [ref=e1118]: Or fastest delivery Tomorrow 6 am - 10 am
+                        - generic [ref=e1132] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1133]
+                          - generic [ref=e1134]: Add to cart
+                        - group "colours available" [ref=e1136]:
+                          - list [ref=e1137]:
+                            - generic [ref=e1138]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL8BF2X2/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9
+                            - generic [ref=e1141]:
+                              - listitem:
+                                - link "Cobalt Violet":
+                                  - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL873FSD/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9
+                            - generic [ref=e1144]:
+                              - listitem:
+                                - link "Sky Blue":
+                                  - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL8HZF8R/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9
+                            - generic [ref=e1147]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /Samsung-Creative-ProVisual-Customized-Processor/dp/B0GL8BYCVM/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-9
+                - listitem [ref=e1152]:
+                  - generic [ref=e1158]:
+                    - link [ref=e1164] [cursor=pointer]:
+                      - /url: /Samsung-Icyblue-Storage-Snapdragon-Display/dp/B0H2J3PRKV/ref=sr_1_10?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-10
+                      - img [ref=e1166]
+                    - generic [ref=e1169]:
+                      - generic [ref=e1170]:
+                        - heading "Samsung" [level=2] [ref=e1173]
+                        - link "Galaxy S25 5G (Icyblue, 12GB RAM, 256GB Storage) | Snapdragon 8 Elite for Galaxy | 50MP Triple Camera | 12MP Front Camera | 6.2\" Full HD+ Display | 4000mAh Battery" [ref=e1174] [cursor=pointer]:
+                          - /url: /Samsung-Icyblue-Storage-Snapdragon-Display/dp/B0H2J3PRKV/ref=sr_1_10?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-10
+                          - heading "Galaxy S25 5G (Icyblue, 12GB RAM, 256GB Storage) | Snapdragon 8 Elite for Galaxy | 50MP Triple Camera | 12MP Front Camera | 6.2\" Full HD+ Display | 4000mAh Battery" [level=2] [ref=e1175]
+                      - generic [ref=e1176]:
+                        - generic [ref=e1177]:
+                          - text: "3.3"
+                          - button "3.3 out of 5 stars, rating details" [ref=e1179] [cursor=pointer]:
+                            - generic [ref=e1181]: 3.3 out of 5 stars
+                          - link "4 ratings" [ref=e1183] [cursor=pointer]:
+                            - /url: /Samsung-Icyblue-Storage-Snapdragon-Display/dp/B0H2J3PRKV/ref=sr_1_10?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-10#customerReviews
+                            - text: (4)
+                        - generic [ref=e1184]: 200+ bought in past month
+                      - generic [ref=e1187]:
+                        - generic [ref=e1188]:
+                          - generic [ref=e1190]:
+                            - generic [ref=e1191]: Price, product page
+                            - 'link "₹65,899 M.R.P: ₹94,999 M.R.P: ₹94,999" [ref=e1192] [cursor=pointer]':
+                              - /url: /Samsung-Icyblue-Storage-Snapdragon-Display/dp/B0H2J3PRKV/ref=sr_1_10?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-10
+                              - generic [ref=e1193]:
+                                - generic [ref=e1194]: ₹65,899
+                                - generic [ref=e1195]: ₹65,899
+                              - generic [ref=e1196]: "M.R.P: ₹94,999"
+                              - generic [ref=e1197]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1198]:
+                                  - generic [ref=e1199]: ₹94,999
+                                  - text: ₹94,999
+                            - text: (31% off)
+                          - generic [ref=e1203]:
+                            - generic [ref=e1204]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1205]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1210]: FREE delivery Sat, 22 Aug
+                        - generic [ref=e1224] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1225]
+                          - generic [ref=e1226]: Add to cart
+                - listitem [ref=e1229]:
+                  - generic [ref=e1235]:
+                    - link [ref=e1241] [cursor=pointer]:
+                      - /url: /Samsung-Smartphone-Precision-Ultra-Sleek-Snapdragon/dp/B0F7LL5ZXX/ref=sr_1_11?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-11
+                      - img [ref=e1243]
+                    - generic [ref=e1246]:
+                      - generic [ref=e1247]:
+                        - heading "Samsung" [level=2] [ref=e1250]
+                        - link "Galaxy S25 Edge 5G AI Smartphone (Titanium JetBlack, 12GB RAM, 512GB Storage) | Precision Built with Titanium | Ultra-Sleek and Premium with a 200 MP Camera | Snapdragon 8 Elite for Galaxy" [ref=e1251] [cursor=pointer]:
+                          - /url: /Samsung-Smartphone-Precision-Ultra-Sleek-Snapdragon/dp/B0F7LL5ZXX/ref=sr_1_11?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-11
+                          - heading "Galaxy S25 Edge 5G AI Smartphone (Titanium JetBlack, 12GB RAM, 512GB Storage) | Precision Built with Titanium | Ultra-Sleek and Premium with a 200 MP Camera | Snapdragon 8 Elite for Galaxy" [level=2] [ref=e1252]
+                      - generic [ref=e1253]:
+                        - generic [ref=e1254]:
+                          - text: "4.3"
+                          - button "4.3 out of 5 stars, rating details" [ref=e1256] [cursor=pointer]:
+                            - generic [ref=e1258]: 4.3 out of 5 stars
+                          - link "25 ratings" [ref=e1260] [cursor=pointer]:
+                            - /url: /Samsung-Smartphone-Precision-Ultra-Sleek-Snapdragon/dp/B0F7LL5ZXX/ref=sr_1_11?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-11#customerReviews
+                            - text: (25)
+                        - generic [ref=e1261]: 50+ bought in past month
+                      - generic [ref=e1264]:
+                        - generic [ref=e1265]:
+                          - generic [ref=e1267]:
+                            - generic [ref=e1268]: Price, product page
+                            - 'link "₹81,985 M.R.P: ₹1,21,999 M.R.P: ₹1,21,999" [ref=e1269] [cursor=pointer]':
+                              - /url: /Samsung-Smartphone-Precision-Ultra-Sleek-Snapdragon/dp/B0F7LL5ZXX/ref=sr_1_11?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-11
+                              - generic [ref=e1270]:
+                                - generic [ref=e1271]: ₹81,985
+                                - generic [ref=e1272]: ₹81,985
+                              - generic [ref=e1273]: "M.R.P: ₹1,21,999"
+                              - generic [ref=e1274]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1275]:
+                                  - generic [ref=e1276]: ₹1,21,999
+                                  - text: ₹1,21,999
+                            - text: (33% off)
+                          - generic [ref=e1280]:
+                            - generic [ref=e1281]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1282]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1287]: FREE delivery Mon, 24 Aug
+                        - generic [ref=e1301] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1302]
+                          - generic [ref=e1303]: Add to cart
+                - listitem [ref=e1306]:
+                  - generic [ref=e1312]:
+                    - link [ref=e1318] [cursor=pointer]:
+                      - /url: /OnePlus-Snapdragon%C2%AE-7400mAh-Personalised-Game-Changing/dp/B0FZT1LXPZ/ref=sr_1_12?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-12
+                      - img [ref=e1320]
+                    - generic [ref=e1323]:
+                      - generic [ref=e1324]:
+                        - heading "OnePlus" [level=2] [ref=e1327]
+                        - link "15R | 12GB+256GB | Mint Breeze | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery | Personalised AI | Game-Changing 165Hz Display | IP66 IP68 IP69 & IP69K | 4K 120fps Video" [ref=e1328] [cursor=pointer]:
+                          - /url: /OnePlus-Snapdragon%C2%AE-7400mAh-Personalised-Game-Changing/dp/B0FZT1LXPZ/ref=sr_1_12?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-12
+                          - heading "15R | 12GB+256GB | Mint Breeze | World's First Snapdragon® 8 Gen 5 | 7400mAh Battery | Personalised AI | Game-Changing 165Hz Display | IP66 IP68 IP69 & IP69K | 4K 120fps Video" [level=2] [ref=e1329]
+                      - generic [ref=e1330]:
+                        - generic [ref=e1331]:
+                          - text: "4.5"
+                          - button "4.5 out of 5 stars, rating details" [ref=e1333] [cursor=pointer]:
+                            - generic [ref=e1335]: 4.5 out of 5 stars
+                          - link "1,571 ratings" [ref=e1337] [cursor=pointer]:
+                            - /url: /OnePlus-Snapdragon%C2%AE-7400mAh-Personalised-Game-Changing/dp/B0FZT1LXPZ/ref=sr_1_12?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-12#customerReviews
+                            - text: (1.5K)
+                        - generic [ref=e1338]: 300+ bought in past month
+                      - generic [ref=e1341]:
+                        - generic [ref=e1342]:
+                          - generic [ref=e1344]:
+                            - generic [ref=e1345]: Price, product page
+                            - 'link "₹59,998 M.R.P: ₹61,999 M.R.P: ₹61,999" [ref=e1346] [cursor=pointer]':
+                              - /url: /OnePlus-Snapdragon%C2%AE-7400mAh-Personalised-Game-Changing/dp/B0FZT1LXPZ/ref=sr_1_12?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-12
+                              - generic [ref=e1347]:
+                                - generic [ref=e1348]: ₹59,998
+                                - generic [ref=e1349]: ₹59,998
+                              - generic [ref=e1350]: "M.R.P: ₹61,999"
+                              - generic [ref=e1351]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1352]:
+                                  - generic [ref=e1353]: ₹61,999
+                                  - text: ₹61,999
+                            - text: (3% off)
+                          - generic [ref=e1357]:
+                            - generic [ref=e1358]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1359]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1362]:
+                          - generic [ref=e1364]: FREE delivery Fri, 14 Aug
+                          - generic [ref=e1366]: Or fastest delivery Tomorrow 6 am - 10 am
+                        - generic [ref=e1380] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1381]
+                          - generic [ref=e1382]: Add to cart
+                        - group "colours available" [ref=e1384]:
+                          - list [ref=e1385]:
+                            - generic [ref=e1386]:
+                              - listitem:
+                                - link "Mint Breeze":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-7400mAh-Personalised-Game-Changing/dp/B0FZT1LXPZ/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-12
+                            - generic [ref=e1389]:
+                              - listitem:
+                                - link "Charcoal Black":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-7400mAh-Personalised-Game-Changing/dp/B0FZSWZZW2/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-12
+                            - generic [ref=e1392]:
+                              - listitem:
+                                - link "Electric Violet":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-7400mAh-Personalised-Game-Changing/dp/B0FZT1D63F/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-12
+                - listitem [ref=e1397]:
+                  - generic [ref=e1403]:
+                    - link [ref=e1409] [cursor=pointer]:
+                      - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8FNY5G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13
+                      - img [ref=e1411]
+                    - generic [ref=e1414]:
+                      - generic [ref=e1415]:
+                        - heading "Samsung" [level=2] [ref=e1418]
+                        - link "Galaxy S26 Ultra 5G (Black, 12GB RAM, 256GB Storage) with Built-in Privacy Display, AI Phone, Photo Assist, Creative Studio, 200MP Camera, 5000mAh Battery and Snapdragon 8 Elite Gen 5" [ref=e1419] [cursor=pointer]:
+                          - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8FNY5G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13
+                          - heading "Galaxy S26 Ultra 5G (Black, 12GB RAM, 256GB Storage) with Built-in Privacy Display, AI Phone, Photo Assist, Creative Studio, 200MP Camera, 5000mAh Battery and Snapdragon 8 Elite Gen 5" [level=2] [ref=e1420]
+                      - generic [ref=e1421]:
+                        - generic [ref=e1422]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e1424] [cursor=pointer]:
+                            - generic [ref=e1426]: 4.6 out of 5 stars
+                          - link "173 ratings" [ref=e1428] [cursor=pointer]:
+                            - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8FNY5G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13#customerReviews
+                            - text: (173)
+                        - generic [ref=e1429]: 100+ bought in past month
+                      - generic [ref=e1432]:
+                        - generic [ref=e1433]:
+                          - link "Freedom Sale Deal" [ref=e1435] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e1438]: Freedom Sale Deal
+                          - generic [ref=e1440]:
+                            - generic [ref=e1441]: Price, product page
+                            - 'link "₹1,24,999 M.R.P: ₹1,69,999 M.R.P: ₹1,69,999" [ref=e1442] [cursor=pointer]':
+                              - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8FNY5G/ref=sr_1_13?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13
+                              - generic [ref=e1443]:
+                                - generic [ref=e1444]: ₹1,24,999
+                                - generic [ref=e1445]: ₹1,24,999
+                              - generic [ref=e1446]: "M.R.P: ₹1,69,999"
+                              - generic [ref=e1447]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1448]:
+                                  - generic [ref=e1449]: ₹1,69,999
+                                  - text: ₹1,69,999
+                            - text: (26% off)
+                          - generic [ref=e1453]:
+                            - generic [ref=e1454]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1455]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1458]:
+                          - generic [ref=e1460]: FREE delivery Sat, 15 Aug
+                          - generic [ref=e1462]: Or fastest delivery Fri, 14 Aug
+                        - generic [ref=e1476] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1477]
+                          - generic [ref=e1478]: Add to cart
+                        - group "colours available" [ref=e1480]:
+                          - list [ref=e1481]:
+                            - generic [ref=e1482]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8FNY5G/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13
+                            - generic [ref=e1485]:
+                              - listitem:
+                                - link "Cobalt Violet":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GLGVG814/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13
+                            - generic [ref=e1488]:
+                              - listitem:
+                                - link "Sky Blue":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL85WGTZ/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13
+                            - generic [ref=e1491]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GLGYF3RD/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-13
+                - listitem [ref=e1496]:
+                  - generic [ref=e1502]:
+                    - link [ref=e1508] [cursor=pointer]:
+                      - /url: /Samsung-Storage-Powerful-Snapdragon-Processor/dp/B0H4L92YY7/ref=sr_1_14?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-14
+                      - img [ref=e1510]
+                    - generic [ref=e1513]:
+                      - generic [ref=e1514]:
+                        - heading "Samsung" [level=2] [ref=e1517]
+                        - link "Galaxy M47 5G (Rogue Red, 8GB RAM, 128GB Storage)| Powerful Snapdragon Processor| Fast LPDDR5x RAM,UFS 3.1 Storage| Gorilla Glass Victus+| IP64| Super AMOLED Display| 50MP OIS| AI| Gemini Live" [ref=e1518] [cursor=pointer]:
+                          - /url: /Samsung-Storage-Powerful-Snapdragon-Processor/dp/B0H4L92YY7/ref=sr_1_14?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-14
+                          - heading "Galaxy M47 5G (Rogue Red, 8GB RAM, 128GB Storage)| Powerful Snapdragon Processor| Fast LPDDR5x RAM,UFS 3.1 Storage| Gorilla Glass Victus+| IP64| Super AMOLED Display| 50MP OIS| AI| Gemini Live" [level=2] [ref=e1519]
+                      - generic [ref=e1520]:
+                        - generic [ref=e1521]:
+                          - text: "3.5"
+                          - button "3.5 out of 5 stars, rating details" [ref=e1523] [cursor=pointer]:
+                            - generic [ref=e1525]: 3.5 out of 5 stars
+                          - link "112 ratings" [ref=e1527] [cursor=pointer]:
+                            - /url: /Samsung-Storage-Powerful-Snapdragon-Processor/dp/B0H4L92YY7/ref=sr_1_14?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-14#customerReviews
+                            - text: (112)
+                        - generic [ref=e1528]: 500+ bought in past month
+                      - generic [ref=e1531]:
+                        - generic [ref=e1532]:
+                          - link "Freedom Sale Deal" [ref=e1534] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e1537]: Freedom Sale Deal
+                          - generic [ref=e1539]:
+                            - generic [ref=e1540]: Price, product page
+                            - 'link "₹29,999 M.R.P: ₹49,999 M.R.P: ₹49,999" [ref=e1541] [cursor=pointer]':
+                              - /url: /Samsung-Storage-Powerful-Snapdragon-Processor/dp/B0H4L92YY7/ref=sr_1_14?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-14
+                              - generic [ref=e1542]:
+                                - generic [ref=e1543]: ₹29,999
+                                - generic [ref=e1544]: ₹29,999
+                              - generic [ref=e1545]: "M.R.P: ₹49,999"
+                              - generic [ref=e1546]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1547]:
+                                  - generic [ref=e1548]: ₹49,999
+                                  - text: ₹49,999
+                            - text: (40% off)
+                          - generic [ref=e1552]:
+                            - generic [ref=e1553]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1554]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1557]:
+                          - generic [ref=e1559]: FREE delivery Sat, 15 Aug
+                          - generic [ref=e1561]: Or fastest delivery Fri, 14 Aug
+                        - generic [ref=e1575] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1576]
+                          - generic [ref=e1577]: Add to cart
+                        - group "colours available" [ref=e1579]:
+                          - list [ref=e1580]:
+                            - generic [ref=e1581]:
+                              - listitem:
+                                - link "Rogue Red":
+                                  - /url: /Samsung-Storage-Powerful-Snapdragon-Processor/dp/B0H4L92YY7/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-14
+                            - generic [ref=e1584]:
+                              - listitem:
+                                - link "Blaze Blue":
+                                  - /url: /Samsung-Storage-Powerful-Snapdragon-Processor/dp/B0HBWBRJ9L/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-14
+                - listitem [ref=e1589]:
+                  - generic [ref=e1595]:
+                    - link [ref=e1601] [cursor=pointer]:
+                      - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8GXNTS/ref=sr_1_15?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15
+                      - img [ref=e1603]
+                    - generic [ref=e1606]:
+                      - generic [ref=e1607]:
+                        - heading "Samsung" [level=2] [ref=e1610]
+                        - link "Galaxy S26 Ultra 5G (Sky Blue, 12GB RAM, 512GB Storage) with Built-in Privacy Display, AI Phone, Photo Assist, Creative Studio, 200MP Camera, 5000mAh Battery and Snapdragon 8 Elite Gen 5" [ref=e1611] [cursor=pointer]:
+                          - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8GXNTS/ref=sr_1_15?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15
+                          - heading "Galaxy S26 Ultra 5G (Sky Blue, 12GB RAM, 512GB Storage) with Built-in Privacy Display, AI Phone, Photo Assist, Creative Studio, 200MP Camera, 5000mAh Battery and Snapdragon 8 Elite Gen 5" [level=2] [ref=e1612]
+                      - generic [ref=e1613]:
+                        - generic [ref=e1614]:
+                          - text: "4.4"
+                          - button "4.4 out of 5 stars, rating details" [ref=e1616] [cursor=pointer]:
+                            - generic [ref=e1618]: 4.4 out of 5 stars
+                          - link "164 ratings" [ref=e1620] [cursor=pointer]:
+                            - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8GXNTS/ref=sr_1_15?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15#customerReviews
+                            - text: (164)
+                        - generic [ref=e1621]: 100+ bought in past month
+                      - generic [ref=e1624]:
+                        - generic [ref=e1625]:
+                          - link "Freedom Sale Deal" [ref=e1627] [cursor=pointer]:
+                            - /url: /deals
+                            - generic [ref=e1630]: Freedom Sale Deal
+                          - generic [ref=e1632]:
+                            - generic [ref=e1633]: Price, product page
+                            - 'link "₹1,44,999 M.R.P: ₹1,89,999 M.R.P: ₹1,89,999" [ref=e1634] [cursor=pointer]':
+                              - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8GXNTS/ref=sr_1_15?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15
+                              - generic [ref=e1635]:
+                                - generic [ref=e1636]: ₹1,44,999
+                                - generic [ref=e1637]: ₹1,44,999
+                              - generic [ref=e1638]: "M.R.P: ₹1,89,999"
+                              - generic [ref=e1639]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1640]:
+                                  - generic [ref=e1641]: ₹1,89,999
+                                  - text: ₹1,89,999
+                            - text: (24% off)
+                          - generic [ref=e1645]:
+                            - generic [ref=e1646]: Up to 5% back with Amazon Pay ICICI card
+                            - generic [ref=e1647]: Up to 5% back with Amazon Pay ICI...
+                        - generic [ref=e1652]: FREE delivery Tue, 18 Aug
+                        - generic [ref=e1666] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1667]
+                          - generic [ref=e1668]: Add to cart
+                        - group "colours available" [ref=e1670]:
+                          - list [ref=e1671]:
+                            - generic [ref=e1672]:
+                              - listitem:
+                                - link "Sky Blue":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GL8GXNTS/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15
+                            - generic [ref=e1675]:
+                              - listitem:
+                                - link "Black":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GLH1M7SK/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15
+                            - generic [ref=e1678]:
+                              - listitem:
+                                - link "Cobalt Violet":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GLGZPF9Z/ref=cs_sr_dp_3?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15
+                            - generic [ref=e1681]:
+                              - listitem:
+                                - link "White":
+                                  - /url: /Samsung-Storage-Privacy-Creative-Snapdragon/dp/B0GLGYF3RD/ref=cs_sr_dp_4?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-15
+                - listitem [ref=e1686]:
+                  - generic [ref=e1692]:
+                    - link [ref=e1698] [cursor=pointer]:
+                      - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_16?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-16
+                      - img [ref=e1700]
+                    - generic [ref=e1703]:
+                      - generic [ref=e1704]:
+                        - heading "OnePlus" [level=2] [ref=e1707]
+                        - link "15 | 12GB+256GB | Sand Storm | India's First Snapdragon® 8 Elite Gen 5 | 7300mAh Battery | Personalised AI | Game-Changing 165Hz Display | Triple 50MP Camera with 4K 120fps Dolby Vision" [ref=e1708] [cursor=pointer]:
+                          - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_16?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-16
+                          - heading "15 | 12GB+256GB | Sand Storm | India's First Snapdragon® 8 Elite Gen 5 | 7300mAh Battery | Personalised AI | Game-Changing 165Hz Display | Triple 50MP Camera with 4K 120fps Dolby Vision" [level=2] [ref=e1709]
+                      - generic [ref=e1710]:
+                        - generic [ref=e1711]:
+                          - text: "4.6"
+                          - button "4.6 out of 5 stars, rating details" [ref=e1713] [cursor=pointer]:
+                            - generic [ref=e1715]: 4.6 out of 5 stars
+                          - link "754 ratings" [ref=e1717] [cursor=pointer]:
+                            - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_16?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-16#customerReviews
+                            - text: (754)
+                        - generic [ref=e1718]: 300+ bought in past month
+                      - generic [ref=e1721]:
+                        - generic [ref=e1722]:
+                          - generic [ref=e1724]:
+                            - generic [ref=e1725]: Price, product page
+                            - 'link "₹85,999 M.R.P: ₹89,999 M.R.P: ₹89,999" [ref=e1726] [cursor=pointer]':
+                              - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=sr_1_16?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-16
+                              - generic [ref=e1727]:
+                                - generic [ref=e1728]: ₹85,999
+                                - generic [ref=e1729]: ₹85,999
+                              - generic [ref=e1730]: "M.R.P: ₹89,999"
+                              - generic [ref=e1731]:
+                                - text: "M.R.P:"
+                                - generic [ref=e1732]:
+                                  - generic [ref=e1733]: ₹89,999
+                                  - text: ₹89,999
+                            - text: (4% off)
+                          - generic [ref=e1737]:
+                            - generic [ref=e1738]: Save extra with No Cost EMI
+                            - generic [ref=e1739]: Save extra with No Cost EMI
+                        - generic [ref=e1742]:
+                          - generic [ref=e1744]: FREE delivery Fri, 14 Aug
+                          - generic [ref=e1746]: Or fastest delivery Tomorrow 6 am - 10 am
+                        - generic [ref=e1760] [cursor=pointer]:
+                          - button "Add to cart" [ref=e1761]
+                          - generic [ref=e1762]: Add to cart
+                        - group "colours available" [ref=e1764]:
+                          - list [ref=e1765]:
+                            - generic [ref=e1766]:
+                              - listitem:
+                                - link "Sand Storm":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTRN7L8Q/ref=cs_sr_dp_1?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-16
+                            - generic [ref=e1769]:
+                              - listitem:
+                                - link "Infinite Black":
+                                  - /url: /OnePlus-Snapdragon%C2%AE-7300mAh-Personalised-Game-Changing/dp/B0FTR5NGHJ/ref=cs_sr_dp_2?dib=eyJ2IjoiMSJ9.cFS163e17V8m43v2jNwPoNYoheKWoHwNwna4_qut8owGQ1xXEPWw_XhHgXST2z03goSD61j2eKj6v-kb6vjfmJPZzY3_Mol8NlMWqTdmWeb1SmQmCHiXQgjBA5LKwrwukeTRcsmLbIr2OM-ozl9xJkGF7v_Cb6VXBkyPclpt_1lo8Sg6G-i0o2I-Xo7G3naRbnO0l52GDAWV6MD4MP2OLjZmrizNF_GVKtFjYBMWK4Q.nxX3XmFWhWAEzk4nKL26DsD7bCKNyO4P0KJG8U7iKOA&dib_tag=se&keywords=samsung+s25+ultra+5g+mobile&qid=1786540996&sr=8-16
+          - generic [ref=e1781]:
+            - link "Sponsored video; click to navigate to featured product page. Verilux 4-in-1 USB-C Hub with 4K@30Hz HDMI, USB 3.0 100W PD for MacBook Air | USB-C Data Port and USB 3.0 Expansion, 20CM Cable for Convenient Desk Access" [ref=e1785] [cursor=pointer]:
+              - /url: https://aax-eu-zaz.amazon.in/x/c/JH-u34qxSjARh_P2kVX1LaoAAAGf9iQ5QgoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBpXU1b/clv1c_ek-YBPf3FcTa3ut7cNpggVzlXJ0DWNMvcoD95k_GG2k51rMA73S5eNfSVbugZ7JD9geX-mDN4gerQcqsUKwdmjnT72RLDQNn8-wtLdDVVP1VmyLz8gCS7Ybx599kRjG2VlOqvdT0C5TKingou7tU0KADwJyYhG1Ks1Ig7_ar2pMHAdt8jlA8htwJIRJpvyakS5m1zxsLW4fB3OqJDyTws-r-NtWZhsw0Np_OpmbiZ0UddKeqHe4WQUr6eO9xuVmRxtto_Rl8lX5NioMz8xocsW8L_StwzBn3BRraAS97_tN7pHXY3XjVSkVdCFa8lIquSjYljMOIa5yhY0Bl3ODgV6mGkrKtSlWI4cugWvQKJrWMZGPeFQoXI0jToNmUDM_hV4bcvmOsfMftxG2g8Wi3a8375TbdqSTbNBtFJZ24othLYenBpFSHnRnZ8H10V3Fiba6iWrm6jvIDZY2q6GllfOb1zFd00PapYfYQkzsEjfkW5qNOwu6e0JoGveX0MXTTe2r8179GVzO-TMVgemVyE9Sui_39vhIsUeHvTD6pf-1_MGZNSQi6si7AL0b2SHbrBFRWRN6yvLU5wwIkHg-hA7-Q0F0g-0AHGnsOt-saca68kMD7COekSk4QrVTNE-3WJZCs4oplu2I3mjLkxTSjoxE74__LUc6PB4tc2tiyv_NMZRt7r0reKKc8zb8tC7S-n4M9FlOHpmAvpszQWiNSPG_w0SAXhq6ZuQK5RfFw7kcO7DCz-S0QbVZ7iX4NJjeqCQfOOz1Fu8Jo1CwhgBPcsWBKaxcnwU3tnwgPdsXUm9ujP0WdcAQyGOQVpz2F6_l7z0avOh2QVRpKP8eHVf6ta9WOU4sOnbtSm2pqZcvSdBMSfbZNPFSHI0Pgxq6YaINw8ZfCq_bZ9Ne56TQLHml835bzQ9QK4sHI2El5LWMGAdGWp38Uf7RFBZJhFc-X9XukZoZy_92PXt7MwlK05RQyhmxT7GUr8emqb5d1b3J9PLd5ejkkiCEIeCIYYjnAoNl21QxwgnIkwNiA8ngKzMHtEJUkdkKCZBALIxpBnQGx0Z3S8H34RuI8jEV24ebcaKbKwubJZL0kD-H9pjGX_9qwmOoik0rRw00xEpj6CU_8d-c1iKFy4b5yVik8IsjohjvK1jZBEj5iLr3eHvdYrGRq9SKlCfpoZwF09nshEt_tUN99kXTXkd67s9slceaX067LNr1A7DEB4nkBe1M9GjkHJtpbZa61qqmsCXfCvueUH_SytkU0ZfGl_nZo_9n3QsLfaRD-_nL7io3G2TjVhArWKjAU2eN0dx8PXygDuu4_1Nnvo16r7kB7bXSQ7LQOsYAfy2NdJHt9JpQ_iUgT_V5Bbmhz-Rq2KSexxVQtrzpENyCQjWcMo_iSg_tK4S2SrGYPnMFWV6N5TIYMuTUnuG6BubtRgwPZjRDFLPu28ktfPZx2FSw_reBHSKs9h2YbzUiNEAtJ8EhCM4vj5EcVaX8e1cMGkrq6mpISQNZ-LzzRgTqY4Sho3mrQN-8h4-5bCV9BUoKMdxNOPl5GDK3BrI8cuLDe3Dd0ydEbA2vsLJ0fLuo4wtnnzGuNuNVnl2_EANRr1hY7Fcer6Ifqyy-obDjb4Rb05Q5tbJo_a-AbHKGV7U2V79ZXKpicBJv9gkGcR_WeZjf0PJJiBIJhgayeA5uDm8UZFSHtLlAe0F8vSP_YCWTBgOp2TA/https://www.amazon.in/dp/B0BVDLJCGQ?aref=OhjmUjOVdE&pd_rd_i=B0BVDLJCGQ&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pd_rd_wg=FqGAg&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_w=H4538&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993
+              - generic "Sponsored video; click to navigate to featured product page. Verilux 4-in-1 USB-C Hub with 4K@30Hz HDMI, USB 3.0 100W PD for MacBook Air | USB-C Data Port and USB 3.0 Expansion, 20CM Cable for Convenient Desk Access" [ref=e1786]
+            - generic [ref=e1794]:
+              - link [ref=e1800] [cursor=pointer]:
+                - /url: https://aax-eu-zaz.amazon.in/x/c/JH-u34qxSjARh_P2kVX1LaoAAAGf9iQ5QgoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBpXU1b/clv1c_ek-YBPf3FcTa3ut7cNpggVzlXJ0DWNMvcoD95k_GG2k51rMA73S5eNfSVbugZ7JD9geX-mDN4gerQcqsUKwdmjnT72RLDQNn8-wtLdDVVP1VmyLz8gCS7Ybx599kRjG2VlOqvdT0C5TKingou7tU0KADwJyYhG1Ks1Ig7_ar2pMHAdt8jlA8htwJIRJpvyakS5m1zxsLW4fB3OqJDyTws-r-NtWZhsw0Np_OpmbiZ0UddKeqHe4WQUr6eO9xuVmRxtto_Rl8lX5NioMz8xocsW8L_StwzBn3BRraAS97_tN7pHXY3XjVSkVdCFa8lIquSjYljMOIa5yhY0Bl3ODgV6mGkrKtSlWI4cugWvQKJrWMZGPeFQoXI0jToNmUDM_hV4bcvmOsfMftxG2g8Wi3a8375TbdqSTbNBtFJZ24othLYenBpFSHnRnZ8H10V3Fiba6iWrm6jvIDZY2q6GllfOb1zFd00PapYfYQkzsEjfkW5qNOwu6e0JoGveX0MXTTe2r8179GVzO-TMVgemVyE9Sui_39vhIsUeHvTD6pf-1_MGZNSQi6si7AL0b2SHbrBFRWRN6yvLU5wwIkHg-hA7-Q0F0g-0AHGnsOt-saca68kMD7COekSk4QrVTNE-3WJZCs4oplu2I3mjLkxTSjoxE74__LUc6PB4tc2tiyv_NMZRt7r0reKKc8zb8tC7S-n4M9FlOHpmAvpszQWiNSPG_w0SAXhq6ZuQK5RfFw7kcO7DCz-S0QbVZ7iX4NJjeqCQfOOz1Fu8Jo1CwhgBPcsWBKaxcnwU3tnwgPdsXUm9ujP0WdcAQyGOQVpz2F6_l7z0avOh2QVRpKP8eHVf6ta9WOU4sOnbtSm2pqZcvSdBMSfbZNPFSHI0Pgxq6YaINw8ZfCq_bZ9Ne56TQLHml835bzQ9QK4sHI2El5LWMGAdGWp38Uf7RFBZJhFc-X9XukZoZy_92PXt7MwlK05RQyhmxT7GUr8emqb5d1b3J9PLd5ejkkiCEIeCIYYjnAoNl21QxwgnIkwNiA8ngKzMHtEJUkdkKCZBALIxpBnQGx0Z3S8H34RuI8jEV24ebcaKbKwubJZL0kD-H9pjGX_9qwmOoik0rRw00xEpj6CU_8d-c1iKFy4b5yVik8IsjohjvK1jZBEj5iLr3eHvdYrGRq9SKlCfpoZwF09nshEt_tUN99kXTXkd67s9slceaX067LNr1A7DEB4nkBe1M9GjkHJtpbZa61qqmsCXfCvueUH_SytkU0ZfGl_nZo_9n3QsLfaRD-_nL7io3G2TjVhArWKjAU2eN0dx8PXygDuu4_1Nnvo16r7kB7bXSQ7LQOsYAfy2NdJHt9JpQ_iUgT_V5Bbmhz-Rq2KSexxVQtrzpENyCQjWcMo_iSg_tK4S2SrGYPnMFWV6N5TIYMuTUnuG6BubtRgwPZjRDFLPu28ktfPZx2FSw_reBHSKs9h2YbzUiNEAtJ8EhCM4vj5EcVaX8e1cMGkrq6mpISQNZ-LzzRgTqY4Sho3mrQN-8h4-5bCV9BUoKMdxNOPl5GDK3BrI8cuLDe3Dd0ydEbA2vsLJ0fLuo4wtnnzGuNuNVnl2_EANRr1hY7Fcer6Ifqyy-obDjb4Rb05Q5tbJo_a-AbHKGV7U2V79ZXKpicBJv9gkGcR_WeZjf0PJJiBIJhgayeA5uDm8UZFSHtLlAe0F8vSP_YCWTBgOp2TA/https://www.amazon.in/Verilux-USB-C-30Hz-HDMI-MacBook/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?aref=OhjmUjOVdE&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=samsung+s25+ultra+5g+mobile&keywords=samsung+s25+ultra+5g+mobile&pd_rd_i=B0BVDLJCGQ&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&pd_rd_w=H4538&pd_rd_wg=FqGAg&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=R1X0SJ2C554QFBYAQW2D&qid=1786540996&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                - img [ref=e1802]
+              - generic [ref=e1805]:
+                - generic [ref=e1806]:
+                  - generic [ref=e1809] [cursor=pointer]: Sponsored
+                  - link "Verilux 4-in-1 USB-C Hub with 4K@30Hz HDMI, USB 3.0 100W PD for MacBook Air | USB-C Data Port and USB 3.0 Expansion, 20CM Cable for Convenient Desk Access" [ref=e1811] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JH-u34qxSjARh_P2kVX1LaoAAAGf9iQ5QgoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBpXU1b/clv1c_ek-YBPf3FcTa3ut7cNpggVzlXJ0DWNMvcoD95k_GG2k51rMA73S5eNfSVbugZ7JD9geX-mDN4gerQcqsUKwdmjnT72RLDQNn8-wtLdDVVP1VmyLz8gCS7Ybx599kRjG2VlOqvdT0C5TKingou7tU0KADwJyYhG1Ks1Ig7_ar2pMHAdt8jlA8htwJIRJpvyakS5m1zxsLW4fB3OqJDyTws-r-NtWZhsw0Np_OpmbiZ0UddKeqHe4WQUr6eO9xuVmRxtto_Rl8lX5NioMz8xocsW8L_StwzBn3BRraAS97_tN7pHXY3XjVSkVdCFa8lIquSjYljMOIa5yhY0Bl3ODgV6mGkrKtSlWI4cugWvQKJrWMZGPeFQoXI0jToNmUDM_hV4bcvmOsfMftxG2g8Wi3a8375TbdqSTbNBtFJZ24othLYenBpFSHnRnZ8H10V3Fiba6iWrm6jvIDZY2q6GllfOb1zFd00PapYfYQkzsEjfkW5qNOwu6e0JoGveX0MXTTe2r8179GVzO-TMVgemVyE9Sui_39vhIsUeHvTD6pf-1_MGZNSQi6si7AL0b2SHbrBFRWRN6yvLU5wwIkHg-hA7-Q0F0g-0AHGnsOt-saca68kMD7COekSk4QrVTNE-3WJZCs4oplu2I3mjLkxTSjoxE74__LUc6PB4tc2tiyv_NMZRt7r0reKKc8zb8tC7S-n4M9FlOHpmAvpszQWiNSPG_w0SAXhq6ZuQK5RfFw7kcO7DCz-S0QbVZ7iX4NJjeqCQfOOz1Fu8Jo1CwhgBPcsWBKaxcnwU3tnwgPdsXUm9ujP0WdcAQyGOQVpz2F6_l7z0avOh2QVRpKP8eHVf6ta9WOU4sOnbtSm2pqZcvSdBMSfbZNPFSHI0Pgxq6YaINw8ZfCq_bZ9Ne56TQLHml835bzQ9QK4sHI2El5LWMGAdGWp38Uf7RFBZJhFc-X9XukZoZy_92PXt7MwlK05RQyhmxT7GUr8emqb5d1b3J9PLd5ejkkiCEIeCIYYjnAoNl21QxwgnIkwNiA8ngKzMHtEJUkdkKCZBALIxpBnQGx0Z3S8H34RuI8jEV24ebcaKbKwubJZL0kD-H9pjGX_9qwmOoik0rRw00xEpj6CU_8d-c1iKFy4b5yVik8IsjohjvK1jZBEj5iLr3eHvdYrGRq9SKlCfpoZwF09nshEt_tUN99kXTXkd67s9slceaX067LNr1A7DEB4nkBe1M9GjkHJtpbZa61qqmsCXfCvueUH_SytkU0ZfGl_nZo_9n3QsLfaRD-_nL7io3G2TjVhArWKjAU2eN0dx8PXygDuu4_1Nnvo16r7kB7bXSQ7LQOsYAfy2NdJHt9JpQ_iUgT_V5Bbmhz-Rq2KSexxVQtrzpENyCQjWcMo_iSg_tK4S2SrGYPnMFWV6N5TIYMuTUnuG6BubtRgwPZjRDFLPu28ktfPZx2FSw_reBHSKs9h2YbzUiNEAtJ8EhCM4vj5EcVaX8e1cMGkrq6mpISQNZ-LzzRgTqY4Sho3mrQN-8h4-5bCV9BUoKMdxNOPl5GDK3BrI8cuLDe3Dd0ydEbA2vsLJ0fLuo4wtnnzGuNuNVnl2_EANRr1hY7Fcer6Ifqyy-obDjb4Rb05Q5tbJo_a-AbHKGV7U2V79ZXKpicBJv9gkGcR_WeZjf0PJJiBIJhgayeA5uDm8UZFSHtLlAe0F8vSP_YCWTBgOp2TA/https://www.amazon.in/Verilux-USB-C-30Hz-HDMI-MacBook/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?aref=OhjmUjOVdE&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=samsung+s25+ultra+5g+mobile&keywords=samsung+s25+ultra+5g+mobile&pd_rd_i=B0BVDLJCGQ&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&pd_rd_w=H4538&pd_rd_wg=FqGAg&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=R1X0SJ2C554QFBYAQW2D&qid=1786540996&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                    - heading "Verilux 4-in-1 USB-C Hub with 4K@30Hz HDMI, USB 3.0 100W PD for MacBook Air | USB-C Data Port and USB 3.0 Expansion, 20CM Cable for Convenient Desk Access" [level=2] [ref=e1812]
+                - generic [ref=e1814]:
+                  - text: "4.1"
+                  - button "4.1 out of 5 stars, rating details" [ref=e1816] [cursor=pointer]:
+                    - generic [ref=e1818]: 4.1 out of 5 stars
+                  - link "414 ratings" [ref=e1820] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JH-u34qxSjARh_P2kVX1LaoAAAGf9iQ5QgoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBpXU1b/clv1c_ek-YBPf3FcTa3ut7cNpggVzlXJ0DWNMvcoD95k_GG2k51rMA73S5eNfSVbugZ7JD9geX-mDN4gerQcqsUKwdmjnT72RLDQNn8-wtLdDVVP1VmyLz8gCS7Ybx599kRjG2VlOqvdT0C5TKingou7tU0KADwJyYhG1Ks1Ig7_ar2pMHAdt8jlA8htwJIRJpvyakS5m1zxsLW4fB3OqJDyTws-r-NtWZhsw0Np_OpmbiZ0UddKeqHe4WQUr6eO9xuVmRxtto_Rl8lX5NioMz8xocsW8L_StwzBn3BRraAS97_tN7pHXY3XjVSkVdCFa8lIquSjYljMOIa5yhY0Bl3ODgV6mGkrKtSlWI4cugWvQKJrWMZGPeFQoXI0jToNmUDM_hV4bcvmOsfMftxG2g8Wi3a8375TbdqSTbNBtFJZ24othLYenBpFSHnRnZ8H10V3Fiba6iWrm6jvIDZY2q6GllfOb1zFd00PapYfYQkzsEjfkW5qNOwu6e0JoGveX0MXTTe2r8179GVzO-TMVgemVyE9Sui_39vhIsUeHvTD6pf-1_MGZNSQi6si7AL0b2SHbrBFRWRN6yvLU5wwIkHg-hA7-Q0F0g-0AHGnsOt-saca68kMD7COekSk4QrVTNE-3WJZCs4oplu2I3mjLkxTSjoxE74__LUc6PB4tc2tiyv_NMZRt7r0reKKc8zb8tC7S-n4M9FlOHpmAvpszQWiNSPG_w0SAXhq6ZuQK5RfFw7kcO7DCz-S0QbVZ7iX4NJjeqCQfOOz1Fu8Jo1CwhgBPcsWBKaxcnwU3tnwgPdsXUm9ujP0WdcAQyGOQVpz2F6_l7z0avOh2QVRpKP8eHVf6ta9WOU4sOnbtSm2pqZcvSdBMSfbZNPFSHI0Pgxq6YaINw8ZfCq_bZ9Ne56TQLHml835bzQ9QK4sHI2El5LWMGAdGWp38Uf7RFBZJhFc-X9XukZoZy_92PXt7MwlK05RQyhmxT7GUr8emqb5d1b3J9PLd5ejkkiCEIeCIYYjnAoNl21QxwgnIkwNiA8ngKzMHtEJUkdkKCZBALIxpBnQGx0Z3S8H34RuI8jEV24ebcaKbKwubJZL0kD-H9pjGX_9qwmOoik0rRw00xEpj6CU_8d-c1iKFy4b5yVik8IsjohjvK1jZBEj5iLr3eHvdYrGRq9SKlCfpoZwF09nshEt_tUN99kXTXkd67s9slceaX067LNr1A7DEB4nkBe1M9GjkHJtpbZa61qqmsCXfCvueUH_SytkU0ZfGl_nZo_9n3QsLfaRD-_nL7io3G2TjVhArWKjAU2eN0dx8PXygDuu4_1Nnvo16r7kB7bXSQ7LQOsYAfy2NdJHt9JpQ_iUgT_V5Bbmhz-Rq2KSexxVQtrzpENyCQjWcMo_iSg_tK4S2SrGYPnMFWV6N5TIYMuTUnuG6BubtRgwPZjRDFLPu28ktfPZx2FSw_reBHSKs9h2YbzUiNEAtJ8EhCM4vj5EcVaX8e1cMGkrq6mpISQNZ-LzzRgTqY4Sho3mrQN-8h4-5bCV9BUoKMdxNOPl5GDK3BrI8cuLDe3Dd0ydEbA2vsLJ0fLuo4wtnnzGuNuNVnl2_EANRr1hY7Fcer6Ifqyy-obDjb4Rb05Q5tbJo_a-AbHKGV7U2V79ZXKpicBJv9gkGcR_WeZjf0PJJiBIJhgayeA5uDm8UZFSHtLlAe0F8vSP_YCWTBgOp2TA/https://www.amazon.in/Verilux-USB-C-30Hz-HDMI-MacBook/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?aref=OhjmUjOVdE&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=samsung+s25+ultra+5g+mobile&keywords=samsung+s25+ultra+5g+mobile&pd_rd_i=B0BVDLJCGQ&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&pd_rd_w=H4538&pd_rd_wg=FqGAg&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=R1X0SJ2C554QFBYAQW2D&qid=1786540996&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55#customerReviews
+                    - text: (414)
+                - generic [ref=e1823]:
+                  - generic [ref=e1824]:
+                    - link "Freedom Sale Deal" [ref=e1826] [cursor=pointer]:
+                      - /url: /deals
+                      - generic [ref=e1829]: Freedom Sale Deal
+                    - generic [ref=e1831]:
+                      - generic [ref=e1832]: Price, product page
+                      - 'link "₹869 M.R.P: ₹1,421 M.R.P: ₹1,421" [ref=e1833] [cursor=pointer]':
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JH-u34qxSjARh_P2kVX1LaoAAAGf9iQ5QgoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICBpXU1b/clv1c_ek-YBPf3FcTa3ut7cNpggVzlXJ0DWNMvcoD95k_GG2k51rMA73S5eNfSVbugZ7JD9geX-mDN4gerQcqsUKwdmjnT72RLDQNn8-wtLdDVVP1VmyLz8gCS7Ybx599kRjG2VlOqvdT0C5TKingou7tU0KADwJyYhG1Ks1Ig7_ar2pMHAdt8jlA8htwJIRJpvyakS5m1zxsLW4fB3OqJDyTws-r-NtWZhsw0Np_OpmbiZ0UddKeqHe4WQUr6eO9xuVmRxtto_Rl8lX5NioMz8xocsW8L_StwzBn3BRraAS97_tN7pHXY3XjVSkVdCFa8lIquSjYljMOIa5yhY0Bl3ODgV6mGkrKtSlWI4cugWvQKJrWMZGPeFQoXI0jToNmUDM_hV4bcvmOsfMftxG2g8Wi3a8375TbdqSTbNBtFJZ24othLYenBpFSHnRnZ8H10V3Fiba6iWrm6jvIDZY2q6GllfOb1zFd00PapYfYQkzsEjfkW5qNOwu6e0JoGveX0MXTTe2r8179GVzO-TMVgemVyE9Sui_39vhIsUeHvTD6pf-1_MGZNSQi6si7AL0b2SHbrBFRWRN6yvLU5wwIkHg-hA7-Q0F0g-0AHGnsOt-saca68kMD7COekSk4QrVTNE-3WJZCs4oplu2I3mjLkxTSjoxE74__LUc6PB4tc2tiyv_NMZRt7r0reKKc8zb8tC7S-n4M9FlOHpmAvpszQWiNSPG_w0SAXhq6ZuQK5RfFw7kcO7DCz-S0QbVZ7iX4NJjeqCQfOOz1Fu8Jo1CwhgBPcsWBKaxcnwU3tnwgPdsXUm9ujP0WdcAQyGOQVpz2F6_l7z0avOh2QVRpKP8eHVf6ta9WOU4sOnbtSm2pqZcvSdBMSfbZNPFSHI0Pgxq6YaINw8ZfCq_bZ9Ne56TQLHml835bzQ9QK4sHI2El5LWMGAdGWp38Uf7RFBZJhFc-X9XukZoZy_92PXt7MwlK05RQyhmxT7GUr8emqb5d1b3J9PLd5ejkkiCEIeCIYYjnAoNl21QxwgnIkwNiA8ngKzMHtEJUkdkKCZBALIxpBnQGx0Z3S8H34RuI8jEV24ebcaKbKwubJZL0kD-H9pjGX_9qwmOoik0rRw00xEpj6CU_8d-c1iKFy4b5yVik8IsjohjvK1jZBEj5iLr3eHvdYrGRq9SKlCfpoZwF09nshEt_tUN99kXTXkd67s9slceaX067LNr1A7DEB4nkBe1M9GjkHJtpbZa61qqmsCXfCvueUH_SytkU0ZfGl_nZo_9n3QsLfaRD-_nL7io3G2TjVhArWKjAU2eN0dx8PXygDuu4_1Nnvo16r7kB7bXSQ7LQOsYAfy2NdJHt9JpQ_iUgT_V5Bbmhz-Rq2KSexxVQtrzpENyCQjWcMo_iSg_tK4S2SrGYPnMFWV6N5TIYMuTUnuG6BubtRgwPZjRDFLPu28ktfPZx2FSw_reBHSKs9h2YbzUiNEAtJ8EhCM4vj5EcVaX8e1cMGkrq6mpISQNZ-LzzRgTqY4Sho3mrQN-8h4-5bCV9BUoKMdxNOPl5GDK3BrI8cuLDe3Dd0ydEbA2vsLJ0fLuo4wtnnzGuNuNVnl2_EANRr1hY7Fcer6Ifqyy-obDjb4Rb05Q5tbJo_a-AbHKGV7U2V79ZXKpicBJv9gkGcR_WeZjf0PJJiBIJhgayeA5uDm8UZFSHtLlAe0F8vSP_YCWTBgOp2TA/https://www.amazon.in/Verilux-USB-C-30Hz-HDMI-MacBook/dp/B0BVDLJCGQ/ref=sxbs_sbv_search_btf?aref=OhjmUjOVdE&content-id=amzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644%3Aamzn1.sym.2a10787e-cd6a-4538-8307-70bc4d12c644&cv_ct_cx=samsung+s25+ultra+5g+mobile&keywords=samsung+s25+ultra+5g+mobile&pd_rd_i=B0BVDLJCGQ&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&pd_rd_w=H4538&pd_rd_wg=FqGAg&pf_rd_p=2a10787e-cd6a-4538-8307-70bc4d12c644&pf_rd_r=R1X0SJ2C554QFBYAQW2D&qid=1786540996&sbo=RZvfv%2F%2FHxDF%2BO5021pAnSA%3D%3D&sr=1-1-f1821008-9dea-4812-b2b6-4a6e4a4f2d55
+                        - generic [ref=e1834]:
+                          - generic [ref=e1835]: ₹869
+                          - generic [ref=e1836]: ₹869
+                        - generic [ref=e1837]: "M.R.P: ₹1,421"
+                        - generic [ref=e1838]:
+                          - text: "M.R.P:"
+                          - generic [ref=e1839]:
+                            - generic [ref=e1840]: ₹1,421
+                            - text: ₹1,421
+                      - text: (39% off)
+                    - generic [ref=e1844]:
+                      - generic [ref=e1845]: Up to 5% back with Amazon Pay ICICI card
+                      - generic [ref=e1846]: Up to 5% back with Amazon Pay ICI...
+                  - generic [ref=e1851]: FREE delivery Tue, 18 Aug
+          - generic [ref=e1857]:
+            - generic "Related searches in samsung s25 ultra 5g mobile" [ref=e1858]:
+              - heading "Related searches" [level=2] [ref=e1861]
+            - list [ref=e1863]:
+              - generic [ref=e1864]:
+                - listitem [ref=e1865]:
+                  - link "samsung s23 ultra 5g" [ref=e1867] [cursor=pointer]:
+                    - /url: /s?k=samsung+s23+ultra+5g&ref=rsl_sug_0_0&pd_rd_w=STYfM&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=FqGAg&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&qid=1786540996
+                    - generic [ref=e1872]: samsung s23 ultra 5g
+                - listitem [ref=e1873]:
+                  - link "iphone 14 pro max 256gb" [ref=e1875] [cursor=pointer]:
+                    - /url: /s?k=iphone+14+pro+max+256gb&ref=rsl_sug_0_3&pd_rd_w=STYfM&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=FqGAg&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&qid=1786540996
+                    - generic [ref=e1880]: iphone 14 pro max 256gb
+              - listitem [ref=e1882]:
+                - link "samsung s25 ultra 5g" [ref=e1884] [cursor=pointer]:
+                  - /url: /s?k=samsung+s25+ultra+5g&ref=rsl_sug_0_1&pd_rd_w=STYfM&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=FqGAg&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&qid=1786540996
+                  - generic [ref=e1889]: samsung s25 ultra 5g
+              - listitem [ref=e1891]:
+                - link "samsung s23" [ref=e1893] [cursor=pointer]:
+                  - /url: /s?k=samsung+s23&ref=rsl_sug_0_2&pd_rd_w=STYfM&content-id=amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01:amzn1.sym.c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_p=c6a4c27a-40f0-4447-9435-8e917ffa1d01&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=FqGAg&pd_rd_r=7d69eb42-459b-43b1-a2a7-8bc77b7b1993&qid=1786540996
+                  - generic [ref=e1898]: samsung s23
+          - navigation "pagination" [ref=e1901]:
+            - list [ref=e1903]:
+              - listitem [ref=e1904]:
+                - button "Previous" [disabled] [ref=e1906]:
+                  - img [ref=e1907]
+                  - text: Previous
+              - listitem [ref=e1909]:
+                - button "Page 1" [ref=e1911]: "1"
+              - listitem [ref=e1912]:
+                - button "Go to page 2" [ref=e1914] [cursor=pointer]: "2"
+              - listitem [ref=e1915]:
+                - button "Go to page 3" [ref=e1917] [cursor=pointer]: "3"
+              - button [disabled] [ref=e1918]:
+                - img [ref=e1919]: ...
+              - button "20" [disabled] [ref=e1921]
+              - listitem [ref=e1922]:
+                - button "Go to next page, page 2" [ref=e1924] [cursor=pointer]:
+                  - text: Next
+                  - img [ref=e1925]
+          - generic [ref=e1929]:
+            - generic [ref=e1930]:
+              - heading "Brands related to your search" [ref=e1931]
+              - button "Leave feedback on Sponsored ad" [ref=e1936] [cursor=pointer]: Sponsored
+            - list [ref=e1941]:
+              - listitem [ref=e1942]:
+                - generic [ref=e1943]:
+                  - link [ref=e1944] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JF8RUtyzqfQzJaq7iAiwOswAAAGf9iQ5wwoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDvcTX2/clv1c_ek-wBHfWFcTa3eubkyVXvs2mUlobS3rJgYTdQ2Kql_KOeDR14kuvplBWloYUAZ5QDAYd1gfzahynoUoO1y30mNRMfzj8MzCRk-j361D_vtQq6Tmb-3_BWWfyjrm1IHvaPJMJyHbH8s26v3SVNo2YutTB0F2dlXHKvqzgLzYvwr4D4duTjseBymDkAs99tLImpvSBguXLEgbWmRz4HwgDwy7Kix99Qdv_cAdg8S16hdOaeqDXMO6Apc8EA22B2KtadTpCOSiaFoOqA2iyL-Uo5bYzhD85or5OahcgdSahPBlnNvepIXZNUc6oU5b_qV57xdj9xVYQ5ICdU-iWxkZsbbh47OCuDkVrFTAYfwcFT24Y-WKF_SMRYwrg19z0_7Njcy6OifvkVOtiKJtpzQ3wdOoQhaYFMHwHeOBVOqLSZ27Qs6Y2kee-VwiTyTIrm30l3WmICqgn20awQ5LOdv8l2bJVh-kskRNszEV6KfdRjMgJNH9v5LcpQARVUTY_zZACp7mE_x5YnfgqUvefg-ntEVGoHH82g0hFFdkL2Up5oRg9vW2U9DLDSKsA4tnKkunXqHcglrva8UvHzA9R4lyfLICEzn4MbjmTh9Yyd9fBIMn6J94YunAKSC18LEy3wvfv0EoF5d8uVOVgjqMPPFEst1z19ZdcfSAXK55SdSbQGcI8r3fh7KOSUpp7Rzyp-rk9fP_vNEqEi999tG7BVQkLVOuNDdjRtr_5csAzMo809KXvewNuk7HU_HsMjfHVcbHN9BnudTJcY_CFzKGEPvvQxPw8_d1pZpL6B8UqlDQzO-6sSGDq2-QvXbMQnTuUGM59y-bWej_1j3f26GiOMcm6C3sTfwunWF-3JU7L4S-zYh6dVW0Cn73WtB0ihWyx47QmAgYQjPxJxawzd4bkxBzKWgFpTJadhqDPlu0O2nY8RT00gVWAxR_RuSFwg-o3lAU_ngziT2BWBbVCQ6E1vTU-Q8aQYbj3nxHP1oIjHgaHIRjB7C1YxAzaPuub7Tai52NFoS5j7nn2wgJ2FKhRjgVHvQTGYdmcl5IW8C5DsV5vZWt6baj_3lx2Ri1-Tiy-VDTQfDfmixCat0XwFMRMHqF0GSB6ERi46Ifk17iWdl3kfEApYSEuJEIKhyyqZIP8JOqVgndSc0hAfUGsTHQt8sTQxRDDDD7mAYhKCgMEoYJ_DjDJd0na7w7RaaMHEA2Bqv63HWZpP9m7B3A5M5W2y0j730ctst1XQ8FZcWMDJr77BXuEwyaKSVEshM8wKiM0GYv1Goygrai55e7bYos_BjI0I6pi9TQHZN2N5RkjIlAnCZcPG6DodGh13_2WUSIdNF0D0z4UVAKbl_9HLhZOZvg4znSv0sEWVC4Y3nVPV3_GABmk7xcBTB2xYSJiXdtR_kVApHCDWkHvRMgrRlkXf3QWuOQlAcpwJIyQToJ0zHbVqeECGMCb6y_2YLge3c88aWV5rzGlukoC5UCZ3NE4Zpm1rVkjmcvitU4frJCfSXP2GJVlGzbrsvPt3BQjmAQyfwyul5yteCbONdV6rjxHvi_8p1oyY6XLNoe0Nb-j_hUFIas0JHoVMyBVo1FlOpqWAUpOxxhOKYXpjWbvFD2erSH_xzjmYVPW5JTjXS2YOJQPKUhVYtdL3zSfLls_rNgLmLh6rFtdifqFQvIX_jOYDOy9wH65AXz_adS-5cXmz44MWYYbPUVylDxpmx_LFm_I4wz2/https://www.amazon.in/stores/page/B81623C7-46AF-4293-B70D-FE5E3016BF33/?_encoding=UTF8&store_ref=SB_A05038242RAXIPB9R6N8S-A030183520OY5W2N6QI7G&pd_rd_plhdr=t&aaxitk=d0cabd6c0f2046ded7171e3f5c959846&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=CCdkvgHOdv&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                  - generic:
+                    - generic:
+                      - link "Sponsored ad from Samsung. \"Galaxy S25 Ultra - AI ProVisual Engine.\" Shop Samsung." [ref=e1945] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JF8RUtyzqfQzJaq7iAiwOswAAAGf9iQ5wwoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDvcTX2/clv1c_ek-wBHfWFcTa3eubkyVXvs2mUlobS3rJgYTdQ2Kql_KOeDR14kuvplBWloYUAZ5QDAYd1gfzahynoUoO1y30mNRMfzj8MzCRk-j361D_vtQq6Tmb-3_BWWfyjrm1IHvaPJMJyHbH8s26v3SVNo2YutTB0F2dlXHKvqzgLzYvwr4D4duTjseBymDkAs99tLImpvSBguXLEgbWmRz4HwgDwy7Kix99Qdv_cAdg8S16hdOaeqDXMO6Apc8EA22B2KtadTpCOSiaFoOqA2iyL-Uo5bYzhD85or5OahcgdSahPBlnNvepIXZNUc6oU5b_qV57xdj9xVYQ5ICdU-iWxkZsbbh47OCuDkVrFTAYfwcFT24Y-WKF_SMRYwrg19z0_7Njcy6OifvkVOtiKJtpzQ3wdOoQhaYFMHwHeOBVOqLSZ27Qs6Y2kee-VwiTyTIrm30l3WmICqgn20awQ5LOdv8l2bJVh-kskRNszEV6KfdRjMgJNH9v5LcpQARVUTY_zZACp7mE_x5YnfgqUvefg-ntEVGoHH82g0hFFdkL2Up5oRg9vW2U9DLDSKsA4tnKkunXqHcglrva8UvHzA9R4lyfLICEzn4MbjmTh9Yyd9fBIMn6J94YunAKSC18LEy3wvfv0EoF5d8uVOVgjqMPPFEst1z19ZdcfSAXK55SdSbQGcI8r3fh7KOSUpp7Rzyp-rk9fP_vNEqEi999tG7BVQkLVOuNDdjRtr_5csAzMo809KXvewNuk7HU_HsMjfHVcbHN9BnudTJcY_CFzKGEPvvQxPw8_d1pZpL6B8UqlDQzO-6sSGDq2-QvXbMQnTuUGM59y-bWej_1j3f26GiOMcm6C3sTfwunWF-3JU7L4S-zYh6dVW0Cn73WtB0ihWyx47QmAgYQjPxJxawzd4bkxBzKWgFpTJadhqDPlu0O2nY8RT00gVWAxR_RuSFwg-o3lAU_ngziT2BWBbVCQ6E1vTU-Q8aQYbj3nxHP1oIjHgaHIRjB7C1YxAzaPuub7Tai52NFoS5j7nn2wgJ2FKhRjgVHvQTGYdmcl5IW8C5DsV5vZWt6baj_3lx2Ri1-Tiy-VDTQfDfmixCat0XwFMRMHqF0GSB6ERi46Ifk17iWdl3kfEApYSEuJEIKhyyqZIP8JOqVgndSc0hAfUGsTHQt8sTQxRDDDD7mAYhKCgMEoYJ_DjDJd0na7w7RaaMHEA2Bqv63HWZpP9m7B3A5M5W2y0j730ctst1XQ8FZcWMDJr77BXuEwyaKSVEshM8wKiM0GYv1Goygrai55e7bYos_BjI0I6pi9TQHZN2N5RkjIlAnCZcPG6DodGh13_2WUSIdNF0D0z4UVAKbl_9HLhZOZvg4znSv0sEWVC4Y3nVPV3_GABmk7xcBTB2xYSJiXdtR_kVApHCDWkHvRMgrRlkXf3QWuOQlAcpwJIyQToJ0zHbVqeECGMCb6y_2YLge3c88aWV5rzGlukoC5UCZ3NE4Zpm1rVkjmcvitU4frJCfSXP2GJVlGzbrsvPt3BQjmAQyfwyul5yteCbONdV6rjxHvi_8p1oyY6XLNoe0Nb-j_hUFIas0JHoVMyBVo1FlOpqWAUpOxxhOKYXpjWbvFD2erSH_xzjmYVPW5JTjXS2YOJQPKUhVYtdL3zSfLls_rNgLmLh6rFtdifqFQvIX_jOYDOy9wH65AXz_adS-5cXmz44MWYYbPUVylDxpmx_LFm_I4wz2/https://www.amazon.in/stores/page/B81623C7-46AF-4293-B70D-FE5E3016BF33/?_encoding=UTF8&store_ref=SB_A05038242RAXIPB9R6N8S-A030183520OY5W2N6QI7G&pd_rd_plhdr=t&aaxitk=d0cabd6c0f2046ded7171e3f5c959846&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=CCdkvgHOdv&ref_=sbx_be_s_3psl_mbd_mb0_asin&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                        - img "Sponsored ad from Samsung. \"Galaxy S25 Ultra - AI ProVisual Engine.\" Shop Samsung." [ref=e1946]
+                      - generic:
+                        - link:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JF8RUtyzqfQzJaq7iAiwOswAAAGf9iQ5wwoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDvcTX2/clv1c_ek-wBHfWFcTa3eubkyVXvs2mUlobS3rJgYTdQ2Kql_KOeDR14kuvplBWloYUAZ5QDAYd1gfzahynoUoO1y30mNRMfzj8MzCRk-j361D_vtQq6Tmb-3_BWWfyjrm1IHvaPJMJyHbH8s26v3SVNo2YutTB0F2dlXHKvqzgLzYvwr4D4duTjseBymDkAs99tLImpvSBguXLEgbWmRz4HwgDwy7Kix99Qdv_cAdg8S16hdOaeqDXMO6Apc8EA22B2KtadTpCOSiaFoOqA2iyL-Uo5bYzhD85or5OahcgdSahPBlnNvepIXZNUc6oU5b_qV57xdj9xVYQ5ICdU-iWxkZsbbh47OCuDkVrFTAYfwcFT24Y-WKF_SMRYwrg19z0_7Njcy6OifvkVOtiKJtpzQ3wdOoQhaYFMHwHeOBVOqLSZ27Qs6Y2kee-VwiTyTIrm30l3WmICqgn20awQ5LOdv8l2bJVh-kskRNszEV6KfdRjMgJNH9v5LcpQARVUTY_zZACp7mE_x5YnfgqUvefg-ntEVGoHH82g0hFFdkL2Up5oRg9vW2U9DLDSKsA4tnKkunXqHcglrva8UvHzA9R4lyfLICEzn4MbjmTh9Yyd9fBIMn6J94YunAKSC18LEy3wvfv0EoF5d8uVOVgjqMPPFEst1z19ZdcfSAXK55SdSbQGcI8r3fh7KOSUpp7Rzyp-rk9fP_vNEqEi999tG7BVQkLVOuNDdjRtr_5csAzMo809KXvewNuk7HU_HsMjfHVcbHN9BnudTJcY_CFzKGEPvvQxPw8_d1pZpL6B8UqlDQzO-6sSGDq2-QvXbMQnTuUGM59y-bWej_1j3f26GiOMcm6C3sTfwunWF-3JU7L4S-zYh6dVW0Cn73WtB0ihWyx47QmAgYQjPxJxawzd4bkxBzKWgFpTJadhqDPlu0O2nY8RT00gVWAxR_RuSFwg-o3lAU_ngziT2BWBbVCQ6E1vTU-Q8aQYbj3nxHP1oIjHgaHIRjB7C1YxAzaPuub7Tai52NFoS5j7nn2wgJ2FKhRjgVHvQTGYdmcl5IW8C5DsV5vZWt6baj_3lx2Ri1-Tiy-VDTQfDfmixCat0XwFMRMHqF0GSB6ERi46Ifk17iWdl3kfEApYSEuJEIKhyyqZIP8JOqVgndSc0hAfUGsTHQt8sTQxRDDDD7mAYhKCgMEoYJ_DjDJd0na7w7RaaMHEA2Bqv63HWZpP9m7B3A5M5W2y0j730ctst1XQ8FZcWMDJr77BXuEwyaKSVEshM8wKiM0GYv1Goygrai55e7bYos_BjI0I6pi9TQHZN2N5RkjIlAnCZcPG6DodGh13_2WUSIdNF0D0z4UVAKbl_9HLhZOZvg4znSv0sEWVC4Y3nVPV3_GABmk7xcBTB2xYSJiXdtR_kVApHCDWkHvRMgrRlkXf3QWuOQlAcpwJIyQToJ0zHbVqeECGMCb6y_2YLge3c88aWV5rzGlukoC5UCZ3NE4Zpm1rVkjmcvitU4frJCfSXP2GJVlGzbrsvPt3BQjmAQyfwyul5yteCbONdV6rjxHvi_8p1oyY6XLNoe0Nb-j_hUFIas0JHoVMyBVo1FlOpqWAUpOxxhOKYXpjWbvFD2erSH_xzjmYVPW5JTjXS2YOJQPKUhVYtdL3zSfLls_rNgLmLh6rFtdifqFQvIX_jOYDOy9wH65AXz_adS-5cXmz44MWYYbPUVylDxpmx_LFm_I4wz2/https://www.amazon.in/stores/page/B81623C7-46AF-4293-B70D-FE5E3016BF33/?_encoding=UTF8&store_ref=SB_A05038242RAXIPB9R6N8S-A030183520OY5W2N6QI7G&pd_rd_plhdr=t&aaxitk=d0cabd6c0f2046ded7171e3f5c959846&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=CCdkvgHOdv&ref_=sbx_be_s_3psl_mbd_mb0_bkgd&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                        - generic:
+                          - generic:
+                            - link "Samsung" [ref=e1947] [cursor=pointer]:
+                              - /url: https://aax-eu-zaz.amazon.in/x/c/JF8RUtyzqfQzJaq7iAiwOswAAAGf9iQ5wwoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDvcTX2/clv1c_ek-wBHfWFcTa3eubkyVXvs2mUlobS3rJgYTdQ2Kql_KOeDR14kuvplBWloYUAZ5QDAYd1gfzahynoUoO1y30mNRMfzj8MzCRk-j361D_vtQq6Tmb-3_BWWfyjrm1IHvaPJMJyHbH8s26v3SVNo2YutTB0F2dlXHKvqzgLzYvwr4D4duTjseBymDkAs99tLImpvSBguXLEgbWmRz4HwgDwy7Kix99Qdv_cAdg8S16hdOaeqDXMO6Apc8EA22B2KtadTpCOSiaFoOqA2iyL-Uo5bYzhD85or5OahcgdSahPBlnNvepIXZNUc6oU5b_qV57xdj9xVYQ5ICdU-iWxkZsbbh47OCuDkVrFTAYfwcFT24Y-WKF_SMRYwrg19z0_7Njcy6OifvkVOtiKJtpzQ3wdOoQhaYFMHwHeOBVOqLSZ27Qs6Y2kee-VwiTyTIrm30l3WmICqgn20awQ5LOdv8l2bJVh-kskRNszEV6KfdRjMgJNH9v5LcpQARVUTY_zZACp7mE_x5YnfgqUvefg-ntEVGoHH82g0hFFdkL2Up5oRg9vW2U9DLDSKsA4tnKkunXqHcglrva8UvHzA9R4lyfLICEzn4MbjmTh9Yyd9fBIMn6J94YunAKSC18LEy3wvfv0EoF5d8uVOVgjqMPPFEst1z19ZdcfSAXK55SdSbQGcI8r3fh7KOSUpp7Rzyp-rk9fP_vNEqEi999tG7BVQkLVOuNDdjRtr_5csAzMo809KXvewNuk7HU_HsMjfHVcbHN9BnudTJcY_CFzKGEPvvQxPw8_d1pZpL6B8UqlDQzO-6sSGDq2-QvXbMQnTuUGM59y-bWej_1j3f26GiOMcm6C3sTfwunWF-3JU7L4S-zYh6dVW0Cn73WtB0ihWyx47QmAgYQjPxJxawzd4bkxBzKWgFpTJadhqDPlu0O2nY8RT00gVWAxR_RuSFwg-o3lAU_ngziT2BWBbVCQ6E1vTU-Q8aQYbj3nxHP1oIjHgaHIRjB7C1YxAzaPuub7Tai52NFoS5j7nn2wgJ2FKhRjgVHvQTGYdmcl5IW8C5DsV5vZWt6baj_3lx2Ri1-Tiy-VDTQfDfmixCat0XwFMRMHqF0GSB6ERi46Ifk17iWdl3kfEApYSEuJEIKhyyqZIP8JOqVgndSc0hAfUGsTHQt8sTQxRDDDD7mAYhKCgMEoYJ_DjDJd0na7w7RaaMHEA2Bqv63HWZpP9m7B3A5M5W2y0j730ctst1XQ8FZcWMDJr77BXuEwyaKSVEshM8wKiM0GYv1Goygrai55e7bYos_BjI0I6pi9TQHZN2N5RkjIlAnCZcPG6DodGh13_2WUSIdNF0D0z4UVAKbl_9HLhZOZvg4znSv0sEWVC4Y3nVPV3_GABmk7xcBTB2xYSJiXdtR_kVApHCDWkHvRMgrRlkXf3QWuOQlAcpwJIyQToJ0zHbVqeECGMCb6y_2YLge3c88aWV5rzGlukoC5UCZ3NE4Zpm1rVkjmcvitU4frJCfSXP2GJVlGzbrsvPt3BQjmAQyfwyul5yteCbONdV6rjxHvi_8p1oyY6XLNoe0Nb-j_hUFIas0JHoVMyBVo1FlOpqWAUpOxxhOKYXpjWbvFD2erSH_xzjmYVPW5JTjXS2YOJQPKUhVYtdL3zSfLls_rNgLmLh6rFtdifqFQvIX_jOYDOy9wH65AXz_adS-5cXmz44MWYYbPUVylDxpmx_LFm_I4wz2/https://www.amazon.in/stores/page/B81623C7-46AF-4293-B70D-FE5E3016BF33/?_encoding=UTF8&store_ref=SB_A05038242RAXIPB9R6N8S-A030183520OY5W2N6QI7G&pd_rd_plhdr=t&aaxitk=d0cabd6c0f2046ded7171e3f5c959846&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=CCdkvgHOdv&ref_=sbx_be_s_3psl_mbd_mb0_logo&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                              - img "Samsung" [ref=e1948]
+                            - link "Galaxy S25 Ultra - AI ProVisual Engine" [ref=e1949] [cursor=pointer]:
+                              - /url: https://aax-eu-zaz.amazon.in/x/c/JF8RUtyzqfQzJaq7iAiwOswAAAGf9iQ5wwoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDvcTX2/clv1c_ek-wBHfWFcTa3eubkyVXvs2mUlobS3rJgYTdQ2Kql_KOeDR14kuvplBWloYUAZ5QDAYd1gfzahynoUoO1y30mNRMfzj8MzCRk-j361D_vtQq6Tmb-3_BWWfyjrm1IHvaPJMJyHbH8s26v3SVNo2YutTB0F2dlXHKvqzgLzYvwr4D4duTjseBymDkAs99tLImpvSBguXLEgbWmRz4HwgDwy7Kix99Qdv_cAdg8S16hdOaeqDXMO6Apc8EA22B2KtadTpCOSiaFoOqA2iyL-Uo5bYzhD85or5OahcgdSahPBlnNvepIXZNUc6oU5b_qV57xdj9xVYQ5ICdU-iWxkZsbbh47OCuDkVrFTAYfwcFT24Y-WKF_SMRYwrg19z0_7Njcy6OifvkVOtiKJtpzQ3wdOoQhaYFMHwHeOBVOqLSZ27Qs6Y2kee-VwiTyTIrm30l3WmICqgn20awQ5LOdv8l2bJVh-kskRNszEV6KfdRjMgJNH9v5LcpQARVUTY_zZACp7mE_x5YnfgqUvefg-ntEVGoHH82g0hFFdkL2Up5oRg9vW2U9DLDSKsA4tnKkunXqHcglrva8UvHzA9R4lyfLICEzn4MbjmTh9Yyd9fBIMn6J94YunAKSC18LEy3wvfv0EoF5d8uVOVgjqMPPFEst1z19ZdcfSAXK55SdSbQGcI8r3fh7KOSUpp7Rzyp-rk9fP_vNEqEi999tG7BVQkLVOuNDdjRtr_5csAzMo809KXvewNuk7HU_HsMjfHVcbHN9BnudTJcY_CFzKGEPvvQxPw8_d1pZpL6B8UqlDQzO-6sSGDq2-QvXbMQnTuUGM59y-bWej_1j3f26GiOMcm6C3sTfwunWF-3JU7L4S-zYh6dVW0Cn73WtB0ihWyx47QmAgYQjPxJxawzd4bkxBzKWgFpTJadhqDPlu0O2nY8RT00gVWAxR_RuSFwg-o3lAU_ngziT2BWBbVCQ6E1vTU-Q8aQYbj3nxHP1oIjHgaHIRjB7C1YxAzaPuub7Tai52NFoS5j7nn2wgJ2FKhRjgVHvQTGYdmcl5IW8C5DsV5vZWt6baj_3lx2Ri1-Tiy-VDTQfDfmixCat0XwFMRMHqF0GSB6ERi46Ifk17iWdl3kfEApYSEuJEIKhyyqZIP8JOqVgndSc0hAfUGsTHQt8sTQxRDDDD7mAYhKCgMEoYJ_DjDJd0na7w7RaaMHEA2Bqv63HWZpP9m7B3A5M5W2y0j730ctst1XQ8FZcWMDJr77BXuEwyaKSVEshM8wKiM0GYv1Goygrai55e7bYos_BjI0I6pi9TQHZN2N5RkjIlAnCZcPG6DodGh13_2WUSIdNF0D0z4UVAKbl_9HLhZOZvg4znSv0sEWVC4Y3nVPV3_GABmk7xcBTB2xYSJiXdtR_kVApHCDWkHvRMgrRlkXf3QWuOQlAcpwJIyQToJ0zHbVqeECGMCb6y_2YLge3c88aWV5rzGlukoC5UCZ3NE4Zpm1rVkjmcvitU4frJCfSXP2GJVlGzbrsvPt3BQjmAQyfwyul5yteCbONdV6rjxHvi_8p1oyY6XLNoe0Nb-j_hUFIas0JHoVMyBVo1FlOpqWAUpOxxhOKYXpjWbvFD2erSH_xzjmYVPW5JTjXS2YOJQPKUhVYtdL3zSfLls_rNgLmLh6rFtdifqFQvIX_jOYDOy9wH65AXz_adS-5cXmz44MWYYbPUVylDxpmx_LFm_I4wz2/https://www.amazon.in/stores/page/B81623C7-46AF-4293-B70D-FE5E3016BF33/?_encoding=UTF8&store_ref=SB_A05038242RAXIPB9R6N8S-A030183520OY5W2N6QI7G&pd_rd_plhdr=t&aaxitk=d0cabd6c0f2046ded7171e3f5c959846&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=CCdkvgHOdv&ref_=sbx_be_s_3psl_mbd_mb0_hl&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                              - generic [ref=e1950]:
+                                - generic [ref=e1951]: Galaxy S25 Ultra - AI ProVisual Engine
+                                - generic [ref=e1952]: Galaxy S25 Ultra - AI ProVisual Engine
+                            - link "Shop Samsung" [ref=e1953] [cursor=pointer]:
+                              - /url: https://aax-eu-zaz.amazon.in/x/c/JF8RUtyzqfQzJaq7iAiwOswAAAGf9iQ5wwoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICDvcTX2/clv1c_ek-wBHfWFcTa3eubkyVXvs2mUlobS3rJgYTdQ2Kql_KOeDR14kuvplBWloYUAZ5QDAYd1gfzahynoUoO1y30mNRMfzj8MzCRk-j361D_vtQq6Tmb-3_BWWfyjrm1IHvaPJMJyHbH8s26v3SVNo2YutTB0F2dlXHKvqzgLzYvwr4D4duTjseBymDkAs99tLImpvSBguXLEgbWmRz4HwgDwy7Kix99Qdv_cAdg8S16hdOaeqDXMO6Apc8EA22B2KtadTpCOSiaFoOqA2iyL-Uo5bYzhD85or5OahcgdSahPBlnNvepIXZNUc6oU5b_qV57xdj9xVYQ5ICdU-iWxkZsbbh47OCuDkVrFTAYfwcFT24Y-WKF_SMRYwrg19z0_7Njcy6OifvkVOtiKJtpzQ3wdOoQhaYFMHwHeOBVOqLSZ27Qs6Y2kee-VwiTyTIrm30l3WmICqgn20awQ5LOdv8l2bJVh-kskRNszEV6KfdRjMgJNH9v5LcpQARVUTY_zZACp7mE_x5YnfgqUvefg-ntEVGoHH82g0hFFdkL2Up5oRg9vW2U9DLDSKsA4tnKkunXqHcglrva8UvHzA9R4lyfLICEzn4MbjmTh9Yyd9fBIMn6J94YunAKSC18LEy3wvfv0EoF5d8uVOVgjqMPPFEst1z19ZdcfSAXK55SdSbQGcI8r3fh7KOSUpp7Rzyp-rk9fP_vNEqEi999tG7BVQkLVOuNDdjRtr_5csAzMo809KXvewNuk7HU_HsMjfHVcbHN9BnudTJcY_CFzKGEPvvQxPw8_d1pZpL6B8UqlDQzO-6sSGDq2-QvXbMQnTuUGM59y-bWej_1j3f26GiOMcm6C3sTfwunWF-3JU7L4S-zYh6dVW0Cn73WtB0ihWyx47QmAgYQjPxJxawzd4bkxBzKWgFpTJadhqDPlu0O2nY8RT00gVWAxR_RuSFwg-o3lAU_ngziT2BWBbVCQ6E1vTU-Q8aQYbj3nxHP1oIjHgaHIRjB7C1YxAzaPuub7Tai52NFoS5j7nn2wgJ2FKhRjgVHvQTGYdmcl5IW8C5DsV5vZWt6baj_3lx2Ri1-Tiy-VDTQfDfmixCat0XwFMRMHqF0GSB6ERi46Ifk17iWdl3kfEApYSEuJEIKhyyqZIP8JOqVgndSc0hAfUGsTHQt8sTQxRDDDD7mAYhKCgMEoYJ_DjDJd0na7w7RaaMHEA2Bqv63HWZpP9m7B3A5M5W2y0j730ctst1XQ8FZcWMDJr77BXuEwyaKSVEshM8wKiM0GYv1Goygrai55e7bYos_BjI0I6pi9TQHZN2N5RkjIlAnCZcPG6DodGh13_2WUSIdNF0D0z4UVAKbl_9HLhZOZvg4znSv0sEWVC4Y3nVPV3_GABmk7xcBTB2xYSJiXdtR_kVApHCDWkHvRMgrRlkXf3QWuOQlAcpwJIyQToJ0zHbVqeECGMCb6y_2YLge3c88aWV5rzGlukoC5UCZ3NE4Zpm1rVkjmcvitU4frJCfSXP2GJVlGzbrsvPt3BQjmAQyfwyul5yteCbONdV6rjxHvi_8p1oyY6XLNoe0Nb-j_hUFIas0JHoVMyBVo1FlOpqWAUpOxxhOKYXpjWbvFD2erSH_xzjmYVPW5JTjXS2YOJQPKUhVYtdL3zSfLls_rNgLmLh6rFtdifqFQvIX_jOYDOy9wH65AXz_adS-5cXmz44MWYYbPUVylDxpmx_LFm_I4wz2/https://www.amazon.in/stores/page/B81623C7-46AF-4293-B70D-FE5E3016BF33/?_encoding=UTF8&store_ref=SB_A05038242RAXIPB9R6N8S-A030183520OY5W2N6QI7G&pd_rd_plhdr=t&aaxitk=d0cabd6c0f2046ded7171e3f5c959846&hsa_cr_id=0&lp_asins=B0DSKNKCYX%2CB0DSKL9MQ8&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=CCdkvgHOdv&ref_=sbx_be_s_3psl_mbd_mb0_cta&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                              - generic [ref=e1956]:
+                                - text: Shop
+                                - generic [ref=e1957]:
+                                  - text: Samsung
+                                  - img [ref=e1958]
+              - listitem [ref=e1960]:
+                - generic [ref=e1961]:
+                  - link [ref=e1962] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/JCt3YdPf92_KTPgcV1Q4YpQAAAGf9iQ5xAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICCLnvei/clv1c_ek-wBPf3bbbaXiwWmeVx-eGWTim4kHjnxHYz7ZYuO9lIhX6I3F4ZhT7SlU2qz0HQrtdBlEebSP6zq5qsfoAdm3HxT9xDE-cJ0BKPzDvb5Oy-uh-lKLuYOTDBwnt9lsrhd-clv5PBxctcPh_cRK-BU-9X4dqShjVqkkzzxmfyjKccX2g7atCVQJ-ZHhRpNKFqmJVwX55QDEuItKV-ekzNmnINMfQ1zAb-voyHSROR4X7Bq0DUJEVzYQAxQD9X_xG2EMgaGzNW4EvFboBp0kwr5Yc-wHoY3fTtDUa1-_x0ykvxwNP8XP0FPEP8wuqjBtZ4RRYp1gTii9s1a68pyXzB_g3T6uQ94cAywgOLg5Zka2B-MqLcq03jOn8S1pjKehvwkZ49PtY98UvSwAouFudRBASrSSaBJXFiYQY_geED_z_YCrjT4maZ18247Dt4tymN1q9ToJ1KzlqLA3-WtampvNeTu06HPkpSoTkUec7Bby0twBwkpGLcif4lABTlVb3UAoN3zDcSmwHssh-vqKw_rAd-_TDhEGEeo4yLUeLRzcD-sTr8-P-O6Hz_7zEAYB4dGwCR8CDrqNndKQnjDZE5QxQeOnzAY0uLSWYAzkt2FM-U3a8TX7kcNhLP1_LpIRb8dD4jcuwGKWlw9YP3jnTVG_1alLPzM0-kcyQJYJYOQlEpUP5gnBawi2MQxmfNci0FSWEeDIzO9qWR6RGIs9oU68AVejSgM4_J3tK9A3m37svKOCuLw6aelVQFDjr5qDoaSHywFecW7WHDhSyyHS4nXOWc4WU68fv0zH5F2s88c2IG7Qo2_t4SuZFedp-cEmiX6YM4dnea0Un9MkaARUJVG3bmrIfWLU91oJ3WJ77wIJrNbGHbwL4EfPMQ0KREp3ucYk2P0am46tTUY7Eurbhc4u6pq5JYI-1UB3C06PJtmngH3yIrtumhtkkb-d8Qib32f6-Cl3nnIKs5LQxNq4qGdEAnmFBZcaQvm9kZuouPldfWumT1y0HhSv04ua3p7R6O488akzm1_OAnPVwA3DrbgtHaGk9xqFhuOB7I96Jc268H-2KQB9AElnbsxQJVN3xSk6fHp3mFZ2SVAjzNeRddYv7WHGkauDaY_MaydEaHYGSKrK61iHf4-oKF4gP_czlriqNLStHNb_UYzo9_Fo-OQm6_hUiRint1BCHOOz8sSKQrsveHn39Mg3bipik4UgKX3H42swqqLZerQFBpFgaqrSFRUglZ-2ACwqsAjEfjpW4Eh0GvmqRDp-SoLjL6CyYWSErLkY6iyUdeyTWNFjo0l1Chg-4TzsUAx-Hsa-oXaA4aTEwHRE7I55Otg3Mnbimi-C-PUdxVAXE7R6-aB5hm-0c_EDs6zRcH4TKSm5CvbsaegQPyuUXgFQDqmHRdnBLL6b5iLMJyBNmS3wKjh6i56Gcax7-RmAjMul2gQajX9rHhKVAru-9wrDylhaOamkOqXNc6JFzqL_8WJfwmzuZdDx8GyGg6O-zW0vMMK2UiZcHNXXJ1x397lPPExBredMfe6Z1AHgpMYUz8KApnj3kL5BRfr6ASFapDH_C7N5yaJQ61iJVFiRlGQqyrDS-R6gkoqqVU8VRqJTQolbNwQGTDW8YROZZxWFtvCWtqEk3pehbn8VEX41TVRAup9SH8slROxb7byob-1s_4ogdtp9vbU3D0Mrw65935zWWG81xYsYKhir3ibzwUMf2JHiaayzEYU1A/https://www.amazon.in/stores/page/641AA707-3424-4A95-9507-AD0AA25F026D/?_encoding=UTF8&store_ref=SB_A03813701QD8PBGTHPW8V-A0209912W590GYUFD527&pd_rd_plhdr=t&aaxitk=9d9d0aa22b4daf143e55ac837b071b0e&hsa_cr_id=4932820480102&lp_asins=B0D4DDPDRK%2CB08P9HD7JB%2CB09VDQ2ZS9&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=MBNuAxyzDj&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                  - generic:
+                    - generic:
+                      - link "Sponsored ad from Hola. \"Landline phones.\" Shop Hola." [ref=e1963] [cursor=pointer]:
+                        - /url: https://aax-eu-zaz.amazon.in/x/c/JCt3YdPf92_KTPgcV1Q4YpQAAAGf9iQ5xAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICCLnvei/clv1c_ek-wBPf3bbbaXiwWmeVx-eGWTim4kHjnxHYz7ZYuO9lIhX6I3F4ZhT7SlU2qz0HQrtdBlEebSP6zq5qsfoAdm3HxT9xDE-cJ0BKPzDvb5Oy-uh-lKLuYOTDBwnt9lsrhd-clv5PBxctcPh_cRK-BU-9X4dqShjVqkkzzxmfyjKccX2g7atCVQJ-ZHhRpNKFqmJVwX55QDEuItKV-ekzNmnINMfQ1zAb-voyHSROR4X7Bq0DUJEVzYQAxQD9X_xG2EMgaGzNW4EvFboBp0kwr5Yc-wHoY3fTtDUa1-_x0ykvxwNP8XP0FPEP8wuqjBtZ4RRYp1gTii9s1a68pyXzB_g3T6uQ94cAywgOLg5Zka2B-MqLcq03jOn8S1pjKehvwkZ49PtY98UvSwAouFudRBASrSSaBJXFiYQY_geED_z_YCrjT4maZ18247Dt4tymN1q9ToJ1KzlqLA3-WtampvNeTu06HPkpSoTkUec7Bby0twBwkpGLcif4lABTlVb3UAoN3zDcSmwHssh-vqKw_rAd-_TDhEGEeo4yLUeLRzcD-sTr8-P-O6Hz_7zEAYB4dGwCR8CDrqNndKQnjDZE5QxQeOnzAY0uLSWYAzkt2FM-U3a8TX7kcNhLP1_LpIRb8dD4jcuwGKWlw9YP3jnTVG_1alLPzM0-kcyQJYJYOQlEpUP5gnBawi2MQxmfNci0FSWEeDIzO9qWR6RGIs9oU68AVejSgM4_J3tK9A3m37svKOCuLw6aelVQFDjr5qDoaSHywFecW7WHDhSyyHS4nXOWc4WU68fv0zH5F2s88c2IG7Qo2_t4SuZFedp-cEmiX6YM4dnea0Un9MkaARUJVG3bmrIfWLU91oJ3WJ77wIJrNbGHbwL4EfPMQ0KREp3ucYk2P0am46tTUY7Eurbhc4u6pq5JYI-1UB3C06PJtmngH3yIrtumhtkkb-d8Qib32f6-Cl3nnIKs5LQxNq4qGdEAnmFBZcaQvm9kZuouPldfWumT1y0HhSv04ua3p7R6O488akzm1_OAnPVwA3DrbgtHaGk9xqFhuOB7I96Jc268H-2KQB9AElnbsxQJVN3xSk6fHp3mFZ2SVAjzNeRddYv7WHGkauDaY_MaydEaHYGSKrK61iHf4-oKF4gP_czlriqNLStHNb_UYzo9_Fo-OQm6_hUiRint1BCHOOz8sSKQrsveHn39Mg3bipik4UgKX3H42swqqLZerQFBpFgaqrSFRUglZ-2ACwqsAjEfjpW4Eh0GvmqRDp-SoLjL6CyYWSErLkY6iyUdeyTWNFjo0l1Chg-4TzsUAx-Hsa-oXaA4aTEwHRE7I55Otg3Mnbimi-C-PUdxVAXE7R6-aB5hm-0c_EDs6zRcH4TKSm5CvbsaegQPyuUXgFQDqmHRdnBLL6b5iLMJyBNmS3wKjh6i56Gcax7-RmAjMul2gQajX9rHhKVAru-9wrDylhaOamkOqXNc6JFzqL_8WJfwmzuZdDx8GyGg6O-zW0vMMK2UiZcHNXXJ1x397lPPExBredMfe6Z1AHgpMYUz8KApnj3kL5BRfr6ASFapDH_C7N5yaJQ61iJVFiRlGQqyrDS-R6gkoqqVU8VRqJTQolbNwQGTDW8YROZZxWFtvCWtqEk3pehbn8VEX41TVRAup9SH8slROxb7byob-1s_4ogdtp9vbU3D0Mrw65935zWWG81xYsYKhir3ibzwUMf2JHiaayzEYU1A/https://www.amazon.in/stores/page/641AA707-3424-4A95-9507-AD0AA25F026D/?_encoding=UTF8&store_ref=SB_A03813701QD8PBGTHPW8V-A0209912W590GYUFD527&pd_rd_plhdr=t&aaxitk=9d9d0aa22b4daf143e55ac837b071b0e&hsa_cr_id=4932820480102&lp_asins=B0D4DDPDRK%2CB08P9HD7JB%2CB09VDQ2ZS9&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=MBNuAxyzDj&ref_=sbx_be_s_3psl_mbd_mb1_asin&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                        - img "Sponsored ad from Hola. \"Landline phones.\" Shop Hola." [ref=e1964]
+                      - generic:
+                        - link:
+                          - /url: https://aax-eu-zaz.amazon.in/x/c/JCt3YdPf92_KTPgcV1Q4YpQAAAGf9iQ5xAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICCLnvei/clv1c_ek-wBPf3bbbaXiwWmeVx-eGWTim4kHjnxHYz7ZYuO9lIhX6I3F4ZhT7SlU2qz0HQrtdBlEebSP6zq5qsfoAdm3HxT9xDE-cJ0BKPzDvb5Oy-uh-lKLuYOTDBwnt9lsrhd-clv5PBxctcPh_cRK-BU-9X4dqShjVqkkzzxmfyjKccX2g7atCVQJ-ZHhRpNKFqmJVwX55QDEuItKV-ekzNmnINMfQ1zAb-voyHSROR4X7Bq0DUJEVzYQAxQD9X_xG2EMgaGzNW4EvFboBp0kwr5Yc-wHoY3fTtDUa1-_x0ykvxwNP8XP0FPEP8wuqjBtZ4RRYp1gTii9s1a68pyXzB_g3T6uQ94cAywgOLg5Zka2B-MqLcq03jOn8S1pjKehvwkZ49PtY98UvSwAouFudRBASrSSaBJXFiYQY_geED_z_YCrjT4maZ18247Dt4tymN1q9ToJ1KzlqLA3-WtampvNeTu06HPkpSoTkUec7Bby0twBwkpGLcif4lABTlVb3UAoN3zDcSmwHssh-vqKw_rAd-_TDhEGEeo4yLUeLRzcD-sTr8-P-O6Hz_7zEAYB4dGwCR8CDrqNndKQnjDZE5QxQeOnzAY0uLSWYAzkt2FM-U3a8TX7kcNhLP1_LpIRb8dD4jcuwGKWlw9YP3jnTVG_1alLPzM0-kcyQJYJYOQlEpUP5gnBawi2MQxmfNci0FSWEeDIzO9qWR6RGIs9oU68AVejSgM4_J3tK9A3m37svKOCuLw6aelVQFDjr5qDoaSHywFecW7WHDhSyyHS4nXOWc4WU68fv0zH5F2s88c2IG7Qo2_t4SuZFedp-cEmiX6YM4dnea0Un9MkaARUJVG3bmrIfWLU91oJ3WJ77wIJrNbGHbwL4EfPMQ0KREp3ucYk2P0am46tTUY7Eurbhc4u6pq5JYI-1UB3C06PJtmngH3yIrtumhtkkb-d8Qib32f6-Cl3nnIKs5LQxNq4qGdEAnmFBZcaQvm9kZuouPldfWumT1y0HhSv04ua3p7R6O488akzm1_OAnPVwA3DrbgtHaGk9xqFhuOB7I96Jc268H-2KQB9AElnbsxQJVN3xSk6fHp3mFZ2SVAjzNeRddYv7WHGkauDaY_MaydEaHYGSKrK61iHf4-oKF4gP_czlriqNLStHNb_UYzo9_Fo-OQm6_hUiRint1BCHOOz8sSKQrsveHn39Mg3bipik4UgKX3H42swqqLZerQFBpFgaqrSFRUglZ-2ACwqsAjEfjpW4Eh0GvmqRDp-SoLjL6CyYWSErLkY6iyUdeyTWNFjo0l1Chg-4TzsUAx-Hsa-oXaA4aTEwHRE7I55Otg3Mnbimi-C-PUdxVAXE7R6-aB5hm-0c_EDs6zRcH4TKSm5CvbsaegQPyuUXgFQDqmHRdnBLL6b5iLMJyBNmS3wKjh6i56Gcax7-RmAjMul2gQajX9rHhKVAru-9wrDylhaOamkOqXNc6JFzqL_8WJfwmzuZdDx8GyGg6O-zW0vMMK2UiZcHNXXJ1x397lPPExBredMfe6Z1AHgpMYUz8KApnj3kL5BRfr6ASFapDH_C7N5yaJQ61iJVFiRlGQqyrDS-R6gkoqqVU8VRqJTQolbNwQGTDW8YROZZxWFtvCWtqEk3pehbn8VEX41TVRAup9SH8slROxb7byob-1s_4ogdtp9vbU3D0Mrw65935zWWG81xYsYKhir3ibzwUMf2JHiaayzEYU1A/https://www.amazon.in/stores/page/641AA707-3424-4A95-9507-AD0AA25F026D/?_encoding=UTF8&store_ref=SB_A03813701QD8PBGTHPW8V-A0209912W590GYUFD527&pd_rd_plhdr=t&aaxitk=9d9d0aa22b4daf143e55ac837b071b0e&hsa_cr_id=4932820480102&lp_asins=B0D4DDPDRK%2CB08P9HD7JB%2CB09VDQ2ZS9&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=MBNuAxyzDj&ref_=sbx_be_s_3psl_mbd_mb1_bkgd&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                        - generic:
+                          - generic:
+                            - link "Hola" [ref=e1965] [cursor=pointer]:
+                              - /url: https://aax-eu-zaz.amazon.in/x/c/JCt3YdPf92_KTPgcV1Q4YpQAAAGf9iQ5xAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICCLnvei/clv1c_ek-wBPf3bbbaXiwWmeVx-eGWTim4kHjnxHYz7ZYuO9lIhX6I3F4ZhT7SlU2qz0HQrtdBlEebSP6zq5qsfoAdm3HxT9xDE-cJ0BKPzDvb5Oy-uh-lKLuYOTDBwnt9lsrhd-clv5PBxctcPh_cRK-BU-9X4dqShjVqkkzzxmfyjKccX2g7atCVQJ-ZHhRpNKFqmJVwX55QDEuItKV-ekzNmnINMfQ1zAb-voyHSROR4X7Bq0DUJEVzYQAxQD9X_xG2EMgaGzNW4EvFboBp0kwr5Yc-wHoY3fTtDUa1-_x0ykvxwNP8XP0FPEP8wuqjBtZ4RRYp1gTii9s1a68pyXzB_g3T6uQ94cAywgOLg5Zka2B-MqLcq03jOn8S1pjKehvwkZ49PtY98UvSwAouFudRBASrSSaBJXFiYQY_geED_z_YCrjT4maZ18247Dt4tymN1q9ToJ1KzlqLA3-WtampvNeTu06HPkpSoTkUec7Bby0twBwkpGLcif4lABTlVb3UAoN3zDcSmwHssh-vqKw_rAd-_TDhEGEeo4yLUeLRzcD-sTr8-P-O6Hz_7zEAYB4dGwCR8CDrqNndKQnjDZE5QxQeOnzAY0uLSWYAzkt2FM-U3a8TX7kcNhLP1_LpIRb8dD4jcuwGKWlw9YP3jnTVG_1alLPzM0-kcyQJYJYOQlEpUP5gnBawi2MQxmfNci0FSWEeDIzO9qWR6RGIs9oU68AVejSgM4_J3tK9A3m37svKOCuLw6aelVQFDjr5qDoaSHywFecW7WHDhSyyHS4nXOWc4WU68fv0zH5F2s88c2IG7Qo2_t4SuZFedp-cEmiX6YM4dnea0Un9MkaARUJVG3bmrIfWLU91oJ3WJ77wIJrNbGHbwL4EfPMQ0KREp3ucYk2P0am46tTUY7Eurbhc4u6pq5JYI-1UB3C06PJtmngH3yIrtumhtkkb-d8Qib32f6-Cl3nnIKs5LQxNq4qGdEAnmFBZcaQvm9kZuouPldfWumT1y0HhSv04ua3p7R6O488akzm1_OAnPVwA3DrbgtHaGk9xqFhuOB7I96Jc268H-2KQB9AElnbsxQJVN3xSk6fHp3mFZ2SVAjzNeRddYv7WHGkauDaY_MaydEaHYGSKrK61iHf4-oKF4gP_czlriqNLStHNb_UYzo9_Fo-OQm6_hUiRint1BCHOOz8sSKQrsveHn39Mg3bipik4UgKX3H42swqqLZerQFBpFgaqrSFRUglZ-2ACwqsAjEfjpW4Eh0GvmqRDp-SoLjL6CyYWSErLkY6iyUdeyTWNFjo0l1Chg-4TzsUAx-Hsa-oXaA4aTEwHRE7I55Otg3Mnbimi-C-PUdxVAXE7R6-aB5hm-0c_EDs6zRcH4TKSm5CvbsaegQPyuUXgFQDqmHRdnBLL6b5iLMJyBNmS3wKjh6i56Gcax7-RmAjMul2gQajX9rHhKVAru-9wrDylhaOamkOqXNc6JFzqL_8WJfwmzuZdDx8GyGg6O-zW0vMMK2UiZcHNXXJ1x397lPPExBredMfe6Z1AHgpMYUz8KApnj3kL5BRfr6ASFapDH_C7N5yaJQ61iJVFiRlGQqyrDS-R6gkoqqVU8VRqJTQolbNwQGTDW8YROZZxWFtvCWtqEk3pehbn8VEX41TVRAup9SH8slROxb7byob-1s_4ogdtp9vbU3D0Mrw65935zWWG81xYsYKhir3ibzwUMf2JHiaayzEYU1A/https://www.amazon.in/stores/page/641AA707-3424-4A95-9507-AD0AA25F026D/?_encoding=UTF8&store_ref=SB_A03813701QD8PBGTHPW8V-A0209912W590GYUFD527&pd_rd_plhdr=t&aaxitk=9d9d0aa22b4daf143e55ac837b071b0e&hsa_cr_id=4932820480102&lp_asins=B0D4DDPDRK%2CB08P9HD7JB%2CB09VDQ2ZS9&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=MBNuAxyzDj&ref_=sbx_be_s_3psl_mbd_mb1_logo&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                              - img "Hola" [ref=e1966]
+                            - link "Landline phones" [ref=e1967] [cursor=pointer]:
+                              - /url: https://aax-eu-zaz.amazon.in/x/c/JCt3YdPf92_KTPgcV1Q4YpQAAAGf9iQ5xAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICCLnvei/clv1c_ek-wBPf3bbbaXiwWmeVx-eGWTim4kHjnxHYz7ZYuO9lIhX6I3F4ZhT7SlU2qz0HQrtdBlEebSP6zq5qsfoAdm3HxT9xDE-cJ0BKPzDvb5Oy-uh-lKLuYOTDBwnt9lsrhd-clv5PBxctcPh_cRK-BU-9X4dqShjVqkkzzxmfyjKccX2g7atCVQJ-ZHhRpNKFqmJVwX55QDEuItKV-ekzNmnINMfQ1zAb-voyHSROR4X7Bq0DUJEVzYQAxQD9X_xG2EMgaGzNW4EvFboBp0kwr5Yc-wHoY3fTtDUa1-_x0ykvxwNP8XP0FPEP8wuqjBtZ4RRYp1gTii9s1a68pyXzB_g3T6uQ94cAywgOLg5Zka2B-MqLcq03jOn8S1pjKehvwkZ49PtY98UvSwAouFudRBASrSSaBJXFiYQY_geED_z_YCrjT4maZ18247Dt4tymN1q9ToJ1KzlqLA3-WtampvNeTu06HPkpSoTkUec7Bby0twBwkpGLcif4lABTlVb3UAoN3zDcSmwHssh-vqKw_rAd-_TDhEGEeo4yLUeLRzcD-sTr8-P-O6Hz_7zEAYB4dGwCR8CDrqNndKQnjDZE5QxQeOnzAY0uLSWYAzkt2FM-U3a8TX7kcNhLP1_LpIRb8dD4jcuwGKWlw9YP3jnTVG_1alLPzM0-kcyQJYJYOQlEpUP5gnBawi2MQxmfNci0FSWEeDIzO9qWR6RGIs9oU68AVejSgM4_J3tK9A3m37svKOCuLw6aelVQFDjr5qDoaSHywFecW7WHDhSyyHS4nXOWc4WU68fv0zH5F2s88c2IG7Qo2_t4SuZFedp-cEmiX6YM4dnea0Un9MkaARUJVG3bmrIfWLU91oJ3WJ77wIJrNbGHbwL4EfPMQ0KREp3ucYk2P0am46tTUY7Eurbhc4u6pq5JYI-1UB3C06PJtmngH3yIrtumhtkkb-d8Qib32f6-Cl3nnIKs5LQxNq4qGdEAnmFBZcaQvm9kZuouPldfWumT1y0HhSv04ua3p7R6O488akzm1_OAnPVwA3DrbgtHaGk9xqFhuOB7I96Jc268H-2KQB9AElnbsxQJVN3xSk6fHp3mFZ2SVAjzNeRddYv7WHGkauDaY_MaydEaHYGSKrK61iHf4-oKF4gP_czlriqNLStHNb_UYzo9_Fo-OQm6_hUiRint1BCHOOz8sSKQrsveHn39Mg3bipik4UgKX3H42swqqLZerQFBpFgaqrSFRUglZ-2ACwqsAjEfjpW4Eh0GvmqRDp-SoLjL6CyYWSErLkY6iyUdeyTWNFjo0l1Chg-4TzsUAx-Hsa-oXaA4aTEwHRE7I55Otg3Mnbimi-C-PUdxVAXE7R6-aB5hm-0c_EDs6zRcH4TKSm5CvbsaegQPyuUXgFQDqmHRdnBLL6b5iLMJyBNmS3wKjh6i56Gcax7-RmAjMul2gQajX9rHhKVAru-9wrDylhaOamkOqXNc6JFzqL_8WJfwmzuZdDx8GyGg6O-zW0vMMK2UiZcHNXXJ1x397lPPExBredMfe6Z1AHgpMYUz8KApnj3kL5BRfr6ASFapDH_C7N5yaJQ61iJVFiRlGQqyrDS-R6gkoqqVU8VRqJTQolbNwQGTDW8YROZZxWFtvCWtqEk3pehbn8VEX41TVRAup9SH8slROxb7byob-1s_4ogdtp9vbU3D0Mrw65935zWWG81xYsYKhir3ibzwUMf2JHiaayzEYU1A/https://www.amazon.in/stores/page/641AA707-3424-4A95-9507-AD0AA25F026D/?_encoding=UTF8&store_ref=SB_A03813701QD8PBGTHPW8V-A0209912W590GYUFD527&pd_rd_plhdr=t&aaxitk=9d9d0aa22b4daf143e55ac837b071b0e&hsa_cr_id=4932820480102&lp_asins=B0D4DDPDRK%2CB08P9HD7JB%2CB09VDQ2ZS9&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=MBNuAxyzDj&ref_=sbx_be_s_3psl_mbd_mb1_hl&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                              - generic [ref=e1968]:
+                                - generic [ref=e1969]: Landline phones
+                                - generic [ref=e1970]: Landline phones
+                            - link "Shop Hola" [ref=e1971] [cursor=pointer]:
+                              - /url: https://aax-eu-zaz.amazon.in/x/c/JCt3YdPf92_KTPgcV1Q4YpQAAAGf9iQ5xAoAAAH2AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICCLnvei/clv1c_ek-wBPf3bbbaXiwWmeVx-eGWTim4kHjnxHYz7ZYuO9lIhX6I3F4ZhT7SlU2qz0HQrtdBlEebSP6zq5qsfoAdm3HxT9xDE-cJ0BKPzDvb5Oy-uh-lKLuYOTDBwnt9lsrhd-clv5PBxctcPh_cRK-BU-9X4dqShjVqkkzzxmfyjKccX2g7atCVQJ-ZHhRpNKFqmJVwX55QDEuItKV-ekzNmnINMfQ1zAb-voyHSROR4X7Bq0DUJEVzYQAxQD9X_xG2EMgaGzNW4EvFboBp0kwr5Yc-wHoY3fTtDUa1-_x0ykvxwNP8XP0FPEP8wuqjBtZ4RRYp1gTii9s1a68pyXzB_g3T6uQ94cAywgOLg5Zka2B-MqLcq03jOn8S1pjKehvwkZ49PtY98UvSwAouFudRBASrSSaBJXFiYQY_geED_z_YCrjT4maZ18247Dt4tymN1q9ToJ1KzlqLA3-WtampvNeTu06HPkpSoTkUec7Bby0twBwkpGLcif4lABTlVb3UAoN3zDcSmwHssh-vqKw_rAd-_TDhEGEeo4yLUeLRzcD-sTr8-P-O6Hz_7zEAYB4dGwCR8CDrqNndKQnjDZE5QxQeOnzAY0uLSWYAzkt2FM-U3a8TX7kcNhLP1_LpIRb8dD4jcuwGKWlw9YP3jnTVG_1alLPzM0-kcyQJYJYOQlEpUP5gnBawi2MQxmfNci0FSWEeDIzO9qWR6RGIs9oU68AVejSgM4_J3tK9A3m37svKOCuLw6aelVQFDjr5qDoaSHywFecW7WHDhSyyHS4nXOWc4WU68fv0zH5F2s88c2IG7Qo2_t4SuZFedp-cEmiX6YM4dnea0Un9MkaARUJVG3bmrIfWLU91oJ3WJ77wIJrNbGHbwL4EfPMQ0KREp3ucYk2P0am46tTUY7Eurbhc4u6pq5JYI-1UB3C06PJtmngH3yIrtumhtkkb-d8Qib32f6-Cl3nnIKs5LQxNq4qGdEAnmFBZcaQvm9kZuouPldfWumT1y0HhSv04ua3p7R6O488akzm1_OAnPVwA3DrbgtHaGk9xqFhuOB7I96Jc268H-2KQB9AElnbsxQJVN3xSk6fHp3mFZ2SVAjzNeRddYv7WHGkauDaY_MaydEaHYGSKrK61iHf4-oKF4gP_czlriqNLStHNb_UYzo9_Fo-OQm6_hUiRint1BCHOOz8sSKQrsveHn39Mg3bipik4UgKX3H42swqqLZerQFBpFgaqrSFRUglZ-2ACwqsAjEfjpW4Eh0GvmqRDp-SoLjL6CyYWSErLkY6iyUdeyTWNFjo0l1Chg-4TzsUAx-Hsa-oXaA4aTEwHRE7I55Otg3Mnbimi-C-PUdxVAXE7R6-aB5hm-0c_EDs6zRcH4TKSm5CvbsaegQPyuUXgFQDqmHRdnBLL6b5iLMJyBNmS3wKjh6i56Gcax7-RmAjMul2gQajX9rHhKVAru-9wrDylhaOamkOqXNc6JFzqL_8WJfwmzuZdDx8GyGg6O-zW0vMMK2UiZcHNXXJ1x397lPPExBredMfe6Z1AHgpMYUz8KApnj3kL5BRfr6ASFapDH_C7N5yaJQ61iJVFiRlGQqyrDS-R6gkoqqVU8VRqJTQolbNwQGTDW8YROZZxWFtvCWtqEk3pehbn8VEX41TVRAup9SH8slROxb7byob-1s_4ogdtp9vbU3D0Mrw65935zWWG81xYsYKhir3ibzwUMf2JHiaayzEYU1A/https://www.amazon.in/stores/page/641AA707-3424-4A95-9507-AD0AA25F026D/?_encoding=UTF8&store_ref=SB_A03813701QD8PBGTHPW8V-A0209912W590GYUFD527&pd_rd_plhdr=t&aaxitk=9d9d0aa22b4daf143e55ac837b071b0e&hsa_cr_id=4932820480102&lp_asins=B0D4DDPDRK%2CB08P9HD7JB%2CB09VDQ2ZS9&lp_query=samsung%20s25%20ultra%205g%20mobile&lp_slot=desktop-hsa-3psl&aref=MBNuAxyzDj&ref_=sbx_be_s_3psl_mbd_mb1_cta&pd_rd_w=OQr0y&content-id=amzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391%3Aamzn1.sym.302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_p=302b41b4-ce85-4496-a41e-0894a8c89391&pf_rd_r=R1X0SJ2C554QFBYAQW2D&pd_rd_wg=Tyu51&pd_rd_r=30ca9d68-f2d3-4bff-a34d-6e23372a470a
+                              - generic [ref=e1974]:
+                                - text: Shop
+                                - generic [ref=e1975]:
+                                  - text: Hola
+                                  - img [ref=e1976]
+          - generic [ref=e1983]:
+            - heading "Need help?" [level=2] [ref=e1986]
+            - generic [ref=e1987]:
+              - link "Visit the help section" [ref=e1988] [cursor=pointer]:
+                - /url: /gp/help/customer/display.html?nodeId=201889520
+              - text: or
+              - link "contact us" [ref=e1989] [cursor=pointer]:
+                - /url: /gp/help/customer/contact-us
+          - generic [ref=e1992]:
+            - iframe [ref=e1993]:
+              - generic [ref=f2e3]:
+                - generic [ref=f2e4]: Click to navigate to product detail page Sponsored Ad. Product image. Branded image. 10000mAh Power Bank Portable Slim Design with Dual USB Port Lithium Polymer Battery Compatible with iPhone, Samsung, OnePlus & All Smartphones- Black. 699.
+                - generic [ref=f2e7]:
+                  - img "Brand logo" [ref=f2e12]
+                  - img "Product image" [ref=f2e17]
+                - link "Click to navigate to product detail page" [ref=f2e21] [cursor=pointer]:
+                  - /url: https://aax-eu-zaz.amazon.in/x/c/RDkz0reh7vjMTFaC01BG0akAAAGf9iQ5qAoAAAH_AQBvbm9fdHhuX2JpZDIgICBvbm9fdHhuX2ltcDEgICBEd2f2/clv1c_ek-ggwfWLcTCTRHemQSlAV_6A6wWAE8T-9tbFJNscodPJMOLslYW5FLZAm_3eJ8q17GxTJkJbS8GfPBHBi1jO3yKW8t37K3Y8F1gAxOtyxcha9PrM6C6E1QF5_55hEg7vczeNgoeOwPWWgFszFXPLU_ijHUcF1HGVt78u4aFyPH87wnELBcr7M0iqGQqwKdu0i1Y2AAuWhHzcxa-DYmAce4VH2i4DXyqdpZgwGsW_f7_ojfMrcL_RyvKW8_rjAcj4Qntj7AndP1B-bAezEPgBFaGEzZGPdGMrLEhkILieP_hJxLTVGziJgZt9waFXDid0h5mJgIkiIZratTC108Lj5RuBI0rhWWMsRhv5yXWqSegZV2OFVz-Cba_W_9Xgln5QuMati_-6Nv9bpk7utbniIydMOMjOTkMiEMVROohg0Q4A_pss_aQ5ht-Iyz4WMjjEgNM46rb03uBtRac8NHGaA6r74u9UivID2nY8YT6nXqKTTvipZt3WO_aVJRpAoFCYXcv__zJcT4PSKCfrBSk8BGuybjJM_afSlj58V-W0Rqd3mpYS0gmk7415xfOocq_BglQBWo69VMwQx3PfvFyVSooEeyCJthCJ2FnLegRFP_0EkScRKf8Er9gJ2PRO9HnIUBBf5NUaOlWxa9uJpdRrw8oipWs655lEtjd1wQy8SpngNh0Sv2u-ih19cb_j2eQhRp0XtcBNANh1E9aOJnn5-JNgYaYXvy7FE61XSCrBOzf-Q6PlZwzLzTA6rmT-agzj4yIhG62xjQFKTbw5xGDes5tNwj55zqtcc5lhki-3boJQP26V5IEcIacw_-mzSEACPrP9f7G2OK5iVmM6QoK0Cx0Fcq2Q-M2B3U7ATk3Fd2vSjovLyaGjq6icbdUUOaQhJqy4BPR4_o6pc7cakdmQMbxkwSohjcvFt1Mm1su5VqIvF_jPHu7yRPW-QHZrMd1q-nQt1YvfzBdtJ1P8r0naNpv3hLMj23NzVOHTfQKDkvx2_P_xEWHcL2yBr7XguyUiAgQnRIKjy-G9rDPLLLQUZD2nNodLPLG/http://www.amazon.in/dp/B0FJMRF4CM/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pd_rd_plhdr=t&aref=us8vY5uP1Q
+            - button "Leave feedback on Sponsored advertisement" [ref=e1995] [cursor=pointer]:
+              - generic [ref=e1996]: Sponsored
+        - link "Go back to filtering menu" [ref=e1998] [cursor=pointer]:
+          - /url: "#s-skipLinkTargetForFilterOptions"
+      - dialog "Filters" [ref=e1999]:
+        - generic [ref=e2000]:
+          - link "Skip to main search results" [ref=e2001] [cursor=pointer]:
+            - /url: "#s-skipLinkTargetForMainSearchResults"
+          - generic [ref=e2003]:
+            - generic [ref=e2007]:
+              - group "Deals & Discounts" [ref=e2008]:
+                - heading "Deals & Discounts" [level=2] [ref=e2009]
+                - list "Deals & Discounts" [ref=e2010]:
+                  - listitem [ref=e2011]:
+                    - link "Freedom Sale Deals" [ref=e2013] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_deal_type%3A26921224031&dc&qid=1786540996&rnid=26921223031&ref=sr_nr_p_n_deal_type_1&ds=v1%3AcHPwg1y2Wk8ld30Fy9F3EYVNfWkWURJV10FzETV%2FEPA
+              - group "Delivery Day" [ref=e2014]:
+                - heading "Delivery Day" [level=2] [ref=e2015]
+                - list "Delivery Day" [ref=e2016]:
+                  - listitem [ref=e2017]:
+                    - link "Apply the filter Get It by Tomorrow to narrow results" [ref=e2019] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_90%3A6741118031&dc&qid=1786540996&rnid=6741116031&ref=sr_nr_p_90_1&ds=v1%3Ap7eXW9Uck3SpLn%2Fa4c4G10fq%2B2a%2FPhAliWbIBe%2F9R5U
+                      - checkbox [ref=e2022]
+                      - text: Get It by Tomorrow
+                  - listitem [ref=e2024]:
+                    - link "Apply the filter Get It in 2 Days to narrow results" [ref=e2026] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_90%3A20912642031&dc&qid=1786540996&rnid=6741116031&ref=sr_nr_p_90_2&ds=v1%3AnrRyqBSvvZjUCSCuEm1HRABGUYqm6EFi8Oiwv3VFhYE
+                      - checkbox [ref=e2029]
+                      - text: Get It in 2 Days
+                - heading "Eligible for Free Delivery" [level=2] [ref=e2031]
+                - list "Eligible for Free Delivery" [ref=e2032]:
+                  - listitem [ref=e2033]:
+                    - link "Apply the filter Free Shipping to narrow results" [ref=e2035] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_free_shipping_eligible%3A205563695031&dc&qid=1786540996&rnid=205563694031&ref=sr_nr_p_n_free_shipping_eligible_1&ds=v1%3AOTfRAMgs%2BPBsIjHftHQGzUeXDBfI6uUOSwx0S5YUaHc
+                      - checkbox [ref=e2038]
+                      - text: Free Shipping
+                      - generic [ref=e2040]: Get FREE Shipping on eligible orders shipped by Amazon
+              - group "Brands" [ref=e2041]:
+                - heading "Brands" [level=2] [ref=e2042]
+                - list "Brands" [ref=e2043]:
+                  - listitem [ref=e2044]:
+                    - link "Apply the filter Samsung to narrow results" [ref=e2046] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_123%3A46655&dc&qid=1786540996&rnid=91049095031&ref=sr_nr_p_123_1&ds=v1%3A8gPQVW2b9THqaFdAQilmwXVOpXXjkrGrElkqn%2FfktCA
+                      - checkbox [ref=e2049]
+                      - text: Samsung
+                  - listitem [ref=e2051]:
+                    - link "Apply the filter iQOO to narrow results" [ref=e2053] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_123%3A646111&dc&qid=1786540996&rnid=91049095031&ref=sr_nr_p_123_2&ds=v1%3AQrxj8Oaq5eNOWbNsXfP4CfGWwyJ1tDUqXTnXB4rl35A
+                      - checkbox [ref=e2056]
+                      - text: iQOO
+              - group "Storage Capacity" [ref=e2058]:
+                - heading "Storage Capacity" [level=2] [ref=e2059]
+                - list "Storage Capacity" [ref=e2060]:
+                  - listitem [ref=e2061]:
+                    - link "Apply the filter 128 GB to narrow results" [ref=e2063] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003492455111%3A81332994031&dc&qid=1786540996&rnid=44349045031&ref=sr_nr_p_n_g-1003492455111_1&ds=v1%3Aqx%2BuvNNqP1r%2B4inlDLiSzXoG4JWzprNFBixvHVoV%2F9w
+                      - checkbox [ref=e2066]
+                      - text: 128 GB
+                  - listitem [ref=e2068]:
+                    - link "Apply the filter 256 GB to narrow results" [ref=e2070] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003492455111%3A81332996031&dc&qid=1786540996&rnid=44349045031&ref=sr_nr_p_n_g-1003492455111_2&ds=v1%3AFXdtZQ028%2Fm9LBFk9zYNFiyICtVG7xhyMyIbZMWDB9w
+                      - checkbox [ref=e2073]
+                      - text: 256 GB
+              - group "Customer Reviews" [ref=e2075]:
+                - heading "Customer Reviews" [level=2] [ref=e2076]
+                - list "Customer Reviews" [ref=e2077]:
+                  - listitem [ref=e2078]:
+                    - link "Apply the filter 4 Stars & Up to narrow results" [ref=e2081] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_72%3A1318476031&dc&qid=1786540996&rnid=1318475031&ref=sr_nr_p_72_1&ds=v1%3AawktvtlN25VrufRAoL%2FDf7syRFCQ7s%2BaOHEsy4BcnP4
+                      - generic [ref=e2083]: 4 Stars
+                      - text: "& Up"
+              - group "RAM Size" [ref=e2084]:
+                - heading "RAM Size" [level=2] [ref=e2085]
+                - list "RAM Size" [ref=e2086]:
+                  - listitem [ref=e2087]:
+                    - link "Apply the filter 6 to 7.9 GB to narrow results" [ref=e2089] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003495121111%3A44897287031&dc&qid=1786540996&rnid=44897277031&ref=sr_nr_p_n_g-1003495121111_1&ds=v1%3ATGXYMtUBcyM%2FEFz%2Bo1LqTY0XBo232%2FYyVq2i6TUagEo
+                      - checkbox [ref=e2092]
+                      - text: 6 to 7.9 GB
+                  - listitem [ref=e2094]:
+                    - link "Apply the filter 8 to 9.9 GB to narrow results" [ref=e2096] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003495121111%3A44897288031&dc&qid=1786540996&rnid=44897277031&ref=sr_nr_p_n_g-1003495121111_2&ds=v1%3A2wMknF%2FIV6rabQryf9JveUCLx95lmBAgY95pQ7zayEU
+                      - checkbox [ref=e2099]
+                      - text: 8 to 9.9 GB
+                  - listitem [ref=e2101]:
+                    - link "Apply the filter 10 GB & Above to narrow results" [ref=e2103] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003495121111%3A44897292031&dc&qid=1786540996&rnid=44897277031&ref=sr_nr_p_n_g-1003495121111_3&ds=v1%3AKtdMsWJljhOtRzEU31MJPUjiUGVrZ2zDL3sgbmOakE4
+                      - checkbox [ref=e2106]
+                      - text: 10 GB & Above
+              - group "Item Condition" [ref=e2108]:
+                - heading "Item Condition" [level=2] [ref=e2109]
+                - list "Item Condition" [ref=e2110]:
+                  - listitem [ref=e2111]:
+                    - link "Apply the filter New to narrow results" [ref=e2113] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_condition-type%3A8609960031&dc&qid=1786540996&rnid=8609959031&ref=sr_nr_p_n_condition-type_1&ds=v1%3ARCFt7iou1ym8RfZI3ez0wowwoWr47MeeQKRjncgQTBw
+                      - checkbox [ref=e2116]
+                      - text: New
+              - group [ref=e2118]:
+                - generic [ref=e2119]:
+                  - generic [ref=e2120]: Price
+                  - generic [ref=e2123]:
+                    - generic [ref=e2124]:
+                      - generic [ref=e2125]: ₹24,900
+                      - generic [ref=e2126]: –
+                      - generic [ref=e2127]: ₹165,800+
+                    - generic [ref=e2129]:
+                      - generic:
+                        - slider "Minimum price": "0"
+                      - generic [ref=e2130]:
+                        - slider "Maximum price": "175"
+                - list [ref=e2131]:
+                  - listitem [ref=e2132]:
+                    - link "Up to ₹78,000" [ref=e2134] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_36%3A-7800000&dc&qid=1786540996&rnid=1318502031&ref=sr_nr_p_36_1&ds=v1%3AhRjYNCSOEDuaf0JeCBknn6DCEVtmfEP9OAwE2h2goJU
+                  - listitem [ref=e2135]:
+                    - link "₹78,000 - ₹175,000" [ref=e2137] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_36%3A7800000-17500000&dc&qid=1786540996&rnid=1318502031&ref=sr_nr_p_36_2&ds=v1%3A7FF36kHrGq5LQUNrlH1fwBeDSTS%2FGDpSynq6qq5XOzU
+                  - listitem [ref=e2138]:
+                    - link "Over ₹175,000" [ref=e2140] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_36%3A17500000-&dc&qid=1786540996&rnid=1318502031&ref=sr_nr_p_36_3&ds=v1%3AF1BhMmQQ9AAtRHXlKUn3SReWeboYH7I6pKJ3DsxdtYs
+              - group "Battery Capacity" [ref=e2141]:
+                - heading "Battery Capacity" [level=2] [ref=e2142]
+                - list "Battery Capacity" [ref=e2143]:
+                  - listitem [ref=e2144]:
+                    - link "Apply the filter 4,000 to 4,999 mAh to narrow results" [ref=e2146] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015098008111%3A91805325031&dc&qid=1786540996&rnid=91805324031&ref=sr_nr_p_n_g-101015098008111_1&ds=v1%3AIoDMYYTE9yXjEIQmx0749Tt3PCStxdc7ju69Smyq50Q
+                      - checkbox [ref=e2149]
+                      - text: 4,000 to 4,999 mAh
+                  - listitem [ref=e2151]:
+                    - link "Apply the filter 6,000 mAh & Above to narrow results" [ref=e2153] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015098008111%3A92071917031&dc&qid=1786540996&rnid=91805324031&ref=sr_nr_p_n_g-101015098008111_2&ds=v1%3AtFv2jJeAu6RedmDK9N%2BFM4pZgvB226hg%2BLCRpcuh%2B0I
+                      - checkbox [ref=e2156]
+                      - text: 6,000 mAh & Above
+              - group "Discount" [ref=e2158]:
+                - heading "Discount" [level=2] [ref=e2159]
+                - list "Discount" [ref=e2160]:
+                  - listitem [ref=e2161]:
+                    - link "10% Off or more" [ref=e2163] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_pct-off-with-tax%3A2665399031&dc&qid=1786540996&rnid=2665398031&ref=sr_nr_p_n_pct-off-with-tax_1&ds=v1%3ACig29MtFnqImTxCFkxF%2F6OOZUtm1RD0LTDu1zjSaU8E
+                  - listitem [ref=e2164]:
+                    - generic [ref=e2165]: 25% Off or more
+                  - listitem [ref=e2166]:
+                    - generic [ref=e2167]: 35% Off or more
+                  - listitem [ref=e2168]:
+                    - generic [ref=e2169]: 50% Off or more
+                  - listitem [ref=e2170]:
+                    - generic [ref=e2171]: 60% Off or more
+                  - listitem [ref=e2172]:
+                    - generic [ref=e2173]: 70% Off or more
+              - group "Cellular Technology" [ref=e2174]:
+                - heading "Cellular Technology" [level=2] [ref=e2175]
+                - list "Cellular Technology" [ref=e2176]:
+                  - listitem [ref=e2177]:
+                    - link "Apply the filter 5G to narrow results" [ref=e2179] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003469290111%3A33962382031&dc&qid=1786540996&rnid=33962288031&ref=sr_nr_p_n_g-1003469290111_1&ds=v1%3AINpX4oQ5mjtKKLrwwuvi0Y3laEHx3jS7cyd0Ad%2B0W2s
+                      - checkbox [ref=e2182]
+                      - text: 5G
+              - group "Display Type" [ref=e2184]:
+                - heading "Display Type" [level=2] [ref=e2185]
+                - list "Display Type" [ref=e2186]:
+                  - listitem [ref=e2187]:
+                    - link "Apply the filter AMOLED to narrow results" [ref=e2189] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101013595158111%3A66009619031&dc&qid=1786540996&rnid=66009617031&ref=sr_nr_p_n_g-101013595158111_1&ds=v1%3A2YGU9EHd6%2FTyylXWsWBrF5ZER3YpUIX8WUXvweTjRbk
+                      - checkbox [ref=e2192]
+                      - text: AMOLED
+                  - listitem [ref=e2194]:
+                    - link "Apply the filter LCD to narrow results" [ref=e2196] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101013595158111%3A66009618031&dc&qid=1786540996&rnid=66009617031&ref=sr_nr_p_n_g-101013595158111_2&ds=v1%3AOlNmIkx4HpRWoP3RIQU%2Bk0mL6j8Bguljy9TWUMXE9Sw
+                      - checkbox [ref=e2199]
+                      - text: LCD
+              - group "Mobile Phone Primary Camera Resolution" [ref=e2201]:
+                - heading "Mobile Phone Primary Camera Resolution" [level=2] [ref=e2202]
+                - list "Mobile Phone Primary Camera Resolution" [ref=e2203]:
+                  - listitem [ref=e2204]:
+                    - link "Apply the filter 32 MP & Above to narrow results" [ref=e2206] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_feature_fourteen_browse-bin%3A21329559031&dc&qid=1786540996&rnid=21345983031&ref=sr_nr_p_n_feature_fourteen_browse-bin_1&ds=v1%3AAjwor%2BxnV7ypq2snrQ79QUDUkvu2sKWMy%2Fil7SEuWQo
+                      - checkbox [ref=e2209]
+                      - text: 32 MP & Above
+              - group "Camera Resolution" [ref=e2211]:
+                - heading "Camera Resolution" [level=2] [ref=e2212]
+                - list "Camera Resolution" [ref=e2213]:
+                  - listitem [ref=e2214]:
+                    - link "Apply the filter 20 MP & above to narrow results" [ref=e2216] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1004151207091%3A1898707031&dc&qid=1786540996&rnid=1898694031&ref=sr_nr_p_n_g-1004151207091_1&ds=v1%3A%2F1XUSV0W7n37cMudkfQjHcpRvTdRgHSJSM88SdNIJbM
+                      - checkbox [ref=e2219]
+                      - text: 20 MP & above
+              - group "Processor Speed" [ref=e2221]:
+                - heading "Processor Speed" [level=2] [ref=e2222]
+                - list "Processor Speed" [ref=e2223]:
+                  - listitem [ref=e2224]:
+                    - link "Apply the filter 2.5 GHz & Above to narrow results" [ref=e2226] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_feature_nine_browse-bin%3A8561127031&dc&qid=1786540996&rnid=8561123031&ref=sr_nr_p_n_feature_nine_browse-bin_1&ds=v1%3AHkoOH%2FIHLAQ9rCvRRQX2k3Aso7j5%2B7RBV%2BdBqiioTuA
+                      - checkbox [ref=e2229]
+                      - text: 2.5 GHz & Above
+              - group "Colour" [ref=e2231]:
+                - heading "Colour" [level=2] [ref=e2232]
+                - list "Colour" [ref=e2233]:
+                  - listitem [ref=e2234]:
+                    - generic:
+                      - link "Apply the filter Black to narrow results":
+                        - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_size_two_browse-vebin%3A15563995031&dc&qid=1786540996&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_1&ds=v1%3AMsfTqCGQKDNzwiSQsFYOlzuVRPYDgydeuScBQhB2BqI
+                  - listitem [ref=e2236]:
+                    - generic:
+                      - link "Apply the filter Blue to narrow results":
+                        - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_size_two_browse-vebin%3A15564007031&dc&qid=1786540996&rnid=15563994031&ref=sr_nr_p_n_size_two_browse-vebin_2&ds=v1%3A2pi352DvXdjHZEyjMBtA%2BijBZ3oolr6DUQH5R4KYqxQ
+              - group "Pay On Delivery" [ref=e2238]:
+                - heading "Pay On Delivery" [level=2] [ref=e2239]
+                - list "Pay On Delivery" [ref=e2240]:
+                  - listitem [ref=e2241]:
+                    - link "Apply the filter Eligible for Pay On Delivery to narrow results" [ref=e2243] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_is_cod_eligible%3A4931671031&dc&qid=1786540996&rnid=4931670031&ref=sr_nr_p_n_is_cod_eligible_1&ds=v1%3APYaix8%2FLFca2LeXVbxoky4GhkdgOKpentLAF36McFJU
+                      - checkbox [ref=e2246]
+                      - text: Eligible for Pay On Delivery
+              - group "SIM Card Slot Count" [ref=e2248]:
+                - heading "SIM Card Slot Count" [level=2] [ref=e2249]
+                - list "SIM Card Slot Count" [ref=e2250]:
+                  - listitem [ref=e2251]:
+                    - link "Apply the filter Dual SIM to narrow results" [ref=e2253] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002989427111%3A27179459031&dc&qid=1786540996&rnid=27179439031&ref=sr_nr_p_n_g-1002989427111_1&ds=v1%3AZd2lrVsbxSpqMV4xb7hXQHr0kOYwGwtr4Km7xms2cNM
+                      - checkbox [ref=e2256]
+                      - text: Dual SIM
+              - group "Screen Size" [ref=e2258]:
+                - heading "Screen Size" [level=2] [ref=e2259]
+                - list "Screen Size" [ref=e2260]:
+                  - listitem [ref=e2261]:
+                    - link "Apply the filter 15 to 17.9 cm to narrow results" [ref=e2263] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_feature_browse-bin%3A212266964031&dc&qid=1786540996&rnid=212266959031&ref=sr_nr_p_n_feature_browse-bin_1&ds=v1%3AwlIkbOxkZOxEPP3K71zUpqunL5oInXRJWfXw%2BZI%2Bo3U
+                      - checkbox [ref=e2266]
+                      - text: 15 to 17.9 cm
+                  - listitem [ref=e2268]:
+                    - link "Apply the filter 18 cm & above to narrow results" [ref=e2270] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_feature_browse-bin%3A212266967031&dc&qid=1786540996&rnid=212266959031&ref=sr_nr_p_n_feature_browse-bin_2&ds=v1%3Aj9w%2F18TO61mZHCmu0R3isY8mkvG3Oo4hZa7FU0T7oP4
+                      - checkbox [ref=e2273]
+                      - text: 18 cm & above
+              - group "Availability" [ref=e2275]:
+                - heading "Availability" [level=2] [ref=e2276]
+                - list "Availability" [ref=e2277]:
+                  - listitem [ref=e2278]:
+                    - link "Apply the filter Include Out of Stock to narrow results" [ref=e2280] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_availability%3A1318485031&dc&qid=1786540996&rnid=1318483031&ref=sr_nr_p_n_availability_2&ds=v1%3ANdO78ff2BoUj32naojUCXDJ1GDBCl2Z%2Bl%2FAM3L2%2FqLU
+                      - checkbox [ref=e2283]
+                      - text: Include Out of Stock
+              - group "Front Camera Resolution" [ref=e2285]:
+                - heading "Front Camera Resolution" [level=2] [ref=e2286]
+                - list "Front Camera Resolution" [ref=e2287]:
+                  - listitem [ref=e2288]:
+                    - link "Apply the filter 10.0 to 12.9 MP to narrow results" [ref=e2290] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003565058111%3A61505199031&dc&qid=1786540996&rnid=61505195031&ref=sr_nr_p_n_g-1003565058111_1&ds=v1%3AmSoAqWEKWdYOswp4LpJ1THD2UfQq6In4gGc2DlM82X0
+                      - checkbox [ref=e2293]
+                      - text: 10.0 to 12.9 MP
+                  - listitem [ref=e2295]:
+                    - link "Apply the filter 13.0 MP & above to narrow results" [ref=e2297] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003565058111%3A61505197031&dc&qid=1786540996&rnid=61505195031&ref=sr_nr_p_n_g-1003565058111_2&ds=v1%3A5MOL2aLpf30VuHP43z%2B0j9ezN9nrb0VMwE81aYWxJUg
+                      - checkbox [ref=e2300]
+                      - text: 13.0 MP & above
+              - group "Video Capture Resolution" [ref=e2302]:
+                - heading "Video Capture Resolution" [level=2] [ref=e2303]
+                - list "Video Capture Resolution" [ref=e2304]:
+                  - listitem [ref=e2305]:
+                    - link "Apply the filter 4k to narrow results" [ref=e2307] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003305462111%3A28430294031&dc&qid=1786540996&rnid=28430291031&ref=sr_nr_p_n_g-1003305462111_1&ds=v1%3AvIx%2BmxaQn823T9RleKx3PMVPgK7MJXwAM8qHwkNpPgE
+                      - checkbox [ref=e2310]
+                      - text: 4k
+                  - listitem [ref=e2312]:
+                    - link "Apply the filter 8k to narrow results" [ref=e2314] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003305462111%3A28430296031&dc&qid=1786540996&rnid=28430291031&ref=sr_nr_p_n_g-1003305462111_2&ds=v1%3AP4YbBaY4jNj%2FQ4IgxDP3cTClVIRGei7dweug40nN%2FG0
+                      - checkbox [ref=e2317]
+                      - text: 8k
+              - group "Security Feature" [ref=e2319]:
+                - heading "Security Feature" [level=2] [ref=e2320]
+                - list "Security Feature" [ref=e2321]:
+                  - listitem [ref=e2322]:
+                    - link "Apply the filter Fingerprint Recognition to narrow results" [ref=e2324] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002085472111%3A27355812031&dc&qid=1786540996&rnid=27355796031&ref=sr_nr_p_n_g-1002085472111_1&ds=v1%3A0PBHKAklcgymqgPHReipbv016dDo85kRhCCkjyhoHOI
+                      - checkbox [ref=e2327]
+                      - text: Fingerprint Recognition
+              - group "Connectivity" [ref=e2329]:
+                - heading "Connectivity" [level=2] [ref=e2330]
+                - list "Connectivity" [ref=e2331]:
+                  - listitem [ref=e2332]:
+                    - link "Apply the filter Bluetooth to narrow results" [ref=e2334] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002112230111%3A27363277031&dc&qid=1786540996&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_1&ds=v1%3AXh4hI7iqenLVqauOPUmUA%2FAmdQq7eBL%2Fvza0UIc7YmA
+                      - checkbox [ref=e2337]
+                      - text: Bluetooth
+                  - listitem [ref=e2339]:
+                    - link "Apply the filter Infrared to narrow results" [ref=e2341] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002112230111%3A27363275031&dc&qid=1786540996&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_2&ds=v1%3A5g6NgFsihi066Z0LLZU%2BQFG5MERHXtEoMWjO%2BNHaoJY
+                      - checkbox [ref=e2344]
+                      - text: Infrared
+                  - listitem [ref=e2346]:
+                    - link "Apply the filter NFC to narrow results" [ref=e2348] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002112230111%3A27363279031&dc&qid=1786540996&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_3&ds=v1%3AU9r8szTp8rejvAc92fMbObdjNJyGCPBzWK3YPBTN8nE
+                      - checkbox [ref=e2351]
+                      - text: NFC
+                  - listitem [ref=e2353]:
+                    - link "Apply the filter USB to narrow results" [ref=e2355] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002112230111%3A27363276031&dc&qid=1786540996&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_4&ds=v1%3AYZKlaJlxlCIkpLr3mL55tgb9wqPxYpoHy8jRLteYx28
+                      - checkbox [ref=e2358]
+                      - text: USB
+                  - listitem [ref=e2360]:
+                    - link "Apply the filter Wi-Fi to narrow results" [ref=e2362] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002112230111%3A27363278031&dc&qid=1786540996&rnid=27363274031&ref=sr_nr_p_n_g-1002112230111_5&ds=v1%3AxrrsIDqNXtDy5cIQdZbUv5lYyXDv4S7EmSJvKsVa6To
+                      - checkbox [ref=e2365]
+                      - text: Wi-Fi
+              - group "Seller" [ref=e2367]:
+                - heading "Seller" [level=2] [ref=e2368]
+                - list "Seller" [ref=e2369]:
+                  - listitem [ref=e2370]:
+                    - link "Apply the filter Clicktech Retail Private Ltd to narrow results" [ref=e2372] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_6%3AAJ6SIZC8YQDZX&dc&qid=1786540996&rnid=1318474031&ref=sr_nr_p_6_1&ds=v1%3AGDgh8%2F13ndxiUSvuCaL31kN1enhTGE41vBHgeFFQ3UY
+                      - checkbox [ref=e2375]
+                      - text: Clicktech Retail Private Ltd
+                  - listitem [ref=e2377]:
+                    - link "Apply the filter Clicktech Business to narrow results" [ref=e2379] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_6%3AA34RBS7MAVZ4G4&dc&qid=1786540996&rnid=1318474031&ref=sr_nr_p_6_2&ds=v1%3AlZ0CEkTsQETiLy6DvnmS1TvN80%2FiivvEWv9zLU%2BOX0c
+                      - checkbox [ref=e2382]
+                      - text: Clicktech Business
+                  - listitem [ref=e2384]:
+                    - button "See more, Seller" [ref=e2387] [cursor=pointer]: See more
+              - group "Rear Camera Photo Sensor Resolution" [ref=e2389]:
+                - heading "Rear Camera Photo Sensor Resolution" [level=2] [ref=e2390]
+                - list "Rear Camera Photo Sensor Resolution" [ref=e2391]:
+                  - listitem [ref=e2392]:
+                    - link "Apply the filter 10 to 12.9 MP to narrow results" [ref=e2394] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003477899111%3A42253777031&dc&qid=1786540996&rnid=42253749031&ref=sr_nr_p_n_g-1003477899111_1&ds=v1%3AzNQhDXC6ivPxKSgCaEIW2ztLG4DduIzHxbsdTgtlKh8
+                      - checkbox [ref=e2397]
+                      - text: 10 to 12.9 MP
+                  - listitem [ref=e2399]:
+                    - link "Apply the filter 16 MP & Above to narrow results" [ref=e2401] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003477899111%3A42253778031&dc&qid=1786540996&rnid=42253749031&ref=sr_nr_p_n_g-1003477899111_2&ds=v1%3A9utpPs4QZ3ME85GLKUV%2FvydHurxus6ySyI3JAUuXOLU
+                      - checkbox [ref=e2404]
+                      - text: 16 MP & Above
+              - group "Connector Type" [ref=e2406]:
+                - heading "Connector Type" [level=2] [ref=e2407]
+                - list "Connector Type" [ref=e2408]:
+                  - listitem [ref=e2409]:
+                    - link "Apply the filter USB Type C to narrow results" [ref=e2411] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002085485111%3A27403491031&dc&qid=1786540996&rnid=27403487031&ref=sr_nr_p_n_g-1002085485111_1&ds=v1%3AwJfP7E99Kxt%2B%2B6uOohaeSZWMCkBp8HkDMjAoIt2hGYY
+                      - checkbox [ref=e2414]
+                      - text: USB Type C
+              - group "Weight" [ref=e2416]:
+                - heading "Weight" [level=2] [ref=e2417]
+                - list "Weight" [ref=e2418]:
+                  - listitem [ref=e2419]:
+                    - link "Apply the filter 142 to 197.9 g to narrow results" [ref=e2421] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003491669111%3A42659588031&dc&qid=1786540996&rnid=42659587031&ref=sr_nr_p_n_g-1003491669111_1&ds=v1%3AaB8O1JZF9ebPmEOEblIqgixmqljJSGh8U3OBIs5GfmQ
+                      - checkbox [ref=e2424]
+                      - text: 142 to 197.9 g
+                  - listitem [ref=e2426]:
+                    - link "Apply the filter 198 to 254.9 g to narrow results" [ref=e2428] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003491669111%3A42659589031&dc&qid=1786540996&rnid=42659587031&ref=sr_nr_p_n_g-1003491669111_2&ds=v1%3AZeCEzLI5RG1ejST9pLlry0oFVskeBVCcnW2KsnMOY3s
+                      - checkbox [ref=e2431]
+                      - text: 198 to 254.9 g
+              - group "New Arrivals" [ref=e2433]:
+                - heading "New Arrivals" [level=2] [ref=e2434]
+                - list "New Arrivals" [ref=e2435]:
+                  - listitem [ref=e2436]:
+                    - link "Last 90 days" [ref=e2438] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_date_first_available_absolute%3A1318488031&dc&qid=1786540996&rnid=1318486031&ref=sr_nr_p_n_date_first_available_absolute_1&ds=v1%3AFbE2oaI%2BywwrIL2wjUlE7TExNDrGj3bvEOC1cA9AFwI
+              - group "Included Components" [ref=e2439]:
+                - heading "Included Components" [level=2] [ref=e2440]
+                - list "Included Components" [ref=e2441]:
+                  - listitem [ref=e2442]:
+                    - link "Apply the filter Quick Start Guide to narrow results" [ref=e2444] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101013594324111%3A213480632031&dc&qid=1786540996&rnid=66008593031&ref=sr_nr_p_n_g-101013594324111_1&ds=v1%3AyY5tofBPD1fnJ3bkl2IUuO0utXq9ShWMqdB3YoVdDyc
+                      - checkbox [ref=e2447]
+                      - text: Quick Start Guide
+              - group "Battery Life" [ref=e2449]:
+                - heading "Battery Life" [level=2] [ref=e2450]
+                - list "Battery Life" [ref=e2451]:
+                  - listitem [ref=e2452]:
+                    - link "Apply the filter 19 h & above to narrow results" [ref=e2454] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1003486052111%3A42062130031&dc&qid=1786540996&rnid=42062008031&ref=sr_nr_p_n_g-1003486052111_1&ds=v1%3A%2FUa5A2gB4q%2FttQm3GLqqe3ImKZ%2BOOfGYvNgRNz%2BDhlM
+                      - checkbox [ref=e2457]
+                      - text: 19 h & above
+              - group "Country of Origin" [ref=e2459]:
+                - heading "Country of Origin" [level=2] [ref=e2460]
+                - list "Country of Origin" [ref=e2461]:
+                  - listitem [ref=e2462]:
+                    - link "Apply the filter India to narrow results" [ref=e2464] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_country_of_origin-bin%3AIN&dc&qid=1786540996&rnid=215263484031&ref=sr_nr_p_country_of_origin-bin_1&ds=v1%3ADIzu9Yo74BgDaGI0x8E7P%2BSlqlUfof5sG1nAAUV2uqE
+                      - checkbox [ref=e2467]
+                      - text: India
+              - group "Wireless Network Technology" [ref=e2469]:
+                - heading "Wireless Network Technology" [level=2] [ref=e2470]
+                - list "Wireless Network Technology" [ref=e2471]:
+                  - listitem [ref=e2472]:
+                    - link "Apply the filter GSM to narrow results" [ref=e2474] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015498571111%3A100436155031&dc&qid=1786540996&rnid=100436133031&ref=sr_nr_p_n_g-101015498571111_1&ds=v1%3AaLg0aPP0BKe85%2FMJz51cE7%2BQOpC6RaixkuXKg9uSYk8
+                      - checkbox [ref=e2477]
+                      - text: GSM
+                  - listitem [ref=e2479]:
+                    - link "Apply the filter Bluetooth to narrow results" [ref=e2481] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015498571111%3A207962825031&dc&qid=1786540996&rnid=100436133031&ref=sr_nr_p_n_g-101015498571111_2&ds=v1%3AoyPB0oxHCt68L%2BklaFduUaA3IQjt3ElfKu5Cr2Y%2ByLA
+                      - checkbox [ref=e2484]
+                      - text: Bluetooth
+                  - listitem [ref=e2486]:
+                    - link "Apply the filter Wi-Fi to narrow results" [ref=e2488] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015498571111%3A100436151031&dc&qid=1786540996&rnid=100436133031&ref=sr_nr_p_n_g-101015498571111_3&ds=v1%3AGl%2B6T4o9zhjd%2FhHjGU75FmrMfwejVvdG2zc0nyPBbrE
+                      - checkbox [ref=e2491]
+                      - text: Wi-Fi
+              - group "Input" [ref=e2493]:
+                - heading "Input" [level=2] [ref=e2494]
+                - list "Input" [ref=e2495]:
+                  - listitem [ref=e2496]:
+                    - link "Apply the filter Touchscreen to narrow results" [ref=e2498] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002097072111%3A27362061031&dc&qid=1786540996&rnid=27362059031&ref=sr_nr_p_n_g-1002097072111_1&ds=v1%3ArCxutTV9U1Grt6t1YFC7Ajexpkk7EoCCCSZNO02Ebhk
+                      - checkbox [ref=e2501]
+                      - text: Touchscreen
+              - group "Supported Satellite Navigation System" [ref=e2503]:
+                - heading "Supported Satellite Navigation System" [level=2] [ref=e2504]
+                - list "Supported Satellite Navigation System" [ref=e2505]:
+                  - listitem [ref=e2506]:
+                    - link "Apply the filter BeiDou to narrow results" [ref=e2508] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015498432111%3A100424900031&dc&qid=1786540996&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_1&ds=v1%3Avfd2TMf1UvQVHQn%2F3UKU7UJo40Shjiu8CUhUlehuSWQ
+                      - checkbox [ref=e2511]
+                      - text: BeiDou
+                  - listitem [ref=e2513]:
+                    - link "Apply the filter GLONASS to narrow results" [ref=e2515] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015498432111%3A100424903031&dc&qid=1786540996&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_2&ds=v1%3AoKH6z8tnrOWobgLrkbj2hQ2CMqxP0cX8LNrE%2BBTwNio
+                      - checkbox [ref=e2518]
+                      - text: GLONASS
+                  - listitem [ref=e2520]:
+                    - link "Apply the filter GPS to narrow results" [ref=e2522] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015498432111%3A100424905031&dc&qid=1786540996&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_3&ds=v1%3AlLdqcXC5EbgbTc73rxw26nOj24NepeOu2O8SxqJY0s4
+                      - checkbox [ref=e2525]
+                      - text: GPS
+                  - listitem [ref=e2527]:
+                    - link "Apply the filter Galileo to narrow results" [ref=e2529] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015498432111%3A100424904031&dc&qid=1786540996&rnid=100424895031&ref=sr_nr_p_n_g-101015498432111_4&ds=v1%3Abd0i41NElKN6dLUq8hrZRFUuo2dHpumw7fmG66yxY0I
+                      - checkbox [ref=e2532]
+                      - text: Galileo
+              - group "Flash" [ref=e2534]:
+                - heading "Flash" [level=2] [ref=e2535]
+                - list "Flash" [ref=e2536]:
+                  - listitem [ref=e2537]:
+                    - link "Apply the filter LED to narrow results" [ref=e2539] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015500208111%3A100427321031&dc&qid=1786540996&rnid=100427311031&ref=sr_nr_p_n_g-101015500208111_1&ds=v1%3A41Po2%2B8%2Bhmy9I6Ydyi47Sy1EEOtMXFrnvf5KbCOvAZ8
+                      - checkbox [ref=e2542]
+                      - text: LED
+              - group "Display Refresh Rate in Hertz" [ref=e2544]:
+                - heading "Display Refresh Rate in Hertz" [level=2] [ref=e2545]
+                - list "Display Refresh Rate in Hertz" [ref=e2546]:
+                  - listitem [ref=e2547]:
+                    - link "Apply the filter 120 to narrow results" [ref=e2549] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101017397158111%3A214852071031&dc&qid=1786540996&rnid=214852064031&ref=sr_nr_p_n_g-101017397158111_1&ds=v1%3AhH4%2FxWf1dfz8b%2FsaR6XOzPsIOaqlCHPUMh9hCz5nck8
+                      - checkbox [ref=e2552]
+                      - text: "120"
+              - group "Battery Type" [ref=e2554]:
+                - heading "Battery Type" [level=2] [ref=e2555]
+                - list "Battery Type" [ref=e2556]:
+                  - listitem [ref=e2557]:
+                    - link "Apply the filter Lithium-Ion to narrow results" [ref=e2559] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015500034111%3A100427319031&dc&qid=1786540996&rnid=100427310031&ref=sr_nr_p_n_g-101015500034111_1&ds=v1%3AErQUeo5u1GeZcgFD8PejcXyVpH3esbTKUEskbE4KVdc
+                      - checkbox [ref=e2562]
+                      - text: Lithium-Ion
+              - group "Sim Card Size" [ref=e2564]:
+                - heading "Sim Card Size" [level=2] [ref=e2565]
+                - list "Sim Card Size" [ref=e2566]:
+                  - listitem [ref=e2567]:
+                    - link "Apply the filter Nano to narrow results" [ref=e2569] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002989370111%3A27179455031&dc&qid=1786540996&rnid=27179438031&ref=sr_nr_p_n_g-1002989370111_1&ds=v1%3AG%2FQP5QB%2FOtRGlw8gkxXvU5MuOF7dZZxkpx771EKoD%2Bk
+                      - checkbox [ref=e2572]
+                      - text: Nano
+              - group "GPS Navigation" [ref=e2574]:
+                - heading "GPS Navigation" [level=2] [ref=e2575]
+                - list "GPS Navigation" [ref=e2576]:
+                  - listitem [ref=e2577]:
+                    - link "Apply the filter True to narrow results" [ref=e2579] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101015364874111%3A96329643031&dc&qid=1786540996&rnid=96329629031&ref=sr_nr_p_n_g-101015364874111_1&ds=v1%3AKqf8aWdBa02F2l9md6CljrrFpIED5fbZ3bSR9jDcToo
+                      - checkbox [ref=e2582]
+                      - text: "True"
+              - group "Purpose" [ref=e2584]:
+                - heading "Purpose" [level=2] [ref=e2585]
+                - list "Purpose" [ref=e2586]:
+                  - listitem [ref=e2587]:
+                    - link "Apply the filter Photography to narrow results" [ref=e2589] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101016756045111%3A207854437031&dc&qid=1786540996&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_1&ds=v1%3AJLbDDYPDnsLOpke13zm%2Fg96eh%2BgpSD2hJ9hLnZis6RY
+                      - checkbox [ref=e2592]
+                      - text: Photography
+                  - listitem [ref=e2594]:
+                    - link "Apply the filter Gaming to narrow results" [ref=e2596] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101016756045111%3A207854436031&dc&qid=1786540996&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_2&ds=v1%3Ay14atp9uFcRkMQW7MqnpX21VK4PAlYGj1MGyHSnQ%2Fbw
+                      - checkbox [ref=e2599]
+                      - text: Gaming
+                  - listitem [ref=e2601]:
+                    - link "Apply the filter Streaming to narrow results" [ref=e2603] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101016756045111%3A207854438031&dc&qid=1786540996&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_3&ds=v1%3AEZCa%2Fh8rrEUmtHEvmv9yO1w6m52VVvae6RoRAEdw8dk
+                      - checkbox [ref=e2606]
+                      - text: Streaming
+                  - listitem [ref=e2608]:
+                    - link "Apply the filter Video Conferencing to narrow results" [ref=e2610] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-101016756045111%3A207854439031&dc&qid=1786540996&rnid=207854435031&ref=sr_nr_p_n_g-101016756045111_4&ds=v1%3AfPwo6RYZcaOfPHW%2Bn06CYDa3doQKXLEBx6h3wL44EZM
+                      - checkbox [ref=e2613]
+                      - text: Video Conferencing
+              - group "Display Resolution" [ref=e2615]:
+                - heading "Display Resolution" [level=2] [ref=e2616]
+                - list "Display Resolution" [ref=e2617]:
+                  - listitem [ref=e2618]:
+                    - link "Apply the filter 3120 x 1440 to narrow results" [ref=e2620] [cursor=pointer]:
+                      - /url: /s?k=samsung+s25+ultra+5g+mobile&rh=p_n_g-1002090229111%3A27345243031&dc&qid=1786540996&rnid=27345181031&ref=sr_nr_p_n_g-1002090229111_1&ds=v1%3AYdmMJIFjRJLGj6TmKlzGofM7E6dA7%2BHYVqP3ocvh65I
+                      - checkbox [ref=e2623]
+                      - text: 3120 x 1440
+            - generic [ref=e2628]:
+              - generic "Text reads \"REDMI Note 17 SEO\", \"mAhSSD Edition\", \"Biggest Battery On A REDMI Ever\". Xiaomi Mi logo displayed. Two smartphone views showing front display with purple gradient and dual rear camera setup on light purple background." [ref=e2631]:
+                - link "Sponsored Ad" [ref=e2632] [cursor=pointer]:
+                  - /url: https://www.amazon.in/dp/B0H8CF8GRH?aaxitk=c7c22ca3302e0f5c5d51cf75e09e4d62&aref=B5sCkpRdnk
+                  - generic [ref=e2633]: Sponsored Ad
+                - img "Sponsored Ad" [ref=e2635]
+              - button "Leave feedback on Sponsored advertisement" [ref=e2637] [cursor=pointer]:
+                - generic [ref=e2638]: Sponsored
+            - generic [ref=e2643]:
+              - iframe [ref=e2644]:
+                - generic [ref=f3e4]:
+                  - generic [ref=f3e5]: "Sponsored Ad. Brand logo. Product image. 10000mAh Power Bank Portable Slim Design with Dual USB Port Lithium Polymer Battery Compatible with iPhone, Samsung, OnePlus & All Smartphones- Black Price: ₹699.00 Shop now"
+                  - link "Click to navigate to product detail page" [ref=f3e8] [cursor=pointer]:
+                    - /url: https://aax-eu-zaz.amazon.in/x/c/RHzxDhAad7UUx8T5IMYV4vYAAAGf9iQ5sAoAAAH_AQBvbm9fdHhuX2JpZDMgICBvbm9fdHhuX2ltcDIgICAYBV4U/clv1c_ek-gg3s2LcTajQDut4ez_2vsiQYDYH9NzmWr_oOUmaJHmdZVEkQI-xLFXWaPhWVPV7G_RYTZS_a3M8bWyQQvgj6bH1XAjMEjWYR1GZ2xKCEVS1PLLh3REV0tduaBRjLzEtp9EFUzKNCAKRvoLpH0w1-NrMmsNlbrgLRghefaybAQhSbBZh29l8wcl1yOR1txvIWvWhp9JTVOwXXVpZFz3G-cL3Ep2FqAdJ7W8yIfSx1iy6C6V4XlpIYLhHvFGews2K6QOd9V-jgclkAo8lWl_BOiVIqE3uwASSR5ykspky65Fw5Eb2UjVs3jKwBHadmnot64vo5qRzBzos301RSlV5OrpreVe4eUm7MvLvlP1FlJrbNzWDbpVs2ooKsLQg-bSeOopagiXQNR0YJnA1K21mRN2vA_nKhuVu9s2ymC8QIMrixRiJjlX1ewcZFrc5kJenZsgrnuJEC2T8nH7i2F2znNn1CIrdjHi_hGX4VLYk5uU5Rrp_3Wxbl9J-kYT8Rt2Tmx1H3XhrpQc-5j6enEKv1387zas2PnX2Ar3LS7cseOlWqKG-H2REBgedbGcVNcxAH3IvRZ7JCwMb1IE3F6mQubNgDo-TNnA4zvUgKVYodQe4xGAHseFvq24k5nTUq5yamrP1-BSL5ThzzWw_iFa0cuPSsEXMCqrIdwcNi0ZSb_7KxK_euwxiUzechtxvRYkrRWE2hz0bcVnQnOmmz1yKd33Mu345SW5tEaUxxG0Ei3nbTxYs3IqmHpBdtiuPKMRYpgtf5biJBRWFeF27EwaYGE7-1dQ8MpkJ6BWw0EaUQddeY251RN93U-n5c_qA3ldL_gAeLFcoLWr0Pc9ww6AQ-zE8JeI2Ilo9A_e9m_WtMgHJmhKBmtqF6gtQQG3CHHDOthloGD2FyRv-bXCF9K-jzMoNnTwE_9Sltkm2pfOT5GYTyZu77mlUAFbLHQ-wN_i1T8VSlNSCtvIQWoc_Ug6yfqlGTws2V-3yFiqtKZfNH9pFJ8EljsWT194hqp6bhbKQ-fGxzS35sG0krbiUVD9p8/http://www.amazon.in/dp/B0FJMRF4CM/ref=syn_sd_onsite_desktop_0?ie=UTF8&psc=1&pd_rd_plhdr=t&aref=us8vY5uP1Q
+                  - generic [ref=f3e9]:
+                    - img "Brand logo" [ref=f3e13]
+                    - img "Product image" [ref=f3e17]
+              - button "Leave feedback on Sponsored advertisement" [ref=e2646] [cursor=pointer]:
+                - generic [ref=e2647]: Sponsored
+  - complementary "Your recently viewed items and featured recommendations"
+  - generic [ref=e2649]:
+    - button "Back to top" [ref=e2650] [cursor=pointer]:
+      - generic [ref=e2651]: Back to top
+    - generic [ref=e2652]:
+      - generic [ref=e2653]:
+        - heading "Get to Know Us" [level=6] [ref=e2654]
+        - list [ref=e2655]:
+          - listitem [ref=e2656]:
+            - link "About Amazon" [ref=e2657] [cursor=pointer]:
+              - /url: https://www.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e2658]:
+            - link "Careers" [ref=e2659] [cursor=pointer]:
+              - /url: https://amazon.jobs
+          - listitem [ref=e2660]:
+            - link "Press Releases" [ref=e2661] [cursor=pointer]:
+              - /url: https://press.aboutamazon.in/?utm_source=gateway&utm_medium=footer
+          - listitem [ref=e2662]:
+            - link "Amazon Science" [ref=e2663] [cursor=pointer]:
+              - /url: https://www.amazon.science
+      - generic [ref=e2665]:
+        - heading "Connect with Us" [level=6] [ref=e2666]
+        - list [ref=e2667]:
+          - listitem [ref=e2668]:
+            - link "Facebook" [ref=e2669] [cursor=pointer]:
+              - /url: https://www.facebook.com/AmazonIN
+          - listitem [ref=e2670]:
+            - link "Twitter" [ref=e2671] [cursor=pointer]:
+              - /url: https://x.com/AmazonIN
+          - listitem [ref=e2672]:
+            - link "Instagram" [ref=e2673] [cursor=pointer]:
+              - /url: https://www.instagram.com/amazondotin
+      - generic [ref=e2675]:
+        - heading "Make Money with Us" [level=6] [ref=e2676]
+        - list [ref=e2677]:
+          - listitem [ref=e2678]:
+            - link "Sell on Amazon" [ref=e2679] [cursor=pointer]:
+              - /url: /b/?node=2838698031&ld=AZINSOANavDesktopFooter_C&ref_=nav_footer_sell_C
+          - listitem [ref=e2680]:
+            - link "Sell under Amazon Accelerator" [ref=e2681] [cursor=pointer]:
+              - /url: https://accelerator.amazon.in/?ref_=map_1_b2b_GW_FT
+          - listitem [ref=e2682]:
+            - link "Protect and Build Your Brand" [ref=e2683] [cursor=pointer]:
+              - /url: https://brandservices.amazon.in/?ref=AOINABRLGNRFOOT&ld=AOINABRLGNRFOOT
+          - listitem [ref=e2684]:
+            - link "Amazon Global Selling" [ref=e2685] [cursor=pointer]:
+              - /url: https://sell.amazon.in/grow-your-business/amazon-global-selling.html?ld=AZIN_Footer_V1&ref=AZIN_Footer_V1
+          - listitem [ref=e2686]:
+            - link "Supply to Amazon" [ref=e2687] [cursor=pointer]:
+              - /url: https://supply.amazon.com/?ref_=footer_sta&lang=en-IN
+          - listitem [ref=e2688]:
+            - link "Become an Affiliate" [ref=e2689] [cursor=pointer]:
+              - /url: https://affiliate-program.amazon.in/?utm_campaign=assocshowcase&utm_medium=footer&utm_source=GW&ref_=footer_assoc
+          - listitem [ref=e2690]:
+            - link "Fulfilment by Amazon" [ref=e2691] [cursor=pointer]:
+              - /url: https://services.amazon.in/services/fulfilment-by-amazon/benefits.html/ref=az_footer_fba?ld=AWRGINFBAfooter
+          - listitem [ref=e2692]:
+            - link "Advertise Your Products" [ref=e2693] [cursor=pointer]:
+              - /url: https://advertising.amazon.in/?ref=Amz.in
+          - listitem [ref=e2694]:
+            - link "Amazon Pay on Merchants" [ref=e2695] [cursor=pointer]:
+              - /url: https://www.amazonpay.in/merchant
+      - generic [ref=e2697]:
+        - heading "Let Us Help You" [level=6] [ref=e2698]
+        - list [ref=e2699]:
+          - listitem [ref=e2700]:
+            - link "Your Account" [ref=e2701] [cursor=pointer]:
+              - /url: /gp/css/homepage.html?ref_=footer_ya
+          - listitem [ref=e2702]:
+            - link "Returns Centre" [ref=e2703] [cursor=pointer]:
+              - /url: /gp/css/returns/homepage.html?ref_=footer_hy_f_4
+          - listitem [ref=e2704]:
+            - link "Recalls and Product Safety Alerts" [ref=e2705] [cursor=pointer]:
+              - /url: https://www.amazon.in/your-product-safety-alerts?ref_=footer_bsx_ypsa
+          - listitem [ref=e2706]:
+            - link "100% Purchase Protection" [ref=e2707] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=201083470&ref_=footer_swc
+          - listitem [ref=e2708]:
+            - link "Amazon App Download" [ref=e2709] [cursor=pointer]:
+              - /url: /gp/browse.html?node=6967393031&ref_=footer_mobapp
+          - listitem [ref=e2710]:
+            - link "Help" [ref=e2711] [cursor=pointer]:
+              - /url: /gp/help/customer/display.html?nodeId=200507590&ref_=footer_gw_m_b_he
+    - generic [ref=e2713]:
+      - link "Amazon India Home" [ref=e2716] [cursor=pointer]:
+        - /url: /ref=footer_logo
+      - generic [ref=e2719]:
+        - generic [ref=e2720]:
+          - link "Choose a language for shopping. Current selection is English." [ref=e2721] [cursor=pointer]:
+            - /url: /customer-preferences/edit?ie=UTF8&preferencesReturnUrl=%2F&ref_=footer_lang
+            - generic [ref=e2723]: English
+          - button "Expand to Change Language or Country" [ref=e2724] [cursor=pointer]
+        - button "Choose a country/region for shopping. The current selection is India." [ref=e2725] [cursor=pointer]:
+          - generic [ref=e2727]: India
+    - generic "More on Amazon" [ref=e2728]:
+      - generic "More on Amazon" [ref=e2729]:
+        - list [ref=e2730]:
+          - listitem [ref=e2731]:
+            - link "AbeBooks Books, art & collectibles" [ref=e2732] [cursor=pointer]:
+              - /url: https://www.abebooks.com/
+              - heading "AbeBooks" [level=5] [ref=e2733]
+              - generic [ref=e2734]:
+                - text: Books, art
+                - text: "& collectibles"
+          - listitem [ref=e2735]
+          - listitem [ref=e2736]:
+            - link "Amazon Web Services Scalable Cloud Computing Services" [ref=e2737] [cursor=pointer]:
+              - /url: https://aws.amazon.com/what-is-cloud-computing/?sc_channel=EL&sc_campaign=IN_amazonfooter
+              - heading "Amazon Web Services" [level=5] [ref=e2738]
+              - generic [ref=e2739]:
+                - text: Scalable Cloud
+                - text: Computing Services
+          - listitem [ref=e2740]
+          - listitem [ref=e2741]:
+            - link "Audible Download Audio Books" [ref=e2742] [cursor=pointer]:
+              - /url: https://www.audible.in/
+              - heading "Audible" [level=5] [ref=e2743]
+              - generic [ref=e2744]:
+                - text: Download
+                - text: Audio Books
+          - listitem [ref=e2745]
+          - listitem [ref=e2746]:
+            - link "IMDb Movies, TV & Celebrities" [ref=e2747] [cursor=pointer]:
+              - /url: https://www.imdb.com/
+              - heading "IMDb" [level=5] [ref=e2748]
+              - generic [ref=e2749]:
+                - text: Movies, TV
+                - text: "& Celebrities"
+        - list [ref=e2750]:
+          - listitem [ref=e2751]:
+            - link "Shopbop Designer Fashion Brands" [ref=e2752] [cursor=pointer]:
+              - /url: https://www.shopbop.com/
+              - heading "Shopbop" [level=5] [ref=e2753]
+              - generic [ref=e2754]:
+                - text: Designer
+                - text: Fashion Brands
+          - listitem [ref=e2755]
+          - listitem [ref=e2756]:
+            - link "Amazon Business Everything For Your Business" [ref=e2757] [cursor=pointer]:
+              - /url: /business?ref=footer_aingw
+              - heading "Amazon Business" [level=5] [ref=e2758]
+              - generic [ref=e2759]:
+                - text: Everything For
+                - text: Your Business
+          - listitem [ref=e2760]
+          - listitem [ref=e2761]:
+            - link "Amazon Music Stream millions of songs" [ref=e2762] [cursor=pointer]:
+              - /url: /music/player?ref=footer_apm
+              - heading "Amazon Music" [level=5] [ref=e2763]
+              - generic [ref=e2764]: Stream millions of songs
+          - listitem [ref=e2765]
+          - listitem [ref=e2766]
+    - generic [ref=e2767]:
+      - list [ref=e2768]:
+        - listitem [ref=e2769]:
+          - link "Conditions of Use & Sale" [ref=e2770] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200545940&ref_=footer_cou
+        - listitem [ref=e2771]:
+          - link "Privacy Notice" [ref=e2772] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=200534380&ref_=footer_privacy
+        - listitem [ref=e2773]:
+          - link "Interest-Based Ads" [ref=e2774] [cursor=pointer]:
+            - /url: /gp/help/customer/display.html?nodeId=202075050&ref_=footer_iba
+      - generic [ref=e2775]: © 1996-2026, Amazon.com, Inc. or its affiliates
+  - iframe [ref=e2777]:
+    - iframe [ref=f5e2]:
+      - generic [active] [ref=f6e1]:
+        - img [ref=f6e2]
+        - img [ref=f6e3]
+        - img [ref=f6e4]
+        - img [ref=f6e5]
+        - img [ref=f6e6]
+        - img [ref=f6e7]
+        - img [ref=f6e8]
+        - img [ref=f6e9]
+        - img [ref=f6e10]
+        - img [ref=f6e11]
+        - img [ref=f6e12]
+        - img [ref=f6e13]
+        - img [ref=f6e14]
+        - img [ref=f6e15]
+        - img [ref=f6e16]
+        - img [ref=f6e17]
+        - img [ref=f6e18]
+        - img [ref=f6e19]
+        - img [ref=f6e20]
+        - img [ref=f6e21]
+        - img [ref=f6e22]
+        - img [ref=f6e23]
+        - img [ref=f6e24]
+        - img [ref=f6e25]
+        - img [ref=f6e26]
+        - img [ref=f6e27]
+        - img [ref=f6e28]
+        - img [ref=f6e29]
+        - img [ref=f6e30]
+        - img [ref=f6e31]
+        - img [ref=f6e32]
+        - img [ref=f6e33]
+        - img [ref=f6e34]
+        - img [ref=f6e35]
+        - img [ref=f6e36]
+        - img [ref=f6e37]
+        - img [ref=f6e38]
+        - img [ref=f6e39]
+        - img [ref=f6e40]
+```
