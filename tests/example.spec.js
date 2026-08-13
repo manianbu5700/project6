@@ -7,7 +7,7 @@ test('has title', async ({ page }) => {
 });
 test('Amazon title', async ({ page }) => {
   await page.goto('https://www.amazon.in/');
-  console.log("Hii Bro")
+  console.log("Hii Buddy")
 });
 
 
